@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Artifact
   - Item
+  - SafetyPoints
   layers:
   - Default
   - TransparentFX

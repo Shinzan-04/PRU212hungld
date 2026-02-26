@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 2ed09482e0f87304b94f1d13136645a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6412088936393376879
+    second: RF_Green Forest_B_0
+  - first:
+      213: 2898517295487113533
+    second: RF_Green Forest_B_1
+  - first:
+      213: -7607064053756313141
+    second: RF_Green Forest_B_2
+  - first:
+      213: -287780023011180821
+    second: RF_Green Forest_B_3
+  - first:
+      213: 1045623384520756742
+    second: RF_Green Forest_B_4
+  - first:
+      213: -139387063670589287
+    second: RF_Green Forest_B_5
+  - first:
+      213: 2572950934428573911
+    second: RF_Green Forest_B_6
+  - first:
+      213: 4691729971144279518
+    second: RF_Green Forest_B_7
+  - first:
+      213: 2345442997828262573
+    second: RF_Green Forest_B_8
+  - first:
+      213: 4272725517663919709
+    second: RF_Green Forest_B_9
+  - first:
+      213: 529034304251297167
+    second: RF_Green Forest_B_10
+  - first:
+      213: 5966009643994255701
+    second: RF_Green Forest_B_11
+  - first:
+      213: 1334172830618698983
+    second: RF_Green Forest_B_12
+  - first:
+      213: -1838944914248450010
+    second: RF_Green Forest_B_13
+  - first:
+      213: 4370257724154735351
+    second: RF_Green Forest_B_14
+  - first:
+      213: -2154684603857503506
+    second: RF_Green Forest_B_15
+  - first:
+      213: -2889013674789225946
+    second: RF_Green Forest_B_16
+  - first:
+      213: 8391619213304439330
+    second: RF_Green Forest_B_17
+  - first:
+      213: -5483707494390760153
+    second: RF_Green Forest_B_18
+  - first:
+      213: 4041701160968543775
+    second: RF_Green Forest_B_19
+  - first:
+      213: 2628255037905596963
+    second: RF_Green Forest_B_20
+  - first:
+      213: -3160027745351290016
+    second: RF_Green Forest_B_21
+  - first:
+      213: 1845084737482216109
+    second: RF_Green Forest_B_22
+  - first:
+      213: 6061212813570152725
+    second: RF_Green Forest_B_23
+  - first:
+      213: -3305113118754958508
+    second: RF_Green Forest_B_24
+  - first:
+      213: 7335902508431086144
+    second: RF_Green Forest_B_25
+  - first:
+      213: -4994911846245550389
+    second: RF_Green Forest_B_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RF_Green Forest_B_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 727
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6480f93ae05cf850800000000000000
+      internalID: 6412088936393376879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 727
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39d5dc8f1a993820800000000000000
+      internalID: 2898517295487113533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 679
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1463c0c874e6690800000000000000
+      internalID: -7607064053756313141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 678
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beef6f20899910cf0800000000000000
+      internalID: -287780023011180821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 725
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e8333adecc28e00800000000000000
+      internalID: 1045623384520756742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99831af343cc01ef0800000000000000
+      internalID: -139387063670589287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 679
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0ef172e35f4b320800000000000000
+      internalID: 2572950934428573911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 679
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5cb180d8f5c1140800000000000000
+      internalID: 4691729971144279518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 674
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa1b76daffac8020800000000000000
+      internalID: 2345442997828262573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 535
+        width: 125
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5eda1f6835cb4b30800000000000000
+      internalID: 4272725517663919709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 535
+        width: 131
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8df4e295e1875700800000000000000
+      internalID: 529034304251297167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 578
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55115d479268bc250800000000000000
+      internalID: 5966009643994255701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_12
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 534
+        width: 98
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e44106ee1fe38210800000000000000
+      internalID: 1334172830618698983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 289
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620c5b8f751ca76e0800000000000000
+      internalID: -1838944914248450010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 512
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa6629de3646ac30800000000000000
+      internalID: 4370257724154735351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 506
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeaf110d4c50912e0800000000000000
+      internalID: -2154684603857503506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 440
+        width: 59
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a31f29e5928e7d0800000000000000
+      internalID: -2889013674789225946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 482
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222aa5bb635057470800000000000000
+      internalID: 8391619213304439330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_18
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 485
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72df0b87615f5e3b0800000000000000
+      internalID: -5483707494390760153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_19
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 455
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e50d3cac1071830800000000000000
+      internalID: 4041701160968543775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_20
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 461
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3227e792800797420800000000000000
+      internalID: 2628255037905596963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_21
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 437
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06335f512835524d0800000000000000
+      internalID: -3160027745351290016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 437
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da25f160bce0b9910800000000000000
+      internalID: 1845084737482216109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_23
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 345
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51915e4b0f0cd1450800000000000000
+      internalID: 6061212813570152725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 193
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45390263121e122d0800000000000000
+      internalID: -3305113118754958508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 107
+        width: 194
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0429ee1d67c5ec560800000000000000
+      internalID: 7335902508431086144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF_Green Forest_B_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 95
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6b428d3228eaab0800000000000000
+      internalID: -4994911846245550389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RF_Green Forest_B_0: 6412088936393376879
+      RF_Green Forest_B_1: 2898517295487113533
+      RF_Green Forest_B_10: 529034304251297167
+      RF_Green Forest_B_11: 5966009643994255701
+      RF_Green Forest_B_12: 1334172830618698983
+      RF_Green Forest_B_13: -1838944914248450010
+      RF_Green Forest_B_14: 4370257724154735351
+      RF_Green Forest_B_15: -2154684603857503506
+      RF_Green Forest_B_16: -2889013674789225946
+      RF_Green Forest_B_17: 8391619213304439330
+      RF_Green Forest_B_18: -5483707494390760153
+      RF_Green Forest_B_19: 4041701160968543775
+      RF_Green Forest_B_2: -7607064053756313141
+      RF_Green Forest_B_20: 2628255037905596963
+      RF_Green Forest_B_21: -3160027745351290016
+      RF_Green Forest_B_22: 1845084737482216109
+      RF_Green Forest_B_23: 6061212813570152725
+      RF_Green Forest_B_24: -3305113118754958508
+      RF_Green Forest_B_25: 7335902508431086144
+      RF_Green Forest_B_26: -4994911846245550389
+      RF_Green Forest_B_3: -287780023011180821
+      RF_Green Forest_B_4: 1045623384520756742
+      RF_Green Forest_B_5: -139387063670589287
+      RF_Green Forest_B_6: 2572950934428573911
+      RF_Green Forest_B_7: 4691729971144279518
+      RF_Green Forest_B_8: 2345442997828262573
+      RF_Green Forest_B_9: 4272725517663919709
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
