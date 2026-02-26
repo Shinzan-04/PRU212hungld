@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: b4bc1e4c25d90194f8cb52d330b5d7e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2310767871847041780
+    second: NgoQ01_0
+  - first:
+      213: -5942844731509457726
+    second: NgoQ01_1
+  - first:
+      213: -1737702496014884948
+    second: NgoQ01_2
+  - first:
+      213: -5508379137887887328
+    second: NgoQ01_3
+  - first:
+      213: -1018632010423815470
+    second: NgoQ01_4
+  - first:
+      213: 4316239730955479644
+    second: NgoQ01_5
+  - first:
+      213: -2339984795344458817
+    second: NgoQ01_6
+  - first:
+      213: 1550676870477714770
+    second: NgoQ01_7
+  - first:
+      213: -6876810760133224543
+    second: NgoQ01_8
+  - first:
+      213: 4164040463854270888
+    second: NgoQ01_9
+  - first:
+      213: 328691353969693198
+    second: NgoQ01_10
+  - first:
+      213: -3997588106766264879
+    second: NgoQ01_11
+  - first:
+      213: -362478886658466171
+    second: NgoQ01_12
+  - first:
+      213: 5212614673583957663
+    second: NgoQ01_13
+  - first:
+      213: -4369869403514586759
+    second: NgoQ01_14
+  - first:
+      213: 1169841949010169082
+    second: NgoQ01_15
+  - first:
+      213: -8192279029633419868
+    second: NgoQ01_16
+  - first:
+      213: 7556665245637639292
+    second: NgoQ01_17
+  - first:
+      213: -6752804493172816306
+    second: NgoQ01_18
+  - first:
+      213: -936704283281476856
+    second: NgoQ01_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NgoQ01_0
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 529
+        width: 157
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa04dfe22f711020800000000000000
+      internalID: 2310767871847041780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 530
+        width: 156
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccb3170436c68da0800000000000000
+      internalID: -5942844731509457726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 529
+        width: 155
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf19bf59c072e7e0800000000000000
+      internalID: -1737702496014884948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_3
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 528
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0202506db5e4e83b0800000000000000
+      internalID: -5508379137887887328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_4
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 528
+        width: 156
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2b8dd55971dd1f0800000000000000
+      internalID: -1018632010423815470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_5
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 529
+        width: 156
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a6709ba2d56eb30800000000000000
+      internalID: 4316239730955479644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_6
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 367
+        width: 127
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbada5f934b68fd0800000000000000
+      internalID: -2339984795344458817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_7
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 367
+        width: 131
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2551d3ad56c158510800000000000000
+      internalID: 1550676870477714770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 368
+        width: 115
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7dcae6c09a090a0800000000000000
+      internalID: -6876810760133224543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_9
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 367
+        width: 124
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9f2666db4a9c930800000000000000
+      internalID: 4164040463854270888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_10
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 373
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e021b128b0fbf8400800000000000000
+      internalID: 328691353969693198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_11
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 367
+        width: 117
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5ded90cc6b588c0800000000000000
+      internalID: -3997588106766264879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 193
+        width: 164
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e94228f5738faf0800000000000000
+      internalID: -362478886658466171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 194
+        width: 174
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96e5f19d6de65840800000000000000
+      internalID: 5212614673583957663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_14
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 195
+        width: 185
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9793aa81eea1b53c0800000000000000
+      internalID: -4369869403514586759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_15
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 193
+        width: 177
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc0a16fd0d1c3010800000000000000
+      internalID: 1169841949010169082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a571d980ad2f4e80800000000000000
+      internalID: -8192279029633419868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_17
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 23
+        width: 127
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c75c4010baed860800000000000000
+      internalID: 7556665245637639292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_18
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 22
+        width: 153
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46c5c267183942a0800000000000000
+      internalID: -6752804493172816306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQ01_19
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 435
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803bb6fca682003f0800000000000000
+      internalID: -936704283281476856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NgoQ01_0: 2310767871847041780
+      NgoQ01_1: -5942844731509457726
+      NgoQ01_10: 328691353969693198
+      NgoQ01_11: -3997588106766264879
+      NgoQ01_12: -362478886658466171
+      NgoQ01_13: 5212614673583957663
+      NgoQ01_14: -4369869403514586759
+      NgoQ01_15: 1169841949010169082
+      NgoQ01_16: -8192279029633419868
+      NgoQ01_17: 7556665245637639292
+      NgoQ01_18: -6752804493172816306
+      NgoQ01_19: -936704283281476856
+      NgoQ01_2: -1737702496014884948
+      NgoQ01_3: -5508379137887887328
+      NgoQ01_4: -1018632010423815470
+      NgoQ01_5: 4316239730955479644
+      NgoQ01_6: -2339984795344458817
+      NgoQ01_7: 1550676870477714770
+      NgoQ01_8: -6876810760133224543
+      NgoQ01_9: 4164040463854270888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
