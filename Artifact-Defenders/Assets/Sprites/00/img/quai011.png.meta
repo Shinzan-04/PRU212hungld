@@ -1,55 +1,49 @@
 fileFormatVersion: 2
-guid: 96c8073dd15c2ee45844c39a09d689bd
+guid: 797f7a7c8bf749f46bd47e0ff7a70d3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5281456842878377486
-    second: thuyencuagiac_0
+      213: -1260234615557125171
+    second: quai011_0
   - first:
-      213: 1508457012777471471
-    second: thuyencuagiac_1
+      213: 1679309189170780770
+    second: quai011_1
   - first:
-      213: 4774632346596031949
-    second: thuyencuagiac_2
+      213: 7780568562703197166
+    second: quai011_2
   - first:
-      213: -8960252968852935905
-    second: thuyencuagiac_3
+      213: -631233960426125272
+    second: quai011_3
   - first:
-      213: 3200985139451124571
-    second: thuyencuagiac_4
+      213: -4577650703839618690
+    second: quai011_4
   - first:
-      213: -5575042314333303743
-    second: thuyencuagiac_5
+      213: 4605632752524703316
+    second: quai011_5
   - first:
-      213: 3721378415494913725
-    second: thuyencuagiac_6
+      213: -6226040528384584790
+    second: quai011_6
   - first:
-      213: -7674460562390690679
-    second: thuyencuagiac_7
+      213: -8565330340257211107
+    second: quai011_7
   - first:
-      213: 1817409355939144081
-    second: thuyencuagiac_8
+      213: 2336202660993674014
+    second: quai011_8
   - first:
-      213: 4557034803291355058
-    second: thuyencuagiac_9
+      213: -2771178619591759567
+    second: quai011_9
   - first:
-      213: -7560277135538347821
-    second: thuyencuagiac_10
+      213: -8860558387552863989
+    second: quai011_10
   - first:
-      213: 4851959278220905530
-    second: thuyencuagiac_11
+      213: 5329213343471089330
+    second: quai011_11
   - first:
-      213: 7519868461508355451
-    second: thuyencuagiac_12
+      213: 7955986605399262906
+    second: quai011_12
   - first:
-      213: 7176061428028238294
-    second: thuyencuagiac_13
-  - first:
-      213: -6365037164830094286
-    second: thuyencuagiac_14
-  - first:
-      213: 7034931298216535278
-    second: thuyencuagiac_15
+      213: 539433973316990920
+    second: quai011_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -82,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -171,353 +165,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thuyencuagiac_0
+      name: quai011_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 666
-        width: 232
-        height: 187
+        x: 311
+        y: 628
+        width: 108
+        height: 205
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f1ada7dbfe74b6b0800000000000000
-      internalID: -5281456842878377486
+      spriteID: dcb011e4b4fb28ee0800000000000000
+      internalID: -1260234615557125171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_1
+      name: quai011_1
       rect:
         serializedVersion: 2
-        x: 328
-        y: 665
-        width: 223
-        height: 166
+        x: 486
+        y: 628
+        width: 132
+        height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fed4c8539ad1fe410800000000000000
-      internalID: 1508457012777471471
+      spriteID: 26ad2986fca1e4710800000000000000
+      internalID: 1679309189170780770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_2
+      name: quai011_2
       rect:
         serializedVersion: 2
-        x: 643
-        y: 666
-        width: 223
-        height: 166
+        x: 746
+        y: 628
+        width: 129
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcd32f772d6e24240800000000000000
-      internalID: 4774632346596031949
+      spriteID: ee3ee7272e12afb60800000000000000
+      internalID: 7780568562703197166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_3
+      name: quai011_3
       rect:
         serializedVersion: 2
-        x: 972
-        y: 665
-        width: 308
+        x: 257
+        y: 418
+        width: 246
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82843a2be086d37f0800000000000000
+      internalID: -631233960426125272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quai011_4
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 416
+        width: 239
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7992d330fae870c0800000000000000
+      internalID: -4577650703839618690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quai011_5
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 418
+        width: 241
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456b324369e7aef30800000000000000
+      internalID: 4605632752524703316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quai011_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 207
+        width: 124
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3937c5029a899a0800000000000000
+      internalID: -6226040528384584790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quai011_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 206
+        width: 147
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dd715cf65d12980800000000000000
+      internalID: -8565330340257211107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quai011_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 207
+        width: 137
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1ba1e5f569c6a380800000000000000
-      internalID: -8960252968852935905
+      spriteID: e1ba9d341fbdb6020800000000000000
+      internalID: 2336202660993674014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_4
+      name: quai011_10
       rect:
         serializedVersion: 2
-        x: 24
-        y: 461
-        width: 210
-        height: 167
+        x: 519
+        y: 208
+        width: 143
+        height: 187
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5bd948560f2c6c20800000000000000
-      internalID: 3200985139451124571
+      spriteID: b09bd4e7719f80580800000000000000
+      internalID: -8860558387552863989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_5
+      name: quai011_11
       rect:
         serializedVersion: 2
-        x: 332
-        y: 461
-        width: 223
-        height: 171
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14c446e8d8871a2b0800000000000000
-      internalID: -5575042314333303743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_6
-      rect:
-        serializedVersion: 2
-        x: 644
-        y: 457
-        width: 225
-        height: 174
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbe5162c3fdf4a330800000000000000
-      internalID: 3721378415494913725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_7
-      rect:
-        serializedVersion: 2
-        x: 972
-        y: 458
-        width: 228
-        height: 174
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98455ff87c6de7590800000000000000
-      internalID: -7674460562390690679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_8
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 252
+        x: 695
+        y: 21
         width: 227
-        height: 173
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19169302e2cb83910800000000000000
-      internalID: 1817409355939144081
+      spriteID: 2b6bdddec4b25f940800000000000000
+      internalID: 5329213343471089330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyencuagiac_9
+      name: quai011_12
       rect:
         serializedVersion: 2
-        x: 327
-        y: 253
-        width: 232
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b7f5476207dd3f30800000000000000
-      internalID: 4557034803291355058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_10
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 251
-        width: 229
-        height: 174
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d0aab45000841790800000000000000
-      internalID: -7560277135538347821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_11
-      rect:
-        serializedVersion: 2
-        x: 967
-        y: 251
+        x: 906
+        y: 19
         width: 234
-        height: 176
+        height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3c840bb14f955340800000000000000
-      internalID: 4851959278220905530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 238
-        height: 215
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b756ed51680fb5860800000000000000
-      internalID: 7519868461508355451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_13
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 37
-        width: 233
-        height: 179
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d9610039dd769360800000000000000
-      internalID: 7176061428028238294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_14
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 36
-        width: 230
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23c84280c68daa7a0800000000000000
-      internalID: -6365037164830094286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyencuagiac_15
-      rect:
-        serializedVersion: 2
-        x: 966
-        y: 0
-        width: 314
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee469793eb811a160800000000000000
-      internalID: 7034931298216535278
+      spriteID: ab6c69c3aa7596e60800000000000000
+      internalID: 7955986605399262906
       vertices: []
       indices: 
       edges: []
@@ -526,7 +432,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f090138ff81382e44b04c3a828f7f04b
     internalID: 0
     vertices: []
     indices: 
@@ -536,22 +442,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      thuyencuagiac_0: -5281456842878377486
-      thuyencuagiac_1: 1508457012777471471
-      thuyencuagiac_10: -7560277135538347821
-      thuyencuagiac_11: 4851959278220905530
-      thuyencuagiac_12: 7519868461508355451
-      thuyencuagiac_13: 7176061428028238294
-      thuyencuagiac_14: -6365037164830094286
-      thuyencuagiac_15: 7034931298216535278
-      thuyencuagiac_2: 4774632346596031949
-      thuyencuagiac_3: -8960252968852935905
-      thuyencuagiac_4: 3200985139451124571
-      thuyencuagiac_5: -5575042314333303743
-      thuyencuagiac_6: 3721378415494913725
-      thuyencuagiac_7: -7674460562390690679
-      thuyencuagiac_8: 1817409355939144081
-      thuyencuagiac_9: 4557034803291355058
+      quai011_0: -1260234615557125171
+      quai011_1: 1679309189170780770
+      quai011_10: -8860558387552863989
+      quai011_11: 5329213343471089330
+      quai011_12: 7955986605399262906
+      quai011_13: 539433973316990920
+      quai011_2: 7780568562703197166
+      quai011_3: -631233960426125272
+      quai011_4: -4577650703839618690
+      quai011_5: 4605632752524703316
+      quai011_6: -6226040528384584790
+      quai011_7: -8565330340257211107
+      quai011_8: 2336202660993674014
+      quai011_9: -2771178619591759567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

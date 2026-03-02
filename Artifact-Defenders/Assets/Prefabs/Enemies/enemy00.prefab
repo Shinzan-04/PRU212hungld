@@ -5067,6 +5067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEater: 1
+  isBoat: 0
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 0
@@ -5075,6 +5076,12 @@ MonoBehaviour:
   bushesMask:
     serializedVersion: 2
     m_Bits: 512
+  waterMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
   isMoving: 0
   left: 0
   isAttacking: 0
@@ -5112,9 +5119,13 @@ MonoBehaviour:
   idleSprites:
   - {fileID: 5035663469962687505, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
-  walkSprites:
   - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
-  - {fileID: -776089270823427399, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  walkSprites:
+  - {fileID: -8860558387552863989, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: 2336202660993674014, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: -8565330340257211107, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: -6226040528384584790, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
   attackSprites:
   - {fileID: 1555418139191661603, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   - {fileID: -1448073533915942957, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}

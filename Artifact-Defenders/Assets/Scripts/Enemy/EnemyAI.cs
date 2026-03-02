@@ -9,6 +9,8 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("Type")]
     [SerializeField] bool isEater = false; // nếu true thì ăn cây, nếu false thì đánh trụ
+    // --- MỚI ---
+    [SerializeField] bool isBoat = false; // Nếu true, quái di chuyển trên nước
 
     [Header("Stats")]
     [SerializeField] float moveSpeed = 2f;
@@ -19,6 +21,9 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Target Masks")]
     [SerializeField] LayerMask bushesMask;
+    // --- MỚI ---
+    [SerializeField] LayerMask waterMask; // Mask cho vùng nước
+    [SerializeField] LayerMask obstacleMask; // Mask cho cọc/vật cản
 
     [HideInInspector] public bool isMoving;
     [HideInInspector] public bool left;
@@ -78,8 +83,42 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
+        // --- MỚI ---
+        if (isBoat)
+        {
+            HandleBoat();
+            return;
+        }
+
         if (isEater) HandleEater();
         else HandleAttacker();
+    }
+
+    // --- MỚI: BOAT LOGIC ---
+    void HandleBoat()
+    {
+        if (artifact == null) return;
+
+        // 1. Di chuyển về phía trụ
+        MoveTowards(artifact.transform.position);
+
+        // 2. Kiểm tra va chạm với cọc
+        Collider2D obstacleHit = Physics2D.OverlapCircle(transform.position, 0.3f, obstacleMask);
+        if (obstacleHit != null)
+        {
+            StartCoroutine(DieRoutine()); // Tự hủy khi gặp cọc
+            return;
+        }
+
+        // 3. Kiểm tra xem còn ở trên nước không
+        Collider2D waterHit = Physics2D.OverlapCircle(transform.position, 0.3f, waterMask);
+        if (waterHit == null)
+        {
+            StartCoroutine(DieRoutine()); // Tự hủy khi rời khỏi nước
+            return;
+        }
+
+        left = artifact.transform.position.x < transform.position.x;
     }
 
     // === EATER LOGIC ===
@@ -195,7 +234,8 @@ public class EnemyAI : MonoBehaviour
 
     void Attack()
     {
-        artifact.Damage(attackDamage);
+        if (artifact != null)
+            artifact.Damage(attackDamage);
     }
 
     // === TÌM BỤI CÂY GẦN NHẤT ===
@@ -251,6 +291,10 @@ public class EnemyAI : MonoBehaviour
 
         EnemyHealth eh = GetComponent<EnemyHealth>();
         if (eh != null) eh.current = 0;
+
+        // Tắt collider để không va chạm khi chết
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
 
         yield return new WaitForSeconds(1.0f);
 
