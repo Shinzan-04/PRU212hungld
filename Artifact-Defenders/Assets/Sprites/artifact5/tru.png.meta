@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c55da72ee53cd44ca9bbd95fd635a23
+guid: dd9bac7057ad5bb49abe7b37bb66c0a6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -156,7 +156,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: artifact5_1_0
+      name: tru_1
       rect:
         serializedVersion: 2
         x: 67
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact5_1_1
+      name: tru_2
       rect:
         serializedVersion: 2
         x: 362
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact5_1_2
+      name: tru_3
       rect:
         serializedVersion: 2
         x: 667
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact5_1_3
+      name: tru_4
       rect:
         serializedVersion: 2
         x: 973
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact5_1_4
+      name: tru_5
       rect:
         serializedVersion: 2
         x: 656
@@ -266,7 +266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact5_1_5
+      name: tru_6
       rect:
         serializedVersion: 2
         x: 959
@@ -301,17 +301,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      artifact5_1_0: -2553136598579101065
-      artifact5_1_1: -7680105812049519306
-      artifact5_1_2: 4982152823350411398
-      artifact5_1_3: 5320038315148644982
-      artifact5_1_4: -1790513590779698215
-      artifact5_1_5: 3655439381947309069
       artifact_10: 6669528363567486473
       artifact_2: -3228366173047113745
       artifact_5: -6339263543823795511
       artifact_6: -2200985473903432586
       artifact_9: -2435634549287290637
+      tru_1: -2553136598579101065
+      tru_2: -7680105812049519306
+      tru_3: 4982152823350411398
+      tru_4: 5320038315148644982
+      tru_5: -1790513590779698215
+      tru_6: 3655439381947309069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
