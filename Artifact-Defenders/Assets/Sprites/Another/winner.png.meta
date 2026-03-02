@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 574b099baceedc545a9e9edf95e98e25
+guid: bcc69ae84c9cab04b9316577b1c294b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5142280207242610327
-    second: back2 1_0
+      213: 2650913928579206598
+    second: winner_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: back2 1_0
+      name: winner_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1820
-        height: 951
+        width: 1376
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 796c7308a9c0d5740800000000000000
-      internalID: 5142280207242610327
+      spriteID: 6cd49134c20f9c420800000000000000
+      internalID: 2650913928579206598
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      back2 1_0: 5142280207242610327
+      winner_0: 2650913928579206598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
