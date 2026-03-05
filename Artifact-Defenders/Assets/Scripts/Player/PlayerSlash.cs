@@ -46,6 +46,11 @@ public class PlayerSlash : MonoBehaviour
         //    audioSource.Play();
         //    timer = Time.time + cooldown;
         //}
+        // Kiểm tra nếu người dùng nhấn chuột trái (nút 0)
+        if (Input.GetMouseButtonDown(0))
+        {
+            OnAttackButtonPressed();
+        }
     }
     void Slash()
     {
