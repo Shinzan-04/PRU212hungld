@@ -4875,7 +4875,7 @@ Transform:
   m_GameObject: {fileID: 4286895053056245160}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0305, y: -0.4187, z: 0}
+  m_LocalPosition: {x: 0.0305, y: -1.38, z: 0}
   m_LocalScale: {x: 1.182892, y: 0.23736, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5068,6 +5068,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEater: 0
   isBoat: 1
+  enemyPrefab: {fileID: 6060242505385302408, guid: 94708bcd8bd22dd4383ed0c714c749d5,
+    type: 3}
+  minSpawnCount: 3
+  maxSpawnCount: 5
+  spawnSpreadRadius: 2
   moveSpeed: 1
   maxHealth: 50
   attackDamage: 2
@@ -5078,7 +5083,7 @@ MonoBehaviour:
     m_Bits: 0
   waterMask:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 32768
   obstacleMask:
     serializedVersion: 2
     m_Bits: 65536

@@ -1,16 +1,22 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Enemy logic: move, attack artifact or eat bushes, and take damage.
-/// Combined from original + extended version.
+/// Enemy logic: move, attack artifact or eat bushes, take damage.
+/// Special: Boat logic spawns land enemies on destruction.
 /// </summary>
 public class EnemyAI : MonoBehaviour
 {
     [Header("Type")]
-    [SerializeField] bool isEater = false; // nếu true thì ăn cây, nếu false thì đánh trụ
-    // --- MỚI ---
-    [SerializeField] bool isBoat = false; // Nếu true, quái di chuyển trên nước
+    [SerializeField] bool isEater = false;
+    [SerializeField] bool isBoat = false;
+
+    [Header("Boat Settings (Only for Boats)")]
+    [SerializeField] GameObject enemyPrefab; // Kéo Prefab Enemy00 vào đây
+    [SerializeField] int minSpawnCount = 3;
+    [SerializeField] int maxSpawnCount = 5;
+    [SerializeField] float spawnSpreadRadius = 0.8f; // Bán kính tủa ra
 
     [Header("Stats")]
     [SerializeField] float moveSpeed = 2f;
@@ -21,9 +27,8 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Target Masks")]
     [SerializeField] LayerMask bushesMask;
-    // --- MỚI ---
-    [SerializeField] LayerMask waterMask; // Mask cho vùng nước
-    [SerializeField] LayerMask obstacleMask; // Mask cho cọc/vật cản
+    [SerializeField] LayerMask waterMask;
+    [SerializeField] LayerMask obstacleMask;
 
     [HideInInspector] public bool isMoving;
     [HideInInspector] public bool left;
@@ -31,16 +36,14 @@ public class EnemyAI : MonoBehaviour
     [HideInInspector] public bool isHurt;
     [HideInInspector] public bool isDead;
 
-    // trạng thái
     int currentHealth;
     float attackTimer;
     float eatTimer;
     bool killingBush;
-    bool attacking;
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
     public GameObject[] UpgradeItems;
-    // mục tiêu
+
     Artifact artifact;
     BushFruits target;
 
@@ -58,11 +61,10 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            artifact = GameObject.FindGameObjectWithTag("Artifact").GetComponent<Artifact>();
-            attacking = false;
+            GameObject artObj = GameObject.FindGameObjectWithTag("Artifact");
+            if (artObj != null) artifact = artObj.GetComponent<Artifact>();
         }
 
-        // Đồng bộ EnemyHealth UI
         EnemyHealth eh = GetComponent<EnemyHealth>();
         if (eh != null)
         {
@@ -77,13 +79,11 @@ public class EnemyAI : MonoBehaviour
 
         if (isHurt)
         {
-            // vẫn giữ hướng đúng
             if (artifact != null)
                 left = artifact.transform.position.x < transform.position.x;
             return;
         }
 
-        // --- MỚI ---
         if (isBoat)
         {
             HandleBoat();
@@ -94,34 +94,87 @@ public class EnemyAI : MonoBehaviour
         else HandleAttacker();
     }
 
-    // --- MỚI: BOAT LOGIC ---
+    // --- LOGIC THUYỀN ---
+    // --- Cập nhật HandleBoat để nhạy hơn với va chạm trên/dưới ---
+    // --- BOAT LOGIC CẢI TIẾN ---
     void HandleBoat()
     {
         if (artifact == null) return;
 
-        // 1. Di chuyển về phía trụ
+        // 1. Xác định hướng di chuyển tiếp theo
+        Vector2 direction = (artifact.transform.position - transform.position).normalized;
+
+        // 2. Dự đoán vị trí tiếp theo (Check ahead)
+        // Kiểm tra một điểm nhỏ ở phía trước thuyền 0.3 đơn vị để xử lý trước khi lọt vào đất
+        Vector3 checkPos = transform.position + (Vector3)direction * 0.3f;
+
+        // 3. Kiểm tra va chạm cọc tại vị trí dự đoán
+        Collider2D obstacleHit = Physics2D.OverlapCircle(checkPos, 0.3f, obstacleMask);
+
+        // 4. Kiểm tra xem điểm dự đoán còn ở trên nước không
+        Collider2D waterHit = Physics2D.OverlapCircle(checkPos, 0.2f, waterMask);
+
+        // NẾU chạm cọc HOẶC điểm phía trước KHÔNG PHẢI LÀ NƯỚC -> Vỡ thuyền ngay
+        if (obstacleHit != null || waterHit == null)
+        {
+            SpawnEnemiesAndDestroy();
+            return;
+        }
+
+        // 5. Nếu an toàn thì mới thực hiện di chuyển
         MoveTowards(artifact.transform.position);
-
-        // 2. Kiểm tra va chạm với cọc
-        Collider2D obstacleHit = Physics2D.OverlapCircle(transform.position, 0.3f, obstacleMask);
-        if (obstacleHit != null)
-        {
-            StartCoroutine(DieRoutine()); // Tự hủy khi gặp cọc
-            return;
-        }
-
-        // 3. Kiểm tra xem còn ở trên nước không
-        Collider2D waterHit = Physics2D.OverlapCircle(transform.position, 0.3f, waterMask);
-        if (waterHit == null)
-        {
-            StartCoroutine(DieRoutine()); // Tự hủy khi rời khỏi nước
-            return;
-        }
 
         left = artifact.transform.position.x < transform.position.x;
     }
 
-    // === EATER LOGIC ===
+    void SpawnEnemiesAndDestroy()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        int spawnCount = Random.Range(minSpawnCount, maxSpawnCount + 1);
+
+        // Tính toán để lính tủa ra các ô xung quanh
+        for (int i = 0; i < spawnCount; i++)
+        {
+            if (enemyPrefab != null)
+            {
+                float angle = i * (360f / spawnCount) * Mathf.Deg2Rad;
+                Vector3 spawnDir = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0);
+
+                // Spawn lính cách thuyền 1 khoảng rộng để mỗi con 1 ô riêng biệt
+                Vector3 spawnPos = transform.position + spawnDir * spawnSpreadRadius;
+
+                GameObject enemy = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+
+                Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.linearVelocity = Vector2.zero;
+                    rb.AddForce(spawnDir * 5f, ForceMode2D.Impulse);
+                }
+
+                EnemyAI ai = enemy.GetComponent<EnemyAI>();
+                if (ai != null)
+                {
+                    ai.isBoat = false;
+                    ai.StartCoroutine(TemporarilyDisableMovement(ai));
+                }
+            }
+        }
+
+        Destroy(gameObject);
+    }
+
+    IEnumerator TemporarilyDisableMovement(EnemyAI ai)
+    {
+        // Vô hiệu hóa script di chuyển của lính trong chốc lát để chúng văng ra vị trí riêng
+        ai.enabled = false;
+        yield return new WaitForSeconds(0.4f);
+        if (ai != null) ai.enabled = true;
+    }
+
+    // === LOGIC ĂN BỤI CÂY ===
     void HandleEater()
     {
         if (target == null || !target.enabled)
@@ -132,13 +185,9 @@ public class EnemyAI : MonoBehaviour
 
         float dist = Vector2.Distance(transform.position, target.transform.position);
 
-        // Nếu còn trái và chưa ăn bụi
         if (target.HasFruits() && !killingBush)
         {
-            if (dist > 0.5f)
-            {
-                MoveTowards(target.transform.position);
-            }
+            if (dist > 0.5f) MoveTowards(target.transform.position);
             else if (!isAttacking)
             {
                 isMoving = false;
@@ -153,10 +202,7 @@ public class EnemyAI : MonoBehaviour
                 StartCoroutine(EatRoutine());
             }
         }
-        else
-        {
-            SearchForTarget();
-        }
+        else SearchForTarget();
 
         if (target != null)
             left = target.transform.position.x < transform.position.x;
@@ -165,9 +211,7 @@ public class EnemyAI : MonoBehaviour
     IEnumerator EatRoutine()
     {
         isAttacking = true;
-
-
-        yield return new WaitForSeconds(0.45f); // frame 4: thực hiện ăn
+        yield return new WaitForSeconds(0.45f);
 
         if (target != null && target.enabled)
         {
@@ -184,43 +228,34 @@ public class EnemyAI : MonoBehaviour
                 SearchForTarget();
             }
         }
-
-        yield return new WaitForSeconds(0.15f); // frame 5: kết thúc animation
+        yield return new WaitForSeconds(0.15f);
         isAttacking = false;
     }
 
-
-    // === ATTACKER LOGIC ===
+    // === LOGIC TẤN CÔNG TRỤ ===
     void HandleAttacker()
     {
         if (artifact == null) return;
-
         float distance = Vector2.Distance(transform.position, artifact.transform.position);
 
-        if (distance > 1.5f)
-        {
-            MoveTowards(artifact.transform.position);
-        }
+        if (distance > 1.5f) MoveTowards(artifact.transform.position);
         else
         {
             isMoving = false;
-
             if (!isAttacking && Time.time > attackTimer)
             {
                 StartCoroutine(AttackRoutine());
                 attackTimer = Time.time + attackCooldown;
             }
         }
-
         left = artifact.transform.position.x < transform.position.x;
     }
 
     IEnumerator AttackRoutine()
     {
         isAttacking = true;
-        yield return null;
         yield return new WaitForSeconds(0.45f);
-        Attack();
+        if (artifact != null) artifact.Damage(attackDamage);
         yield return new WaitForSeconds(0.15f);
         isAttacking = false;
     }
@@ -229,16 +264,8 @@ public class EnemyAI : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
         isMoving = true;
-        isAttacking = false;
     }
 
-    void Attack()
-    {
-        if (artifact != null)
-            artifact.Damage(attackDamage);
-    }
-
-    // === TÌM BỤI CÂY GẦN NHẤT ===
     void SearchForTarget()
     {
         target = null;
@@ -257,42 +284,31 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // === NHẬN SÁT THƯƠNG ===
     public void TakeDamage(int dmg)
     {
         if (isDead) return;
-
         currentHealth = Mathf.Max(0, currentHealth - dmg);
-
         EnemyHealth eh = GetComponent<EnemyHealth>();
         if (eh != null) eh.current = currentHealth;
 
-        if (currentHealth > 0)
-            StartCoroutine(HurtRoutine());
-        else
-            StartCoroutine(DieRoutine());
+        if (currentHealth > 0) StartCoroutine(HurtRoutine());
+        else StartCoroutine(DieRoutine());
     }
 
     IEnumerator HurtRoutine()
     {
         isHurt = true;
         isMoving = false;
-        isAttacking = false;
         yield return new WaitForSeconds(0.4f);
         isHurt = false;
     }
 
     IEnumerator DieRoutine()
     {
+        if (isBoat) { SpawnEnemiesAndDestroy(); yield break; }
+
         isDead = true;
         isMoving = false;
-        isAttacking = false;
-        isHurt = false;
-
-        EnemyHealth eh = GetComponent<EnemyHealth>();
-        if (eh != null) eh.current = 0;
-
-        // Tắt collider để không va chạm khi chết
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
 
@@ -300,19 +316,11 @@ public class EnemyAI : MonoBehaviour
 
         if (UpgradeItems != null && UpgradeItems.Length > 0)
         {
-            Vector3 spawnPos = transform.position + Vector3.up * 0.3f;
-            int rand = Random.Range(0, UpgradeItems.Length); // chọn ngẫu nhiên 1 loại đá
-            GameObject item = Instantiate(UpgradeItems[rand], spawnPos, Quaternion.identity);
-
+            int rand = Random.Range(0, UpgradeItems.Length);
+            GameObject item = Instantiate(UpgradeItems[rand], transform.position, Quaternion.identity);
             Rigidbody2D rb = item.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                // Văng nhẹ ra hướng ngẫu nhiên
-                Vector2 dir = Random.insideUnitCircle.normalized;
-                rb.AddForce(dir * 2f, ForceMode2D.Impulse);
-            }
+            if (rb != null) rb.AddForce(Random.insideUnitCircle.normalized * 2f, ForceMode2D.Impulse);
         }
-
         Destroy(gameObject);
     }
 }

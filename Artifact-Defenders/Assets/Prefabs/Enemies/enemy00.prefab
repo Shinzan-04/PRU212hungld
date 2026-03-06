@@ -5066,8 +5066,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f18aba9a524f9b45b0d4a30521959b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEater: 1
+  isEater: 0
   isBoat: 0
+  enemyPrefab: {fileID: 6060242505385302408}
+  minSpawnCount: 3
+  maxSpawnCount: 5
+  spawnSpreadRadius: 0.8
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 0
