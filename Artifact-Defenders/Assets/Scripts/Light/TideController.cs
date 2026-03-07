@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
+using System.Collections.Generic; // Cần thiết để dùng List
 
 public class TideSwitch : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class TideSwitch : MonoBehaviour
     public TilemapCollider2D waterCollider;
     public TilemapCollider2D stakesCollider;
     public TilemapCollider2D lowWaterStakesCollider;
+
+    // --- Ô MỚI THÊM Ở ĐÂY ---
+    [Header("Danger Zone & Push")]
+    public Collider2D waterDangerZone;
+    public Transform playerTransform;
+    public float pushSpeed = 10f;
+    // -----------------------
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -29,6 +37,14 @@ public class TideSwitch : MonoBehaviour
 
     private bool isHighTide = true;
     private Coroutine tideCoroutine;
+    private List<Transform> safetyPoints = new List<Transform>();
+
+    void Start()
+    {
+        // Tìm tất cả các điểm an toàn có Tag là SafetyPoint trong Scene
+        GameObject[] points = GameObject.FindGameObjectsWithTag("SafetyPoint");
+        foreach (var p in points) safetyPoints.Add(p.transform);
+    }
 
     void Update()
     {
@@ -45,15 +61,16 @@ public class TideSwitch : MonoBehaviour
 
     IEnumerator TransitionTide(bool toHigh)
     {
-        float t = 0f;
+        // 1. Nếu triều lên, kiểm tra và đẩy Player ngay lập tức
+        if (toHigh) CheckAndPushPlayer();
 
+        float t = 0f;
         float startWaterAlpha = waterTilemap.color.a;
         float startStakesAlpha = groundStakesTilemap.color.a;
 
         float targetWaterAlpha = toHigh ? 1f : 0f;
         float targetStakesAlpha = toHigh ? 0f : 1f;
 
-        // 🔊 Play sound
         if (audioSource != null)
         {
             audioSource.clip = toHigh ? tideInSound : tideOutSound;
@@ -65,20 +82,51 @@ public class TideSwitch : MonoBehaviour
             t += Time.deltaTime;
             float p = Mathf.SmoothStep(0f, 1f, t / fadeDuration);
 
-            float waterAlpha = Mathf.Lerp(startWaterAlpha, targetWaterAlpha, p);
-            float stakesAlpha = Mathf.Lerp(startStakesAlpha, targetStakesAlpha, p);
-
-            SetTilemapAlpha(waterTilemap, waterAlpha);
-            SetTilemapAlpha(groundStakesTilemap, stakesAlpha);
-            SetTilemapAlpha(lowWaterStakesUpTilemap, stakesAlpha);
+            SetTilemapAlpha(waterTilemap, Mathf.Lerp(startWaterAlpha, targetWaterAlpha, p));
+            SetTilemapAlpha(groundStakesTilemap, Mathf.Lerp(startStakesAlpha, targetStakesAlpha, p));
+            SetTilemapAlpha(lowWaterStakesUpTilemap, Mathf.Lerp(startStakesAlpha, targetStakesAlpha, p));
 
             yield return null;
         }
 
-        // 🎯 Bật/tắt collider theo tide
+        // 🎯 Cập nhật vật lý sau khi fade xong (hoặc có thể đưa lên đầu nếu muốn chặn ngay)
         waterCollider.enabled = toHigh;
         stakesCollider.enabled = !toHigh;
         lowWaterStakesCollider.enabled = !toHigh;
+    }
+
+    void CheckAndPushPlayer()
+    {
+        // Kiểm tra xem Player có đang đứng trong vùng nguy hiểm không
+        if (waterDangerZone != null && waterDangerZone.OverlapPoint(playerTransform.position))
+        {
+            Transform bestPoint = GetClosestSafetyPoint(playerTransform.position);
+            if (bestPoint != null)
+            {
+                StartCoroutine(PushToSafetyRoutine(bestPoint.position));
+            }
+        }
+    }
+
+    Transform GetClosestSafetyPoint(Vector2 currentPos)
+    {
+        Transform closest = null;
+        float minDist = Mathf.Infinity;
+        foreach (Transform pt in safetyPoints)
+        {
+            float dist = Vector2.Distance(currentPos, pt.position);
+            if (dist < minDist) { minDist = dist; closest = pt; }
+        }
+        return closest;
+    }
+
+    IEnumerator PushToSafetyRoutine(Vector3 targetPos)
+    {
+        while (Vector3.Distance(playerTransform.position, targetPos) > 0.1f)
+        {
+            playerTransform.position = Vector3.MoveTowards(playerTransform.position, targetPos, pushSpeed * Time.deltaTime);
+            yield return null;
+        }
     }
 
     void SetTilemapAlpha(Tilemap tm, float alpha)
@@ -89,7 +137,6 @@ public class TideSwitch : MonoBehaviour
         tm.color = c;
     }
 
-    // 🌊 Wave effect (chỉ áp dụng khi High tide)
     void LateUpdate()
     {
         if (isHighTide && waterTilemap != null)

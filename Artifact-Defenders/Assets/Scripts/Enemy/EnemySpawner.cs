@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Component responsible of spawning wolves, given set respawn points and spawn frequency values.
+/// Component responsible of spawning enemies, including land units and boats.
 /// </summary>
 public class EnemySpawner : MonoBehaviour
 {
@@ -12,21 +12,24 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Transform wolfEaterPrefab;
     [SerializeField] Transform enemy00Prefab;
     [SerializeField] Transform enemy01Prefab;
+    [SerializeField] Transform boatPrefab; // --- MỚI: Prefab thuyền ---
     [SerializeField] Transform BossPrefab;
 
+    [Header("Spawn Points")]
     [SerializeField] Transform[] spawnPoints;
+    [SerializeField] Transform[] waterSpawnPoints; // --- MỚI: Điểm sinh trên nước ---
 
-    [SerializeField] int eaterChance = 3;       // Tỷ lệ sinh của nhóm kẻ thù khó
+    [Header("Rates")]
+    [SerializeField] int eaterChance = 3;
+    [SerializeField] int boatChance = 2;        // --- MỚI: Tỷ lệ sinh thuyền (ví dụ 2/10) ---
     [SerializeField] float spawnTime;
     [SerializeField] float spawnReductionPer;
     [SerializeField] float spawnFloor;
-    [SerializeField] float bossSpawnTime = 20f; // Boss xuất hiện khi còn 20s
+    [SerializeField] float bossSpawnTime = 20f;
 
     Manager gameManager;
 
-    // Danh sách kẻ thù khó (Khởi tạo trước để tái sử dụng)
     private Transform[] hardEnemies;
-    // Danh sách kẻ thù thường (Khởi tạo trước để tái sử dụng)
     private Transform[] commonEnemies;
 
     float currentSpawnTime;
@@ -35,11 +38,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        // Khởi tạo các danh sách một lần duy nhất
-        // Nhóm Khó: wolfEaterPrefab và enemy00Prefab
+        // Khởi tạo các nhóm kẻ thù
         hardEnemies = new Transform[] { wolfEaterPrefab, enemy00Prefab };
-
-        // Nhóm Thường: wolfPrefab và enemy01Prefab
         commonEnemies = new Transform[] { wolfPrefab, enemy01Prefab };
 
         currentSpawnTime = spawnTime;
@@ -50,21 +50,21 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
+        // Boss Logic
         if (!bossSpawned && gameManager != null && gameManager.GetTime() <= bossSpawnTime)
         {
             SpawnBoss();
             bossSpawned = true;
         }
 
+        // Spawn Logic
         if (Time.time > timer)
         {
             Spawn();
-            // Cơ chế giảm thời gian sinh giữ nguyên
+
             currentSpawnTime -= spawnReductionPer;
-            if (currentSpawnTime <= spawnFloor)
-            {
-                currentSpawnTime = spawnFloor;
-            }
+            if (currentSpawnTime <= spawnFloor) currentSpawnTime = spawnFloor;
+
             timer = Time.time + currentSpawnTime;
         }
     }
@@ -73,26 +73,32 @@ public class EnemySpawner : MonoBehaviour
     {
         Vector3 spawnPosition = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
         Instantiate(BossPrefab, spawnPosition, Quaternion.identity);
-        Debug.Log("⚠️ BOSS SPAWNED AT 20s!");
+        Debug.Log("⚠️ BOSS SPAWNED!");
     }
 
     void Spawn()
     {
-        // Chọn ngẫu nhiên một vị trí sinh
+        int roll = Random.Range(0, 11);
+
+        // 1. --- MỚI: Kiểm tra sinh thuyền ---
+        // Nếu roll trúng tỷ lệ thuyền VÀ có thiết lập điểm sinh dưới nước
+        if (roll <= boatChance && waterSpawnPoints.Length > 0)
+        {
+            Vector3 waterPos = waterSpawnPoints[Random.Range(0, waterSpawnPoints.Length)].position;
+            Instantiate(boatPrefab, waterPos, Quaternion.identity);
+            return; // Sinh thuyền xong thì thoát hàm để chờ đợt sau
+        }
+
+        // 2. Logic sinh quái vật trên cạn (giữ nguyên logic cũ)
         Vector3 spawnPosition = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
 
-        // Tính toán tỷ lệ sinh (Random từ 0 đến 10)
-        if (Random.Range(0, 11) <= eaterChance)
+        if (roll <= eaterChance)
         {
-            // === VAI TRÒ KHÓ (Chia sẻ tỷ lệ) ===
-            // Chọn ngẫu nhiên giữa wolfEaterPrefab và enemy00Prefab
             Transform enemyToSpawn = hardEnemies[Random.Range(0, hardEnemies.Length)];
             Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
         }
         else
         {
-            // === VAI TRÒ THƯỜNG (Chia sẻ tỷ lệ) ===
-            // Chọn ngẫu nhiên giữa wolfPrefab và enemy01Prefab
             Transform enemyToSpawn = commonEnemies[Random.Range(0, commonEnemies.Length)];
             Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
         }

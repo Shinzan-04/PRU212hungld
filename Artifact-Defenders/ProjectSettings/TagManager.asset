@@ -12,7 +12,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Land
   - Water
   - UI
   - 
@@ -24,8 +24,8 @@ TagManager:
   - Enemy
   - Ground
   - Road
+  - Water01
   - Obstacle
-  - 
   - 
   - 
   - 
