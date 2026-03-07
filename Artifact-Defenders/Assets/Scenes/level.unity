@@ -2185,6 +2185,7 @@ MonoBehaviour:
   dash: {fileID: 1529478019}
   spin: {fileID: 1529478018}
   boomerang: {fileID: 1529478017}
+  pile: {fileID: 0}
 --- !u!114 &642254320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14305,6 +14306,7 @@ GameObject:
   - component: {fileID: 1529478018}
   - component: {fileID: 1529478017}
   - component: {fileID: 1529478021}
+  - component: {fileID: 1529478022}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -14761,6 +14763,7 @@ MonoBehaviour:
   dash: {fileID: 1529478019}
   spin: {fileID: 1529478018}
   boomerang: {fileID: 1529478017}
+  pile: {fileID: 1529478022}
 --- !u!114 &1529478021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14776,6 +14779,23 @@ MonoBehaviour:
   maxMana: 100
   regenRate: 5
   currentMana: 0
+--- !u!114 &1529478022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529478005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79aeec4b0c794384cb61bf9281b780c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPileSkill
+  pilePrefab: {fileID: 2670634287101842722, guid: 34654124bb2142f4f9e3ef71e8449462,
+    type: 3}
+  minDistance: 1.2
+  cooldown: 2
+  cooldownText: {fileID: 0}
 --- !u!1 &1561513269
 GameObject:
   m_ObjectHideFlags: 0
@@ -15518,7 +15538,7 @@ GameObject:
   - component: {fileID: 1735714918}
   m_Layer: 4
   m_Name: Tilemap_Water
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

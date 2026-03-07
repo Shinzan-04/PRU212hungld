@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 19643789cf4990441bc524e9a1798fd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1112455657899420350
+    second: Pile_0
+  - first:
+      213: 1295988534162336207
+    second: Pile_1
+  - first:
+      213: 5384562855510536694
+    second: Pile_2
+  - first:
+      213: 1866012335173746005
+    second: Pile_3
+  - first:
+      213: -9067575803226253537
+    second: Pile_4
+  - first:
+      213: -1957575815514872835
+    second: Pile_5
+  - first:
+      213: 6507285895523643740
+    second: Pile_6
+  - first:
+      213: 142878136286535951
+    second: Pile_7
+  - first:
+      213: 1536990036998453748
+    second: Pile_8
+  - first:
+      213: 8195564171576034522
+    second: Pile_9
+  - first:
+      213: 8086907172360366722
+    second: Pile_10
+  - first:
+      213: -668187060119512030
+    second: Pile_11
+  - first:
+      213: 4908478383689763721
+    second: Pile_12
+  - first:
+      213: 4221369960707962459
+    second: Pile_13
+  - first:
+      213: 3492654959647184962
+    second: Pile_14
+  - first:
+      213: 2528693106478798318
+    second: Pile_15
+  - first:
+      213: -8245373091321904194
+    second: Pile_16
+  - first:
+      213: -7736026563408732205
+    second: Pile_17
+  - first:
+      213: -8376598096775030095
+    second: Pile_18
+  - first:
+      213: -1107279945833230787
+    second: Pile_19
+  - first:
+      213: 5040818985314401235
+    second: Pile_20
+  - first:
+      213: -6251423334550552064
+    second: Pile_21
+  - first:
+      213: 7377154287138289393
+    second: Pile_22
+  - first:
+      213: -6784994152930800025
+    second: Pile_23
+  - first:
+      213: 2903753518509279541
+    second: Pile_24
+  - first:
+      213: 1526644013814096896
+    second: Pile_25
+  - first:
+      213: -1473866394949366170
+    second: Pile_26
+  - first:
+      213: -8421067549388001407
+    second: Pile_27
+  - first:
+      213: 900231585483860593
+    second: Pile_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pile_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 139
+        width: 324
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24518822973cf80f0800000000000000
+      internalID: -1112455657899420350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pile_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 24
+        width: 324
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118c6e9aab86f1a44a52d75cbc505fc2
+      internalID: -617858472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 55ba53033d8b78a42833d1a9fffc3842
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":677.0,"y":369.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Pile_0: -1112455657899420350
+      Pile_1: -617858472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
