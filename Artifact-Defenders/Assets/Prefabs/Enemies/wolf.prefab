@@ -5067,6 +5067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEater: 0
+  isBoat: 0
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 1
@@ -5075,6 +5076,12 @@ MonoBehaviour:
   bushesMask:
     serializedVersion: 2
     m_Bits: 0
+  waterMask:
+    serializedVersion: 2
+    m_Bits: 16
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 32768
   isMoving: 0
   left: 0
   isAttacking: 0

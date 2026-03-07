@@ -5042,7 +5042,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5216995912334704299, guid: 83a56300da04bcc4faf424cb04560c59,
+  m_Sprite: {fileID: 5035663469962687505, guid: 821f13b71f83c68478c567ee6c796b45,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5066,7 +5066,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f18aba9a524f9b45b0d4a30521959b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEater: 1
+  isEater: 0
+  isBoat: 0
+  enemyPrefab: {fileID: 6060242505385302408}
+  minSpawnCount: 3
+  maxSpawnCount: 5
+  spawnSpreadRadius: 0.8
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 0
@@ -5075,6 +5080,12 @@ MonoBehaviour:
   bushesMask:
     serializedVersion: 2
     m_Bits: 512
+  waterMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
   isMoving: 0
   left: 0
   isAttacking: 0
@@ -5110,32 +5121,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleSprites:
-  - {fileID: -5216995912334704299, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -8286350196196668294, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -3835513217701669455, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 1731906372155247496, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
+  - {fileID: 5035663469962687505, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: 3912837893500353112, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   walkSprites:
-  - {fileID: -6361917669773992345, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -7426124562464593227, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 5050309337097829181, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -5456747483093239955, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -8459940511358406454, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -7182232569540839672, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
+  - {fileID: -8860558387552863989, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: 2336202660993674014, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: -8565330340257211107, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
+  - {fileID: -6226040528384584790, guid: 797f7a7c8bf749f46bd47e0ff7a70d3a, type: 3}
   attackSprites:
-  - {fileID: 4091120319166811461, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -3125149015719185560, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -3671382055485076599, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 3350051580146421554, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
+  - {fileID: 1555418139191661603, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: -1448073533915942957, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: -776089270823427399, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: -5987111450703218171, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   hurtSprites:
-  - {fileID: 6895231850311131279, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 882155338610283717, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 7527972098524700784, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 536631186790323805, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
+  - {fileID: 4127525192192246888, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: -270279438346715552, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   deathSprites:
-  - {fileID: 7022583443616693867, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -8972198498544842715, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: -8354406779685394138, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
-  - {fileID: 5496068190616344613, guid: 83a56300da04bcc4faf424cb04560c59, type: 3}
+  - {fileID: 1155823143962629377, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
+  - {fileID: 5545256031684816470, guid: 821f13b71f83c68478c567ee6c796b45, type: 3}
   frameTime: 0.15
 --- !u!114 &6060242505385302418
 MonoBehaviour:
@@ -5190,7 +5195,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.71875, y: 0.96875}
+    oldSize: {x: 1.04, y: 1.84}
     newSize: {x: 0.71875, y: 0.96875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

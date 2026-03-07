@@ -156,7 +156,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: artifact_0
+      name: artifact5_1_0
       rect:
         serializedVersion: 2
         x: 67
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact_1
+      name: artifact5_1_1
       rect:
         serializedVersion: 2
         x: 362
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact_3
+      name: artifact5_1_2
       rect:
         serializedVersion: 2
         x: 667
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact_4
+      name: artifact5_1_3
       rect:
         serializedVersion: 2
         x: 973
@@ -244,10 +244,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact_7
+      name: artifact5_1_4
       rect:
         serializedVersion: 2
-        x: 654
+        x: 656
         y: 62
         width: 250
         height: 276
@@ -266,7 +266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: artifact_8
+      name: artifact5_1_5
       rect:
         serializedVersion: 2
         x: 959
@@ -301,16 +301,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      artifact_0: -2553136598579101065
-      artifact_1: -7680105812049519306
+      artifact5_1_0: -2553136598579101065
+      artifact5_1_1: -7680105812049519306
+      artifact5_1_2: 4982152823350411398
+      artifact5_1_3: 5320038315148644982
+      artifact5_1_4: -1790513590779698215
+      artifact5_1_5: 3655439381947309069
       artifact_10: 6669528363567486473
       artifact_2: -3228366173047113745
-      artifact_3: 4982152823350411398
-      artifact_4: 5320038315148644982
       artifact_5: -6339263543823795511
       artifact_6: -2200985473903432586
-      artifact_7: -1790513590779698215
-      artifact_8: 3655439381947309069
       artifact_9: -2435634549287290637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
