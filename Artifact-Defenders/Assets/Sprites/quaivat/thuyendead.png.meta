@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: b8b1b7f2051ccd24895cd2435464c7dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7900702003276793004
+    second: thuyendead_0
+  - first:
+      213: 1078491357017863808
+    second: thuyendead_1
+  - first:
+      213: -9156407933243360466
+    second: thuyendead_2
+  - first:
+      213: -7175631908639041148
+    second: thuyendead_3
+  - first:
+      213: -593608504505874838
+    second: thuyendead_4
+  - first:
+      213: 6127522590391173012
+    second: thuyendead_5
+  - first:
+      213: 9189959956476224150
+    second: thuyendead_6
+  - first:
+      213: 2585667796784334688
+    second: thuyendead_7
+  - first:
+      213: -4626420047083331370
+    second: thuyendead_8
+  - first:
+      213: 2788048069079729917
+    second: thuyendead_9
+  - first:
+      213: -3638740686932798395
+    second: thuyendead_10
+  - first:
+      213: 9019302988463127051
+    second: thuyendead_11
+  - first:
+      213: -7324166758999712024
+    second: thuyendead_12
+  - first:
+      213: -4547462696800705656
+    second: thuyendead_13
+  - first:
+      213: 2610281432922938182
+    second: thuyendead_14
+  - first:
+      213: -8283138482134157478
+    second: thuyendead_15
+  - first:
+      213: -1358695493090582976
+    second: thuyendead_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: thuyendead_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 663
+        width: 307
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b387243611b5290800000000000000
+      internalID: -7900702003276793004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 660
+        width: 294
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086f064dc2297fe00800000000000000
+      internalID: 1078491357017863808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_2
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 652
+        width: 304
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bf5785f77ede080800000000000000
+      internalID: -9156407933243360466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_3
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 651
+        width: 323
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4899c961cc80b6c90800000000000000
+      internalID: -7175631908639041148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 441
+        width: 308
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66c641d53413c7f0800000000000000
+      internalID: -593608504505874838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 441
+        width: 311
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f7279b455590550800000000000000
+      internalID: 6127522590391173012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_6
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 441
+        width: 306
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69264d1d3eb498f70800000000000000
+      internalID: 9189959956476224150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_7
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 443
+        width: 315
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0674f76692322e320800000000000000
+      internalID: 2585667796784334688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 234
+        width: 311
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d02adf9a77abcfb0800000000000000
+      internalID: -4626420047083331370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_9
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 237
+        width: 305
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6063672f221b620800000000000000
+      internalID: 2788048069079729917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_10
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 231
+        width: 319
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5441c95cf98908dc0800000000000000
+      internalID: -3638740686932798395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_11
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 229
+        width: 327
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ab6fc18400b2d70800000000000000
+      internalID: 9019302988463127051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 309
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee191643255b5a90800000000000000
+      internalID: -7324166758999712024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_13
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 173
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883aadf45ca24e0c0800000000000000
+      internalID: -4547462696800705656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_14
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 19
+        width: 323
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b5b252225993420800000000000000
+      internalID: 2610281432922938182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 18
+        width: 334
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57760bbf616c0d80800000000000000
+      internalID: -8283138482134157478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thuyendead_16
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 0
+        width: 323
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e5960d5a1f42de0800000000000000
+      internalID: -1358695493090582976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      thuyendead_0: -7900702003276793004
+      thuyendead_1: 1078491357017863808
+      thuyendead_10: -3638740686932798395
+      thuyendead_11: 9019302988463127051
+      thuyendead_12: -7324166758999712024
+      thuyendead_13: -4547462696800705656
+      thuyendead_14: 2610281432922938182
+      thuyendead_15: -8283138482134157478
+      thuyendead_16: -1358695493090582976
+      thuyendead_2: -9156407933243360466
+      thuyendead_3: -7175631908639041148
+      thuyendead_4: -593608504505874838
+      thuyendead_5: 6127522590391173012
+      thuyendead_6: 9189959956476224150
+      thuyendead_7: 2585667796784334688
+      thuyendead_8: -4626420047083331370
+      thuyendead_9: 2788048069079729917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
