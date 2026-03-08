@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
-using System.Collections.Generic; // Cần thiết để dùng List
+using System.Collections.Generic;
 
 public class TideSwitch : MonoBehaviour
 {
+    // Singleton để EnemyAI có thể gọi: TideSwitch.Instance.IsHighTide
+    public static TideSwitch Instance;
+
     [Header("Tilemaps")]
     public Tilemap waterTilemap;
     public Tilemap groundStakesTilemap;
@@ -15,12 +18,10 @@ public class TideSwitch : MonoBehaviour
     public TilemapCollider2D stakesCollider;
     public TilemapCollider2D lowWaterStakesCollider;
 
-    // --- Ô MỚI THÊM Ở ĐÂY ---
     [Header("Danger Zone & Push")]
     public Collider2D waterDangerZone;
     public Transform playerTransform;
     public float pushSpeed = 10f;
-    // -----------------------
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -38,10 +39,16 @@ public class TideSwitch : MonoBehaviour
     private bool isHighTide = true;
     private Coroutine tideCoroutine;
     private List<Transform> safetyPoints = new List<Transform>();
+    private bool isPushingPlayer = false;
+
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+    }
 
     void Start()
     {
-        // Tìm tất cả các điểm an toàn có Tag là SafetyPoint trong Scene
+        // Tìm các điểm an toàn có Tag là SafetyPoint
         GameObject[] points = GameObject.FindGameObjectsWithTag("SafetyPoint");
         foreach (var p in points) safetyPoints.Add(p.transform);
     }
@@ -50,18 +57,24 @@ public class TideSwitch : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            isHighTide = !isHighTide;
-
-            if (tideCoroutine != null)
-                StopCoroutine(tideCoroutine);
-
-            tideCoroutine = StartCoroutine(TransitionTide(isHighTide));
+            ToggleTide();
         }
     }
 
+    public void ToggleTide()
+    {
+        isHighTide = !isHighTide;
+
+        if (tideCoroutine != null) StopCoroutine(tideCoroutine);
+        tideCoroutine = StartCoroutine(TransitionTide(isHighTide));
+    }
+
+    // Hàm để các script khác kiểm tra trạng thái nước
+    public bool IsHighTide() => isHighTide;
+
     IEnumerator TransitionTide(bool toHigh)
     {
-        // 1. Nếu triều lên, kiểm tra và đẩy Player ngay lập tức
+        // 1. Nếu triều lên (toHigh = true), đẩy người chơi ngay lập tức
         if (toHigh) CheckAndPushPlayer();
 
         float t = 0f;
@@ -89,7 +102,7 @@ public class TideSwitch : MonoBehaviour
             yield return null;
         }
 
-        // 🎯 Cập nhật vật lý sau khi fade xong (hoặc có thể đưa lên đầu nếu muốn chặn ngay)
+        // Cập nhật vật lý
         waterCollider.enabled = toHigh;
         stakesCollider.enabled = !toHigh;
         lowWaterStakesCollider.enabled = !toHigh;
@@ -97,7 +110,6 @@ public class TideSwitch : MonoBehaviour
 
     void CheckAndPushPlayer()
     {
-        // Kiểm tra xem Player có đang đứng trong vùng nguy hiểm không
         if (waterDangerZone != null && waterDangerZone.OverlapPoint(playerTransform.position))
         {
             Transform bestPoint = GetClosestSafetyPoint(playerTransform.position);
@@ -122,11 +134,20 @@ public class TideSwitch : MonoBehaviour
 
     IEnumerator PushToSafetyRoutine(Vector3 targetPos)
     {
+        isPushingPlayer = true;
+
+        // Vô hiệu hóa script di chuyển của người chơi nếu cần (Ví dụ: PlayerMovement)
+        // playerTransform.GetComponent<PlayerMovement>().enabled = false;
+
         while (Vector3.Distance(playerTransform.position, targetPos) > 0.1f)
         {
             playerTransform.position = Vector3.MoveTowards(playerTransform.position, targetPos, pushSpeed * Time.deltaTime);
             yield return null;
         }
+
+        // Trả lại quyền điều khiển
+        // playerTransform.GetComponent<PlayerMovement>().enabled = true;
+        isPushingPlayer = false;
     }
 
     void SetTilemapAlpha(Tilemap tm, float alpha)
