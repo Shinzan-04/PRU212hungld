@@ -3,6 +3,10 @@
 // Đảm bảo tên này khớp hệt với tên file bạn đặt trong thư mục Project
 public class ArtifactPointLauncher : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource; // Gán AudioSource của trụ vào đây
+    [SerializeField] private AudioClip shootSound;   // File âm thanh tiếng bắn
+
     [Header("Settings")]
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private LayerMask targetMask;
@@ -49,6 +53,12 @@ public class ArtifactPointLauncher : MonoBehaviour
     void Shoot(Transform target)
     {
         if (arrowPrefab == null) return;
+
+        // PHÁT ÂM THANH KHI BẮN
+        if (audioSource != null && shootSound != null)
+        {
+            audioSource.PlayOneShot(shootSound);
+        }
 
         Vector3 dir = (target.position - transform.position).normalized;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
