@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: eaterInfo
   m_EditorClassIdentifier: 
-  english: These will eat fruits and  bushes, kill them before they take your resources.
-  vietnamese: "Ch\xFAng s\u1EBD \u0103n c\xE1c tr\xE1i c\xE2y v\xE0 b\u1EE5i c\xE2y,
-    h\xE3y ti\xEAu di\u1EC7t ch\xFAng tr\u01B0\u1EDBc khi ch\xFAng c\u01B0\u1EDBp
-    t\xE0i nguy\xEAn c\u1EE7a b\u1EA1n."
+  english: They will eat the fruits and destroy the bushes. Eliminate them before
+    they steal your resources.
+  vietnamese: "Nh\u1EEFng k\u1EBB x\xE2m nh\u1EADp \u0111ang \u0103n tr\xE1i c\xE2y
+    v\xE0 ph\xE1 b\u1EE5i c\xE2y. H\xE3y ti\xEAu di\u1EC7t ch\xFAng tr\u01B0\u1EDBc
+    khi ch\xFAng l\u1EA5y h\u1EBFt t\xE0i nguy\xEAn c\u1EE7a b\u1EA1n."

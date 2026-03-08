@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: wolfInfo
   m_EditorClassIdentifier: 
-  english: These will attack you Artifact directly
-  vietnamese: "Ch\xFAng s\u1EBD t\u1EA5n c\xF4ng tr\u1EF1c ti\u1EBFp v\xE0o c\u1ED5
-    v\u1EADt c\u1EE7a b\u1EA1n."
+  english: These ships will attack your Fortress directly. They will dock at the
+    shore or crash into the spike traps. When a ship is destroyed, enemy soldiers
+    will spawn.
+  vietnamese: "Nh\u1EEFng thuy\u1EC1n n\xE0y s\u1EBD t\u1EA5n c\xF4ng tr\u1EF1c ti\u1EBFp
+    Th\xE0nh C\u1ED5 c\u1EE7a b\u1EA1n. Ch\xFAng s\u1EBD c\u1EADp b\u1EBFn ho\u1EB7c
+    \u0111\xE2m v\xE0o b\xE3i c\u1ECDc. Khi thuy\u1EC1n b\u1ECB ph\xE1 h\u1EE7y,
+    l\xEDnh s\u1EBD xu\u1EA5t hi\u1EC7n."
