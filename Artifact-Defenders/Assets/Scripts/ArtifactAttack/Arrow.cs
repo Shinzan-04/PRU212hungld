@@ -2,25 +2,25 @@
 
 public class Arrow : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioClip hitSound; // Âm thanh khi trúng địch
+    [Range(0f, 1f)][SerializeField] private float hitVolume = 1f;
+
     private Vector2 moveDirection;
     private float speed;
     private int damage;
     private bool hasHit = false;
 
-    // Đây là hàm mà ArtifactPointLauncher đang gọi tới
     public void Setup(Vector2 dir, float _speed, int _damage)
     {
         moveDirection = dir;
         speed = _speed;
         damage = _damage;
-
-        // Tự hủy sau 3 giây để tránh làm rác bộ nhớ nếu bay trượt
         Destroy(gameObject, 3f);
     }
 
     void Update()
     {
-        // Di chuyển mũi tên theo hướng đã định
         transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
     }
 
@@ -28,14 +28,21 @@ public class Arrow : MonoBehaviour
     {
         if (hasHit) return;
 
-        // Tìm component sức khỏe trên mục tiêu
         EnemyHealth health = collision.GetComponent<EnemyHealth>();
 
         if (health != null)
         {
             hasHit = true;
-            health.DamageEnemy(damage); // Gây sát thương
-            Destroy(gameObject);        // Mũi tên biến mất khi trúng đích
+
+            // PHÁT ÂM THANH KHI TRÚNG ĐÍCH
+            if (hitSound != null)
+            {
+                // Dùng PlayClipAtPoint để âm thanh tiếp tục phát sau khi Arrow bị Destroy
+                AudioSource.PlayClipAtPoint(hitSound, transform.position, hitVolume);
+            }
+
+            health.DamageEnemy(damage);
+            Destroy(gameObject);
         }
     }
 }
