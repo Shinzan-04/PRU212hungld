@@ -13,10 +13,15 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] bool isBoat = false;
 
     [Header("Boat Settings (Only for Boats)")]
-    [SerializeField] GameObject enemyPrefab; // Kéo Prefab Enemy00 vào đây
+    [SerializeField] GameObject enemyPrefab;
     [SerializeField] int minSpawnCount = 3;
     [SerializeField] int maxSpawnCount = 5;
-    [SerializeField] float spawnSpreadRadius = 0.8f; // Bán kính tủa ra
+    [SerializeField] float spawnSpreadRadius = 0.8f;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource boatAudioSource; // Kéo AudioSource của thuyền vào đây
+    [SerializeField] private AudioClip boatBreakSound;    // Kéo file âm thanh thuyền vỡ vào đây
+    [Range(0f, 1f)][SerializeField] private float breakVolume = 0.7f;
 
     [Header("Stats")]
     [SerializeField] float moveSpeed = 2f;
@@ -94,55 +99,83 @@ public class EnemyAI : MonoBehaviour
         else HandleAttacker();
     }
 
-    // --- LOGIC THUYỀN ---
-    // --- Cập nhật HandleBoat để nhạy hơn với va chạm trên/dưới ---
-    // --- BOAT LOGIC CẢI TIẾN ---
     void HandleBoat()
     {
         if (artifact == null) return;
 
-        // 1. Xác định hướng di chuyển tiếp theo
-        Vector2 direction = (artifact.transform.position - transform.position).normalized;
+        // Âm thanh lướt sóng (Loop)
+        if (boatAudioSource != null && !boatAudioSource.isPlaying)
+            boatAudioSource.Play();
 
-        // 2. Dự đoán vị trí tiếp theo (Check ahead)
-        // Kiểm tra một điểm nhỏ ở phía trước thuyền 0.3 đơn vị để xử lý trước khi lọt vào đất
+        Vector2 direction = (artifact.transform.position - transform.position).normalized;
         Vector3 checkPos = transform.position + (Vector3)direction * 0.3f;
 
-        // 3. Kiểm tra va chạm cọc tại vị trí dự đoán
-        Collider2D obstacleHit = Physics2D.OverlapCircle(checkPos, 0.3f, obstacleMask);
+        // 1. Kiểm tra trạng thái nước từ TideSwitch
+        bool isHighTide = TideSwitch.Instance != null ? TideSwitch.Instance.IsHighTide() : true;
 
-        // 4. Kiểm tra xem điểm dự đoán còn ở trên nước không
+        // 2. Kiểm tra va chạm
+        Collider2D obstacleHit = Physics2D.OverlapCircle(checkPos, 0.3f, obstacleMask);
         Collider2D waterHit = Physics2D.OverlapCircle(checkPos, 0.2f, waterMask);
 
-        // NẾU chạm cọc HOẶC điểm phía trước KHÔNG PHẢI LÀ NƯỚC -> Vỡ thuyền ngay
-        if (obstacleHit != null || waterHit == null)
+        // TRƯỜNG HỢP A: Chạm đất liền (Luôn vỡ và sinh quân bất kể thủy triều)
+        // Giả sử tileLand của bạn không nằm trong waterMask
+        if (waterHit == null)
         {
-            SpawnEnemiesAndDestroy();
+            SpawnEnemiesAndDestroy(); // Vỡ và thả lính lên bờ
             return;
         }
 
-        // 5. Nếu an toàn thì mới thực hiện di chuyển
-        MoveTowards(artifact.transform.position);
+        // TRƯỜNG HỢP B: Kiểm tra Cọc (Chỉ vỡ khi triều rút)
+        if (!isHighTide && obstacleHit != null)
+        {
+            BreakWithoutSpawning(); // Vỡ do kẹt cọc, không sinh quân (hoặc tùy bạn chỉnh)
+            return;
+        }
 
+        // Nếu nước sâu và không chạm đất, thuyền đi xuyên qua cọc đang chìm
+        MoveTowards(artifact.transform.position);
         left = artifact.transform.position.x < transform.position.x;
     }
 
+    // Hàm mới: Thuyền vỡ khi va chạm cọc/rút nước (Chỉ nổ âm thanh, không ra lính)
+    void BreakWithoutSpawning()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        PlayBreakAudio();
+
+        // Có thể thêm hiệu ứng Particle vỡ vụn ở đây nếu muốn
+        Destroy(gameObject);
+    }
+
+    // Tách riêng logic âm thanh để tái sử dụng
+    void PlayBreakAudio()
+    {
+        if (boatAudioSource != null) boatAudioSource.Stop();
+        if (boatBreakSound != null)
+        {
+            // Kích âm lượng lên 1.5f như bạn muốn
+            AudioSource.PlayClipAtPoint(boatBreakSound, transform.position, 1.5f);
+        }
+    }
+
+    // Cập nhật lại hàm cũ: Chỉ dùng khi thuyền bị tiêu diệt bằng vũ khí (Sinh quân)
     void SpawnEnemiesAndDestroy()
     {
         if (isDead) return;
         isDead = true;
 
+        PlayBreakAudio();
+
         int spawnCount = Random.Range(minSpawnCount, maxSpawnCount + 1);
 
-        // Tính toán để lính tủa ra các ô xung quanh
         for (int i = 0; i < spawnCount; i++)
         {
             if (enemyPrefab != null)
             {
                 float angle = i * (360f / spawnCount) * Mathf.Deg2Rad;
                 Vector3 spawnDir = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0);
-
-                // Spawn lính cách thuyền 1 khoảng rộng để mỗi con 1 ô riêng biệt
                 Vector3 spawnPos = transform.position + spawnDir * spawnSpreadRadius;
 
                 GameObject enemy = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
@@ -168,7 +201,6 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator TemporarilyDisableMovement(EnemyAI ai)
     {
-        // Vô hiệu hóa script di chuyển của lính trong chốc lát để chúng văng ra vị trí riêng
         ai.enabled = false;
         yield return new WaitForSeconds(0.4f);
         if (ai != null) ai.enabled = true;
