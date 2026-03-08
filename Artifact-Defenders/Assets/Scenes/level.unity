@@ -2862,7 +2862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3987fcbb139373d4f9a08b253b260da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWin: 5
+  timeToWin: 120
   artifact: {fileID: 30125869}
 --- !u!114 &642254316
 MonoBehaviour:
