@@ -8,6 +8,11 @@ public class TideSwitch : MonoBehaviour
     // Singleton để EnemyAI có thể gọi: TideSwitch.Instance.IsHighTide
     public static TideSwitch Instance;
 
+    [Header("Artifact Decay Settings")]
+    public int damageToArtifact = 5; // Sát thương gây ra cho trụ mỗi đợt
+    public float decayInterval = 1.0f; // Khoảng thời gian giữa mỗi lần trừ máu (1 giây)
+    private float decayTimer;
+
     [Header("Tilemaps")]
     public Tilemap waterTilemap;
     public Tilemap groundStakesTilemap;
@@ -36,6 +41,10 @@ public class TideSwitch : MonoBehaviour
     public KeyCode toggleKey = KeyCode.P;
     public float fadeDuration = 1f;
 
+    [Header("Mana Settings")]
+    public PlayerMana playerMana; // Kéo thả đối tượng Player có script PlayerMana vào đây
+    public int manaCost = 50;
+
     private bool isHighTide = true;
     private Coroutine tideCoroutine;
     private List<Transform> safetyPoints = new List<Transform>();
@@ -48,7 +57,12 @@ public class TideSwitch : MonoBehaviour
 
     void Start()
     {
-        // Tìm các điểm an toàn có Tag là SafetyPoint
+        // Tự động tìm PlayerMana nếu chưa kéo thả trong Inspector
+        if (playerMana == null)
+        {
+            playerMana = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMana>();
+        }
+
         GameObject[] points = GameObject.FindGameObjectsWithTag("SafetyPoint");
         foreach (var p in points) safetyPoints.Add(p.transform);
     }
@@ -57,14 +71,46 @@ public class TideSwitch : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            ToggleTide();
+            // 1. Kiểm tra xem có đủ 50 mana không thông qua hàm TryUseMana đã viết
+            // Giả sử bạn đã kéo thả PlayerMana vào biến playerMana trong Inspector
+            if (playerMana != null && playerMana.TryUseMana(50))
+            {
+                // 2. Nếu đủ (hàm trả về true), thực hiện đổi thủy triều
+                ToggleTide();
+            }
+            else
+            {
+                // 3. Nếu không đủ, có thể thêm hiệu ứng âm thanh hoặc thông báo ở đây
+                Debug.Log("Không đủ Mana để thực hiện phép thuật!");
+            }
+        }
+        // --- LOGIC MỚI: GIẢM MÁU TRỤ THEO THỜI GIAN ---
+        if (!isHighTide)
+        {
+            HandleArtifactDecay();
+        }
+    }
+    void HandleArtifactDecay()
+    {
+        decayTimer += Time.deltaTime;
+
+        if (decayTimer >= decayInterval)
+        {
+            // Tìm tất cả các Artifact có trong Scene
+            Artifact[] artifacts = GameObject.FindObjectsOfType<Artifact>();
+
+            foreach (Artifact art in artifacts)
+            {
+                art.TakeDamage(damageToArtifact);
+            }
+
+            decayTimer = 0f; // Reset bộ đếm để chờ giây tiếp theo
         }
     }
 
     public void ToggleTide()
     {
         isHighTide = !isHighTide;
-
         if (tideCoroutine != null) StopCoroutine(tideCoroutine);
         tideCoroutine = StartCoroutine(TransitionTide(isHighTide));
     }
