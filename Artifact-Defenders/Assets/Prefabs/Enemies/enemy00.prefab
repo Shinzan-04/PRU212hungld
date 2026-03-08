@@ -5072,6 +5072,9 @@ MonoBehaviour:
   minSpawnCount: 3
   maxSpawnCount: 5
   spawnSpreadRadius: 0.8
+  boatAudioSource: {fileID: 0}
+  boatBreakSound: {fileID: 0}
+  breakVolume: 0.7
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 0

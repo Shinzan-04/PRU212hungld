@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: artifactHealth
   m_EditorClassIdentifier: 
-  english: Artifact Health
-  vietnamese: "Thanh M\xE1u C\u1ED5 V\u1EADt"
+  english: Fortress Health
+  vietnamese: "Thanh M\xE1u Th\xE0nh C\u1ED5"
