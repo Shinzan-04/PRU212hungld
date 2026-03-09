@@ -37,6 +37,17 @@ public class Artifact : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            health = 0;
+            // Gọi Game Over hoặc hiệu ứng phá hủy tại đây
+            Debug.Log("Artifact đã bị phá hủy bởi thủy triều!");
+        }
+    }
+
     public void Damage(int amount)
     {
         health -= amount;

@@ -54,28 +54,39 @@ public class PlayerSlash : MonoBehaviour
     }
     void Slash()
     {
-        if (playerMana != null)
-            playerMana.RestoreMana(manaRestore);
+        // 1. Thực hiện các hiệu ứng hình ảnh/âm thanh/di chuyển trước
         Instantiate(slashPrefab, transform.position, transform.rotation);
         if (playerAnim != null) playerAnim.PlayAttack(0.3f);
         if (playerMovement != null) playerMovement.StopMovementForAttack(0.3f);
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(2,1.5f), pivot.rotation.z, enemyMask);
-        if(hits.Length != 0)
+
+        // 2. Kiểm tra va chạm bằng OverlapBox
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(2, 1.5f), pivot.rotation.z, enemyMask);
+
+        // 3. LOGIC HỒI MANA: Chỉ chạy khi danh sách trúng đòn không trống
+        if (hits.Length != 0)
         {
+            // Kiểm tra xem có script mana không trước khi hồi
+            if (playerMana != null)
+            {
+                playerMana.RestoreMana(manaRestore);
+                // Debug.Log("Trúng đích! Đã hồi mana.");
+            }
+
+            // 4. Gây sát thương cho từng đối tượng trúng đòn
             foreach (Collider2D hit in hits)
             {
                 EnemyAI enemy = hit.GetComponent<EnemyAI>();
-                BossAI boss = hit.GetComponent<BossAI>();   
+                BossAI boss = hit.GetComponent<BossAI>();
+
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(damage); // hoặc damage nếu bạn muốn tính theo Player
+                    enemy.TakeDamage(damage);
                 }
                 else if (boss != null)
                 {
                     boss.TakeDamage(damage);
                 }
             }
-
         }
     }
     public void OnAttackButtonPressed()

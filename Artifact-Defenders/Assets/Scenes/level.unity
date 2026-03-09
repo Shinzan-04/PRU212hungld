@@ -174,7 +174,7 @@ MonoBehaviour:
     m_Bits: 4096
   attackRange: 7
   fireRate: 1.5
-  damage: 20
+  damage: 10
   arrowSpeed: 12
 --- !u!82 &9273240
 AudioSource:
@@ -1905,6 +1905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8348964c4cc0f747b03ef172be7eb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TideController
+  damageToArtifact: 5
+  decayInterval: 1
   waterTilemap: {fileID: 1735714915}
   groundStakesTilemap: {fileID: 2019471049}
   lowWaterStakesUpTilemap: {fileID: 2019471049}
@@ -1921,6 +1923,8 @@ MonoBehaviour:
   waveAmount: 0.02
   toggleKey: 112
   fadeDuration: 1
+  playerMana: {fileID: 1529478021}
+  manaCost: 50
 --- !u!4 &395008642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 908704112443840862, guid: 6218a63343ebf3644bcb7ab390ac148b,
@@ -2637,7 +2641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactPointLauncher
   audioSource: {fileID: 0}
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 825c83f85a1873041a11ce32bc50098c, type: 3}
   arrowPrefab: {fileID: 5824354738768554241, guid: b53b426a5c958ae4989afa9f5d584c89,
     type: 3}
   targetMask:
@@ -2645,7 +2649,7 @@ MonoBehaviour:
     m_Bits: 4096
   attackRange: 7
   fireRate: 1.5
-  damage: 20
+  damage: 10
   arrowSpeed: 12
 --- !u!1001 &600470206
 PrefabInstance:
@@ -2902,6 +2906,8 @@ MonoBehaviour:
   - {fileID: 2001234746}
   - {fileID: 841163984}
   - {fileID: 1992635328}
+  - {fileID: 1674997940}
+  - {fileID: 1709209477}
   eaterChance: 3
   boatChance: 10
   spawnTime: 12
@@ -26797,7 +26803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactPointLauncher
   audioSource: {fileID: 0}
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 825c83f85a1873041a11ce32bc50098c, type: 3}
   arrowPrefab: {fileID: 5824354738768554241, guid: b53b426a5c958ae4989afa9f5d584c89,
     type: 3}
   targetMask:
@@ -26805,7 +26811,7 @@ MonoBehaviour:
     m_Bits: 4096
   attackRange: 7
   fireRate: 1.5
-  damage: 20
+  damage: 10
   arrowSpeed: 12
 --- !u!1 &1264576488
 GameObject:
@@ -31724,6 +31730,8 @@ Transform:
   - {fileID: 2001234746}
   - {fileID: 841163984}
   - {fileID: 1992635328}
+  - {fileID: 1674997940}
+  - {fileID: 1709209477}
   m_Father: {fileID: 642254314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1312613404
@@ -34433,6 +34441,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6218a63343ebf3644bcb7ab390ac148b, type: 3}
+--- !u!1 &1674997939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674997940}
+  m_Layer: 0
+  m_Name: WaterPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674997940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674997939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.3, y: 6.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282861886}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677846672
 GameObject:
   m_ObjectHideFlags: 0
@@ -34612,7 +34651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactPointLauncher
   audioSource: {fileID: 0}
-  shootSound: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 825c83f85a1873041a11ce32bc50098c, type: 3}
   arrowPrefab: {fileID: 5824354738768554241, guid: b53b426a5c958ae4989afa9f5d584c89,
     type: 3}
   targetMask:
@@ -34620,8 +34659,39 @@ MonoBehaviour:
     m_Bits: 4096
   attackRange: 7
   fireRate: 1.5
-  damage: 20
+  damage: 10
   arrowSpeed: 12
+--- !u!1 &1709209476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709209477}
+  m_Layer: 0
+  m_Name: WaterPoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709209477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709209476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.33, y: -15.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282861886}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1713125245 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 908704112443840862, guid: 6218a63343ebf3644bcb7ab390ac148b,
@@ -34711,7 +34781,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.1875, y: 0.171875, z: 0}
   m_MaxChunkCount: 16
@@ -63800,6 +63870,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 12, y: -6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -10, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -67794,7 +67874,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: a3b5013057119594ebac6bc01368fe9d, type: 2}
-  - m_RefCount: 517
+  - m_RefCount: 518
     m_Data: {fileID: 11400000, guid: 31b8e663a32d93f48a5bdc5891da105b, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -68831,7 +68911,7 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 8
     m_Data: {fileID: -1637112764, guid: 1949769dc0432994085a3b04d3d17777, type: 3}
-  - m_RefCount: 517
+  - m_RefCount: 518
     m_Data: {fileID: -1068954423, guid: 1949769dc0432994085a3b04d3d17777, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -69869,7 +69949,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1786902153, guid: 1949769dc0432994085a3b04d3d17777, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 656
+  - m_RefCount: 657
     m_Data:
       e00: 1
       e01: 0
@@ -69978,7 +70058,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 750
+  - m_RefCount: 751
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 5e-44, g: 5e-44, b: 5e-44, a: 5e-44}
