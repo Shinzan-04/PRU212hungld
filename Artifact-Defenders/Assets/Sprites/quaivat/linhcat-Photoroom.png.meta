@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 1f5fe1931b0d0ec41924953a19e161c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1430424271225972753
+    second: linhcat-Photoroom_0
+  - first:
+      213: -2211547898077804523
+    second: linhcat-Photoroom_1
+  - first:
+      213: 7242911794122365246
+    second: linhcat-Photoroom_2
+  - first:
+      213: -2573160500556822769
+    second: linhcat-Photoroom_3
+  - first:
+      213: 6246084783025015479
+    second: linhcat-Photoroom_4
+  - first:
+      213: 4964445354641156320
+    second: linhcat-Photoroom_5
+  - first:
+      213: 4279520163582591049
+    second: linhcat-Photoroom_6
+  - first:
+      213: 980596848235365946
+    second: linhcat-Photoroom_7
+  - first:
+      213: 6810789693345982890
+    second: linhcat-Photoroom_8
+  - first:
+      213: -5504588822965869951
+    second: linhcat-Photoroom_9
+  - first:
+      213: -4000145238085568043
+    second: linhcat-Photoroom_10
+  - first:
+      213: 7175936092691948001
+    second: linhcat-Photoroom_11
+  - first:
+      213: -5461798236530030083
+    second: linhcat-Photoroom_12
+  - first:
+      213: -8326635013149794685
+    second: linhcat-Photoroom_13
+  - first:
+      213: 7882414043437465230
+    second: linhcat-Photoroom_14
+  - first:
+      213: -53385835313484422
+    second: linhcat-Photoroom_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: linhcat-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 525
+        width: 99
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe79a7b34bc162ce0800000000000000
+      internalID: -1430424271225972753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 525
+        width: 99
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5188f4b67e00f41e0800000000000000
+      internalID: -2211547898077804523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 526
+        width: 98
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e399624f6edf38460800000000000000
+      internalID: 7242911794122365246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 527
+        width: 98
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f078e3e682c4a4cd0800000000000000
+      internalID: -2573160500556822769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 354
+        width: 200
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bacd29540d8ea650800000000000000
+      internalID: 6246084783025015479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 354
+        width: 207
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8693e4fb045e440800000000000000
+      internalID: 4964445354641156320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 355
+        width: 219
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94046773ae8e36b30800000000000000
+      internalID: 4279520163582591049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 354
+        width: 199
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36cfe653a7cb9d00800000000000000
+      internalID: 980596848235365946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 182
+        width: 108
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa967c71429c48e50800000000000000
+      internalID: 6810789693345982890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 183
+        width: 114
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182a88c41a5cb93b0800000000000000
+      internalID: -5504588822965869951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 182
+        width: 118
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d970f18911ac78c0800000000000000
+      internalID: -4000145238085568043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 182
+        width: 116
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1eec74bdb069360800000000000000
+      internalID: 7175936092691948001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 36
+        width: 177
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9c5c4117bc334b0800000000000000
+      internalID: -5461798236530030083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 36
+        width: 174
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e50ea6299d17c80800000000000000
+      internalID: -8326635013149794685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 36
+        width: 175
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ef3a74fc5f36d60800000000000000
+      internalID: 7882414043437465230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: linhcat-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 33
+        width: 174
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d2a1a9dd5524ff0800000000000000
+      internalID: -53385835313484422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      linhcat-Photoroom_0: -1430424271225972753
+      linhcat-Photoroom_1: -2211547898077804523
+      linhcat-Photoroom_10: -4000145238085568043
+      linhcat-Photoroom_11: 7175936092691948001
+      linhcat-Photoroom_12: -5461798236530030083
+      linhcat-Photoroom_13: -8326635013149794685
+      linhcat-Photoroom_14: 7882414043437465230
+      linhcat-Photoroom_15: -53385835313484422
+      linhcat-Photoroom_2: 7242911794122365246
+      linhcat-Photoroom_3: -2573160500556822769
+      linhcat-Photoroom_4: 6246084783025015479
+      linhcat-Photoroom_5: 4964445354641156320
+      linhcat-Photoroom_6: 4279520163582591049
+      linhcat-Photoroom_7: 980596848235365946
+      linhcat-Photoroom_8: 6810789693345982890
+      linhcat-Photoroom_9: -5504588822965869951
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
