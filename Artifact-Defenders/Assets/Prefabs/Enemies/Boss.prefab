@@ -4986,8 +4986,8 @@ Transform:
   m_GameObject: {fileID: 6060242505385302408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: -3.07, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.8316, y: -3.1894, z: 0}
+  m_LocalScale: {x: 1.1054351, y: 1.0985812, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1523733976547028258}
@@ -5042,7 +5042,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4932
-  m_Sprite: {fileID: -1430424271225972753, guid: 1f5fe1931b0d0ec41924953a19e161c1,
+  m_Sprite: {fileID: -2424553518018739129, guid: 420a288f80402e74d8e478ebb517f2da,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5127,29 +5127,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAnim
   idleSprites:
-  - {fileID: -1430424271225972753, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -2211547898077804523, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 7242911794122365246, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -2573160500556822769, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
+  - {fileID: -2424553518018739129, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -3588229512158965765, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -6963195877183015321, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 7801903984715115176, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   walkSprites:
-  - {fileID: -1430424271225972753, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -2211547898077804523, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 7242911794122365246, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -2573160500556822769, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
+  - {fileID: -5888845342232556802, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -7366506907712603825, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 5981802871748074552, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -8797041637764437337, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   attackSprites:
-  - {fileID: 6246084783025015479, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 4964445354641156320, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 4279520163582591049, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 980596848235365946, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
+  - {fileID: -6067672718842985316, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 8484074019104989873, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 1734522602796540859, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 4811487537473343952, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   hurtSprites:
-  - {fileID: 6810789693345982890, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -5504588822965869951, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -4000145238085568043, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
+  - {fileID: 576763674245041098, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 7875803310954514552, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -111301877416365784, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: 3046850359654010694, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   deathSprites:
-  - {fileID: -5461798236530030083, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -8326635013149794685, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: 7882414043437465230, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
-  - {fileID: -53385835313484422, guid: 1f5fe1931b0d0ec41924953a19e161c1, type: 3}
+  - {fileID: 2909469358611949070, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -143739131173224929, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -7414294391761901277, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
+  - {fileID: -3362370236742786337, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   castSprites: []
   frameTime: 0.15
 --- !u!61 &6060242505385302419
@@ -5189,8 +5190,8 @@ BoxCollider2D:
   m_Offset: {x: -0.032217264, y: -0.73080003}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.57669544, y: 0.06474081}
-    oldSize: {x: 1.546875, y: 2.453125}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.40625, y: 2.078125}
     newSize: {x: 4.375, y: 2.90625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5322,7 +5323,7 @@ Transform:
   m_GameObject: {fileID: 6060242505721527777}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 2.52, z: 0}
+  m_LocalPosition: {x: 1.23, y: 1.45, z: 0}
   m_LocalScale: {x: 1.2966541, y: 0.2547977, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
