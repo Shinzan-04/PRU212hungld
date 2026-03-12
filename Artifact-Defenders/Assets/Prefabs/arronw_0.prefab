@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Arrow
   hitSound: {fileID: 8300000, guid: 825c83f85a1873041a11ce32bc50098c, type: 3}
-  hitVolume: 1
+  hitVolume: 0.4
 --- !u!61 &-3067570024670005724
 BoxCollider2D:
   m_ObjectHideFlags: 0

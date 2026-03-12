@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tearing
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 129f1f7d1eabb544a9e784f3a819beac, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: 3512138735819155735
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: -405441562244295599
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: 7679642079200795529
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: -2309907990703919447
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: 2438020869977232092
+    - 55aa1fa817fe0bc4aa4a25c4892eef14: 3926249688004509875
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 3512138735819155735, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  - {fileID: -405441562244295599, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  - {fileID: 7679642079200795529, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  - {fileID: -2309907990703919447, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  - {fileID: 2438020869977232092, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  - {fileID: 3926249688004509875, guid: 55aa1fa817fe0bc4aa4a25c4892eef14, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 5asset_15
+  - 5asset_21
+  - 5asset_20
+  - 5asset_9
+  - 5asset_0
+  - 5asset_3
+  m_RenderDataMap: {}
+  m_Tag: Tearing
+  m_IsVariant: 0

@@ -5077,7 +5077,7 @@ MonoBehaviour:
   breakVolume: 0.7
   moveSpeed: 1
   maxHealth: 40
-  attackDamage: 0
+  attackDamage: 5
   attackCooldown: 0
   eatTime: 3
   bushesMask:

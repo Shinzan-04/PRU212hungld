@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 7762ceaa06319a440b43217f0a70914c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7953553390413713539
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_0
+  - first:
+      213: 7526717329764191607
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_1
+  - first:
+      213: 4481496616660701566
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_2
+  - first:
+      213: 8629410682639532012
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_3
+  - first:
+      213: -166151221743176599
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_4
+  - first:
+      213: -6489924340962518143
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_5
+  - first:
+      213: -2307289384136841396
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_6
+  - first:
+      213: -8617878867967677212
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_7
+  - first:
+      213: -3804973642882323023
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_8
+  - first:
+      213: 1233044969999509945
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_9
+  - first:
+      213: -6721382283245685338
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_10
+  - first:
+      213: 2399629654115003235
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_11
+  - first:
+      213: 16020651429815581
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_12
+  - first:
+      213: 36179373140970333
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_13
+  - first:
+      213: -8602603750451829560
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_14
+  - first:
+      213: 2553853157443191281
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_15
+  - first:
+      213: 7524734412065928970
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_16
+  - first:
+      213: -4523391720579816658
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_17
+  - first:
+      213: -7638220038905266304
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_18
+  - first:
+      213: 8499151387915740365
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_19
+  - first:
+      213: -3285954536099295685
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_20
+  - first:
+      213: -3044401897969265289
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_21
+  - first:
+      213: -2597280351113511480
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_22
+  - first:
+      213: 8824746069305438237
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_23
+  - first:
+      213: 1088158146126420253
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_24
+  - first:
+      213: 7266824541345403384
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_25
+  - first:
+      213: 7495874976789695979
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_26
+  - first:
+      213: 8714484876349568701
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_27
+  - first:
+      213: 2520400894452557451
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_28
+  - first:
+      213: 6256725655361106461
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_29
+  - first:
+      213: -8031561621603859470
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_30
+  - first:
+      213: 1333735659041828887
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_31
+  - first:
+      213: 466829888122737487
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_32
+  - first:
+      213: 7825162305140381531
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_33
+  - first:
+      213: -1761557922491223264
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_34
+  - first:
+      213: -8241039281192332724
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_35
+  - first:
+      213: 2376076957265741609
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_36
+  - first:
+      213: 7277440687617638460
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_37
+  - first:
+      213: -5779469138197204089
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_38
+  - first:
+      213: -3749295308196426184
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_39
+  - first:
+      213: -1937748325221339614
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_40
+  - first:
+      213: -3430939533246063989
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_41
+  - first:
+      213: 1906240145917394596
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_42
+  - first:
+      213: 1963246383514738759
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_43
+  - first:
+      213: -4934513870023105063
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_44
+  - first:
+      213: 7109165735813059357
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_45
+  - first:
+      213: -8324240841148461566
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_46
+  - first:
+      213: 3523794440167193298
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_47
+  - first:
+      213: 3643013851006969317
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_48
+  - first:
+      213: -3333280162890686931
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_49
+  - first:
+      213: 1830765531446331768
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_50
+  - first:
+      213: -5314011821404844297
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_51
+  - first:
+      213: -8704077434137978546
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_52
+  - first:
+      213: -7636139433877704146
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_53
+  - first:
+      213: 9112045023764102101
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_54
+  - first:
+      213: -4745819928191879829
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_55
+  - first:
+      213: 5891629306049736597
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_56
+  - first:
+      213: 5446829417177054852
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_57
+  - first:
+      213: -8492608588404011310
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_58
+  - first:
+      213: 5012517812177642311
+    second: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 522
+        width: 162
+        height: 156
+      alignment: 9
+      pivot: {x: 0.439653, y: 0.111409895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38096b93ba2b06e60800000000000000
+      internalID: 7953553390413713539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 526
+        width: 157
+        height: 148
+      alignment: 9
+      pivot: {x: 0.42389363, y: 0.08807373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d0f5d7885447860800000000000000
+      internalID: 7526717329764191607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 525
+        width: 157
+        height: 149
+      alignment: 9
+      pivot: {x: 0.41005594, y: 0.08019241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e711d2acd69713e30800000000000000
+      internalID: 4481496616660701566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 529
+        width: 158
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefb0b79b43d1c770800000000000000
+      internalID: 8629410682639532012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 527
+        width: 157
+        height: 147
+      alignment: 9
+      pivot: {x: 0.41005594, y: 0.06650466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96430091856b1bdf0800000000000000
+      internalID: -166151221743176599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 520
+        width: 165
+        height: 172
+      alignment: 9
+      pivot: {x: 0.39466664, y: 0.082099736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b94cd62382fe5a0800000000000000
+      internalID: -6489924340962518143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 364
+        width: 154
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5634819, y: 0.09363408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c476e78978cdaffd0800000000000000
+      internalID: -2307289384136841396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 361
+        width: 187
+        height: 135
+      alignment: 9
+      pivot: {x: 0.4709561, y: 0.09280305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ece07d34d4276880800000000000000
+      internalID: -8617878867967677212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 357
+        width: 143
+        height: 152
+      alignment: 9
+      pivot: {x: 0.45442316, y: 0.10694986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd6644a1a4023bc0800000000000000
+      internalID: -3804973642882323023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 359
+        width: 145
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5973877, y: 0.08101872}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b927e40ed7ac1110800000000000000
+      internalID: 1233044969999509945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 366
+        width: 146
+        height: 133
+      alignment: 9
+      pivot: {x: 0.52976006, y: 0.116137974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5798fbc6ad8b2a0800000000000000
+      internalID: -6721382283245685338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 362
+        width: 148
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5733948, y: 0.08581916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ba406e4723d4120800000000000000
+      internalID: 2399629654115003235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 170
+        width: 185
+        height: 190
+      alignment: 9
+      pivot: {x: 0.7407358, y: 0.13982327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc46cf8282d03f570800000000000000
+      internalID: 8499151387915740365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 194
+        width: 177
+        height: 147
+      alignment: 9
+      pivot: {x: 0.65956175, y: 0.04924416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1dbf74b62f8d460800000000000000
+      internalID: 7266824541345403384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 176
+        width: 223
+        height: 172
+      alignment: 9
+      pivot: {x: 0.65587395, y: 0.12739182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed0a489392b60860800000000000000
+      internalID: 7495874976789695979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 184
+        width: 190
+        height: 160
+      alignment: 9
+      pivot: {x: 0.38565803, y: 0.106235124}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86eb6582434af220800000000000000
+      internalID: 2520400894452557451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 188
+        width: 6
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c429d78cf62f1ad80800000000000000
+      internalID: -8241039281192332724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 12
+        width: 139
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5156294, y: 0.10895098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ee2133a2cbb15e0800000000000000
+      internalID: -1937748325221339614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 6
+        width: 167
+        height: 134
+      alignment: 9
+      pivot: {x: 0.38942403, y: 0.1190027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aebef12053547a10800000000000000
+      internalID: 1906240145917394596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 7
+        width: 194
+        height: 96
+      alignment: 9
+      pivot: {x: 0.4944005, y: 0.19449289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da79ab9f5807e030800000000000000
+      internalID: 3523794440167193298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 14
+        width: 179
+        height: 60
+      alignment: 9
+      pivot: {x: 0.48786286, y: 0.1922291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe00fc3766d046b0800000000000000
+      internalID: -5314011821404844297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05013236b98dff540b9fb61513f663f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_0: 7953553390413713539
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_1: 7526717329764191607
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_10: -6721382283245685338
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_11: 2399629654115003235
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_12: 16020651429815581
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_13: 36179373140970333
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_14: -8602603750451829560
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_15: 2553853157443191281
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_16: 7524734412065928970
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_17: -4523391720579816658
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_18: -7638220038905266304
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_19: 8499151387915740365
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_2: 4481496616660701566
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_20: -3285954536099295685
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_21: -3044401897969265289
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_22: -2597280351113511480
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_23: 8824746069305438237
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_24: 1088158146126420253
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_25: 7266824541345403384
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_26: 7495874976789695979
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_27: 8714484876349568701
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_28: 2520400894452557451
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_29: 6256725655361106461
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_3: 8629410682639532012
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_30: -8031561621603859470
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_31: 1333735659041828887
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_32: 466829888122737487
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_33: 7825162305140381531
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_34: -1761557922491223264
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_35: -8241039281192332724
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_36: 2376076957265741609
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_37: 7277440687617638460
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_38: -5779469138197204089
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_39: -3749295308196426184
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_4: -166151221743176599
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_40: -1937748325221339614
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_41: -3430939533246063989
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_42: 1906240145917394596
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_43: 1963246383514738759
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_44: -4934513870023105063
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_45: 7109165735813059357
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_46: -8324240841148461566
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_47: 3523794440167193298
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_48: 3643013851006969317
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_49: -3333280162890686931
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_5: -6489924340962518143
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_50: 1830765531446331768
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_51: -5314011821404844297
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_52: -8704077434137978546
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_53: -7636139433877704146
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_54: 9112045023764102101
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_55: -4745819928191879829
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_56: 5891629306049736597
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_57: 5446829417177054852
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_58: -8492608588404011310
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_59: 5012517812177642311
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_6: -2307289384136841396
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_7: -8617878867967677212
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_8: -3804973642882323023
+      grok-image-d2881792-f0c0-4b5f-8ee5-12fb41aa9689-Photoroom_9: 1233044969999509945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
