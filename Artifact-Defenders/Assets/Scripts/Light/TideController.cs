@@ -5,16 +5,13 @@ using System.Collections.Generic;
 
 public class TideSwitch : MonoBehaviour
 {
-    // Singleton để EnemyAI có thể gọi: TideSwitch.Instance.IsHighTide
     public static TideSwitch Instance;
 
-    [Header("Artifact Decay Settings")]
-    public int damageToArtifact = 5; // Sát thương gây ra cho trụ mỗi đợt
-    public float decayInterval = 1.0f; // Khoảng thời gian giữa mỗi lần trừ máu (1 giây)
-    private float decayTimer;
+    [Header("Main Swap Tilemaps")]
+    public Tilemap tilemap1; // Nước (Gắn Material chứa _MainColour)
+    public Tilemap tilemap2; // Đất hoặc trạng thái khác
 
-    [Header("Tilemaps")]
-    public Tilemap waterTilemap;
+    [Header("Sub Stakes Tilemaps")]
     public Tilemap groundStakesTilemap;
     public Tilemap lowWaterStakesUpTilemap;
 
@@ -23,88 +20,108 @@ public class TideSwitch : MonoBehaviour
     public TilemapCollider2D stakesCollider;
     public TilemapCollider2D lowWaterStakesCollider;
 
+    [Header("Settings & Mana")]
+    public KeyCode toggleKey = KeyCode.P;
+    public float fadeDuration = 1f;
+    public PlayerMana playerMana;
+    public int manaCost = 50;
+
+    [Header("VFX & Audio")]
+    public AudioSource audioSource;
+    public AudioClip tideInSound;
+    public AudioClip tideOutSound;
+    public float waveSpeed = 2f;
+    public float waveAmount = 0.02f;
+
     [Header("Danger Zone & Push")]
     public Collider2D waterDangerZone;
     public Transform playerTransform;
     public float pushSpeed = 10f;
 
-    [Header("Audio")]
-    public AudioSource audioSource;
-    public AudioClip tideInSound;
-    public AudioClip tideOutSound;
-
-    [Header("Wave Effect")]
-    public float waveSpeed = 2f;
-    public float waveAmount = 0.02f;
-
-    [Header("Settings")]
-    public KeyCode toggleKey = KeyCode.P;
-    public float fadeDuration = 1f;
-
-    [Header("Mana Settings")]
-    public PlayerMana playerMana; // Kéo thả đối tượng Player có script PlayerMana vào đây
-    public int manaCost = 50;
-
-    private bool isHighTide = true;
+    private bool isHighTide = true; // Bắt đầu là Map 2 bật, Map 1 tắt
+    public bool IsHighTide => isHighTide;
     private Coroutine tideCoroutine;
     private List<Transform> safetyPoints = new List<Transform>();
-    private bool isPushingPlayer = false;
 
     void Awake()
     {
         if (Instance == null) Instance = this;
+
+        // Ép ẩn/hiện ngay lập tức từ lúc load script để tránh bị nháy map
+        ForceImmediateState();
+    }
+
+    void ForceImmediateState()
+    {
+        // --- THAY ĐỔI 2: Logic bật Map 1 (Water), tắt Map 2 (Ground) ---
+        isHighTide = true;
+
+        // HIỆN object Nước (Map 1)
+        if (tilemap1 != null)
+        {
+            SetTilemapAlpha(tilemap1, 1f);
+            tilemap1.gameObject.SetActive(true);
+        }
+
+        // TẮT object Đất/Cọc (Map 2)
+        if (tilemap2 != null)
+        {
+            SetTilemapAlpha(tilemap2, 0f);
+            tilemap2.gameObject.SetActive(false);
+        }
+
+        // Tắt các cọc phụ
+        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(false);
+        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(false);
+
+        // Cập nhật Collider: Bật nước, tắt cọc
+        if (waterCollider) waterCollider.enabled = true;
+        if (stakesCollider) stakesCollider.enabled = false;
+        if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = false;
     }
 
     void Start()
     {
-        // Tự động tìm PlayerMana nếu chưa kéo thả trong Inspector
         if (playerMana == null)
-        {
-            playerMana = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMana>();
-        }
+            playerMana = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerMana>();
 
         GameObject[] points = GameObject.FindGameObjectsWithTag("SafetyPoint");
+        safetyPoints.Clear();
         foreach (var p in points) safetyPoints.Add(p.transform);
+
+        // Gọi lại để đảm bảo mọi thứ đồng bộ sau khi Start
+        InitialState();
+    }
+
+    void InitialState()
+    {
+        // --- THAY ĐỔI 3: Đồng bộ lại hàm InitialState ---
+        // Hiện Nước (Map 1)
+        SetTilemapAlpha(tilemap1, 1f);
+        if (tilemap1 != null) tilemap1.gameObject.SetActive(true);
+        if (waterCollider != null) waterCollider.enabled = true;
+
+        // Tắt Đất/Cọc (Map 2)
+        SetTilemapAlpha(tilemap2, 0f);
+        if (tilemap2 != null) tilemap2.gameObject.SetActive(false);
+
+        SetTilemapAlpha(groundStakesTilemap, 0f);
+        SetTilemapAlpha(lowWaterStakesUpTilemap, 0f);
+        if (groundStakesTilemap != null) groundStakesTilemap.gameObject.SetActive(false);
+        if (lowWaterStakesUpTilemap != null) lowWaterStakesUpTilemap.gameObject.SetActive(false);
+
+        if (stakesCollider != null) stakesCollider.enabled = false;
+        if (lowWaterStakesCollider != null) lowWaterStakesCollider.enabled = false;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            // 1. Kiểm tra xem có đủ 50 mana không thông qua hàm TryUseMana đã viết
-            // Giả sử bạn đã kéo thả PlayerMana vào biến playerMana trong Inspector
-            if (playerMana != null && playerMana.TryUseMana(50))
+            if (playerMana != null && playerMana.TryUseMana(manaCost))
             {
-                // 2. Nếu đủ (hàm trả về true), thực hiện đổi thủy triều
                 ToggleTide();
             }
-            else
-            {
-                // 3. Nếu không đủ, có thể thêm hiệu ứng âm thanh hoặc thông báo ở đây
-                Debug.Log("Không đủ Mana để thực hiện phép thuật!");
-            }
-        }
-        // --- LOGIC MỚI: GIẢM MÁU TRỤ THEO THỜI GIAN ---
-        if (!isHighTide)
-        {
-            HandleArtifactDecay();
-        }
-    }
-    void HandleArtifactDecay()
-    {
-        decayTimer += Time.deltaTime;
-
-        if (decayTimer >= decayInterval)
-        {
-            // Tìm tất cả các Artifact có trong Scene
-            Artifact[] artifacts = GameObject.FindObjectsOfType<Artifact>();
-
-            foreach (Artifact art in artifacts)
-            {
-                art.TakeDamage(damageToArtifact);
-            }
-
-            decayTimer = 0f; // Reset bộ đếm để chờ giây tiếp theo
         }
     }
 
@@ -113,23 +130,20 @@ public class TideSwitch : MonoBehaviour
         isHighTide = !isHighTide;
         if (tideCoroutine != null) StopCoroutine(tideCoroutine);
         tideCoroutine = StartCoroutine(TransitionTide(isHighTide));
+
+        StartCoroutine(ShakeCamera(0.2f, 0.1f));
     }
-
-    // Hàm để các script khác kiểm tra trạng thái nước
-    public bool IsHighTide() => isHighTide;
-
     IEnumerator TransitionTide(bool toHigh)
     {
-        // 1. Nếu triều lên (toHigh = true), đẩy người chơi ngay lập tức
         if (toHigh) CheckAndPushPlayer();
 
+        // Bật GameObject lên để có thể thấy hiệu ứng Fade
+        if (tilemap1) tilemap1.gameObject.SetActive(true);
+        if (tilemap2) tilemap2.gameObject.SetActive(true);
+        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(true);
+        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(true);
+
         float t = 0f;
-        float startWaterAlpha = waterTilemap.color.a;
-        float startStakesAlpha = groundStakesTilemap.color.a;
-
-        float targetWaterAlpha = toHigh ? 1f : 0f;
-        float targetStakesAlpha = toHigh ? 0f : 1f;
-
         if (audioSource != null)
         {
             audioSource.clip = toHigh ? tideInSound : tideOutSound;
@@ -141,28 +155,57 @@ public class TideSwitch : MonoBehaviour
             t += Time.deltaTime;
             float p = Mathf.SmoothStep(0f, 1f, t / fadeDuration);
 
-            SetTilemapAlpha(waterTilemap, Mathf.Lerp(startWaterAlpha, targetWaterAlpha, p));
-            SetTilemapAlpha(groundStakesTilemap, Mathf.Lerp(startStakesAlpha, targetStakesAlpha, p));
-            SetTilemapAlpha(lowWaterStakesUpTilemap, Mathf.Lerp(startStakesAlpha, targetStakesAlpha, p));
+            float alpha1 = toHigh ? p : 1f - p;
+            float alpha2 = 1f - alpha1;
+
+            SetTilemapAlpha(tilemap1, alpha1);
+            SetTilemapAlpha(tilemap2, alpha2);
+            SetTilemapAlpha(groundStakesTilemap, alpha2);
+            SetTilemapAlpha(lowWaterStakesUpTilemap, alpha2);
 
             yield return null;
         }
 
-        // Cập nhật vật lý
-        waterCollider.enabled = toHigh;
-        stakesCollider.enabled = !toHigh;
-        lowWaterStakesCollider.enabled = !toHigh;
+        // Sau khi Fade xong, tắt hẳn GameObject không sử dụng để tối ưu và tránh lỗi hiển thị
+        if (tilemap1) tilemap1.gameObject.SetActive(toHigh);
+        if (tilemap2) tilemap2.gameObject.SetActive(!toHigh);
+        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(!toHigh);
+        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(!toHigh);
+
+        if (waterCollider != null) waterCollider.enabled = toHigh;
+        if (stakesCollider != null) stakesCollider.enabled = !toHigh;
+        if (lowWaterStakesCollider != null) lowWaterStakesCollider.enabled = !toHigh;
+    }
+
+    void SetTilemapAlpha(Tilemap tm, float alpha)
+    {
+        if (tm == null) return;
+
+        // 1. Chỉnh màu trên Component Tilemap
+        Color c = tm.color;
+        c.a = alpha;
+        tm.color = c;
+
+        // 2. Chỉnh màu trực tiếp vào Shader (Dành cho Shader Nước của bạn)
+        TilemapRenderer tr = tm.GetComponent<TilemapRenderer>();
+        if (tr != null && tr.material != null)
+        {
+            // Kiểm tra xem Material có biến _MainColour không
+            if (tr.material.HasProperty("_MainColour"))
+            {
+                Color shaderColor = tr.material.GetColor("_MainColour");
+                shaderColor.a = alpha;
+                tr.material.SetColor("_MainColour", shaderColor);
+            }
+        }
     }
 
     void CheckAndPushPlayer()
     {
-        if (waterDangerZone != null && waterDangerZone.OverlapPoint(playerTransform.position))
+        if (waterDangerZone != null && playerTransform != null && waterDangerZone.OverlapPoint(playerTransform.position))
         {
             Transform bestPoint = GetClosestSafetyPoint(playerTransform.position);
-            if (bestPoint != null)
-            {
-                StartCoroutine(PushToSafetyRoutine(bestPoint.position));
-            }
+            if (bestPoint != null) StartCoroutine(PushToSafetyRoutine(bestPoint.position));
         }
     }
 
@@ -180,36 +223,34 @@ public class TideSwitch : MonoBehaviour
 
     IEnumerator PushToSafetyRoutine(Vector3 targetPos)
     {
-        isPushingPlayer = true;
-
-        // Vô hiệu hóa script di chuyển của người chơi nếu cần (Ví dụ: PlayerMovement)
-        // playerTransform.GetComponent<PlayerMovement>().enabled = false;
-
         while (Vector3.Distance(playerTransform.position, targetPos) > 0.1f)
         {
             playerTransform.position = Vector3.MoveTowards(playerTransform.position, targetPos, pushSpeed * Time.deltaTime);
             yield return null;
         }
-
-        // Trả lại quyền điều khiển
-        // playerTransform.GetComponent<PlayerMovement>().enabled = true;
-        isPushingPlayer = false;
     }
 
-    void SetTilemapAlpha(Tilemap tm, float alpha)
+    IEnumerator ShakeCamera(float duration, float magnitude)
     {
-        if (tm == null) return;
-        Color c = tm.color;
-        c.a = alpha;
-        tm.color = c;
+        Vector3 originalPos = Camera.main.transform.localPosition;
+        float elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+            Camera.main.transform.localPosition = new Vector3(x, y, originalPos.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        Camera.main.transform.localPosition = originalPos;
     }
 
     void LateUpdate()
     {
-        if (isHighTide && waterTilemap != null)
+        if (isHighTide && tilemap1 != null)
         {
             float offset = Mathf.Sin(Time.time * waveSpeed) * waveAmount;
-            waterTilemap.transform.localPosition = new Vector3(0, offset, 0);
+            tilemap1.transform.localPosition = new Vector3(0, offset, 0);
         }
     }
 }

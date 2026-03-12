@@ -5095,7 +5095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd895ff1fa262449bb529fcb281ea94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossAI
-  moveSpeed: 2
+  moveSpeed: 1
   maxHealth: 100
   attackDamage: 5
   attackCooldown: 4
@@ -5190,8 +5190,8 @@ BoxCollider2D:
   m_Offset: {x: -0.032217264, y: -0.73080003}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.40625, y: 2.078125}
+    pivot: {x: 0.6668292, y: 0.08907324}
+    oldSize: {x: 2.84375, y: 2.078125}
     newSize: {x: 4.375, y: 2.90625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5323,7 +5323,7 @@ Transform:
   m_GameObject: {fileID: 6060242505721527777}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.23, y: 1.45, z: 0}
+  m_LocalPosition: {x: 0.05, y: 2.08, z: 0}
   m_LocalScale: {x: 1.2966541, y: 0.2547977, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

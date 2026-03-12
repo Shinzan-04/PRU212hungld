@@ -111,7 +111,7 @@ public class EnemyAI : MonoBehaviour
         Vector3 checkPos = transform.position + (Vector3)direction * 0.3f;
 
         // 1. Kiểm tra trạng thái nước từ TideSwitch
-        bool isHighTide = TideSwitch.Instance != null ? TideSwitch.Instance.IsHighTide() : true;
+        bool isHighTide = TideSwitch.Instance != null ? TideSwitch.Instance.IsHighTide : true;
 
         // 2. Kiểm tra va chạm
         Collider2D obstacleHit = Physics2D.OverlapCircle(checkPos, 0.3f, obstacleMask);
