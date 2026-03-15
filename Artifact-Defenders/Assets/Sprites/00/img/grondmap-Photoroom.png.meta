@@ -1,0 +1,697 @@
+fileFormatVersion: 2
+guid: 021b8e2d2b4c6b34aa1f3d0c4139b47c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4598949754373142924
+    second: grondmap-Photoroom_0
+  - first:
+      213: -6377108305742627581
+    second: grondmap-Photoroom_1
+  - first:
+      213: -590396746669313267
+    second: grondmap-Photoroom_2
+  - first:
+      213: 5858015237646185029
+    second: grondmap-Photoroom_3
+  - first:
+      213: 6607115957884941091
+    second: grondmap-Photoroom_4
+  - first:
+      213: 7584593507208165447
+    second: grondmap-Photoroom_5
+  - first:
+      213: 5248123446274827595
+    second: grondmap-Photoroom_6
+  - first:
+      213: -4941680305107920297
+    second: grondmap-Photoroom_7
+  - first:
+      213: 4592437928879005712
+    second: grondmap-Photoroom_8
+  - first:
+      213: 553692167856559830
+    second: grondmap-Photoroom_9
+  - first:
+      213: -4252363301839243594
+    second: grondmap-Photoroom_10
+  - first:
+      213: 6033805067662261738
+    second: grondmap-Photoroom_11
+  - first:
+      213: 2208148538980198992
+    second: grondmap-Photoroom_12
+  - first:
+      213: 4334380148867349243
+    second: grondmap-Photoroom_13
+  - first:
+      213: 7179778076323946485
+    second: grondmap-Photoroom_14
+  - first:
+      213: 7009676570301012428
+    second: grondmap-Photoroom_15
+  - first:
+      213: -9058313342058092562
+    second: grondmap-Photoroom_16
+  - first:
+      213: 6642067899585043780
+    second: grondmap-Photoroom_17
+  - first:
+      213: -5400407887492280888
+    second: grondmap-Photoroom_18
+  - first:
+      213: 5300400370135876453
+    second: grondmap-Photoroom_19
+  - first:
+      213: 8918973556163660857
+    second: grondmap-Photoroom_20
+  - first:
+      213: 5893708855979396693
+    second: grondmap-Photoroom_21
+  - first:
+      213: 6222332539001563347
+    second: grondmap-Photoroom_22
+  - first:
+      213: 5039404196944372995
+    second: grondmap-Photoroom_23
+  - first:
+      213: 4217175419259449235
+    second: grondmap-Photoroom_24
+  - first:
+      213: -7878168653590797677
+    second: grondmap-Photoroom_25
+  - first:
+      213: 6760001386174092054
+    second: grondmap-Photoroom_26
+  - first:
+      213: 4477127770791913835
+    second: grondmap-Photoroom_27
+  - first:
+      213: 331895167163169290
+    second: grondmap-Photoroom_28
+  - first:
+      213: -4602022583656478978
+    second: grondmap-Photoroom_29
+  - first:
+      213: -6478823296042301051
+    second: grondmap-Photoroom_30
+  - first:
+      213: 435221423765866652
+    second: grondmap-Photoroom_31
+  - first:
+      213: -7368051869750992431
+    second: grondmap-Photoroom_32
+  - first:
+      213: -5426236292272540238
+    second: grondmap-Photoroom_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grondmap-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 301
+        width: 126
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b452c98f77415d840800000000000000
+      internalID: 5248123446274827595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 301
+        width: 127
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a9f74d1ff9b6bb0800000000000000
+      internalID: -4941680305107920297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 300
+        width: 135
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0102ddbe6fd9bbf30800000000000000
+      internalID: 4592437928879005712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 299
+        width: 150
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d69104d71c1fa700800000000000000
+      internalID: 553692167856559830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 274
+        width: 130
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6f6f16b129cf4c0800000000000000
+      internalID: -4252363301839243594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 271
+        width: 131
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedf5f59db16cb350800000000000000
+      internalID: 6033805067662261738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 274
+        width: 110
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a663d956be4ae10800000000000000
+      internalID: 2208148538980198992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 271
+        width: 130
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa3eb6e7cfc62c30800000000000000
+      internalID: 4334380148867349243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 168
+        width: 126
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd0ecf83a5ed05b0800000000000000
+      internalID: -5400407887492280888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 168
+        width: 117
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5634c4dcd0ece8940800000000000000
+      internalID: 5300400370135876453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 168
+        width: 127
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ccc30d13f86cb70800000000000000
+      internalID: 8918973556163660857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 61
+        width: 150
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ec9327af8aac150800000000000000
+      internalID: 5893708855979396693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 51
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8ea851a7a2a5650800000000000000
+      internalID: 6222332539001563347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 83
+        width: 130
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3056b7eca6f8fe540800000000000000
+      internalID: 5039404196944372995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 61
+        width: 126
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fe77443ba668a30800000000000000
+      internalID: 4217175419259449235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 61
+        width: 118
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3926a12995f1ba290800000000000000
+      internalID: -7878168653590797677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 61
+        width: 127
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6131e08d17950dd50800000000000000
+      internalID: 6760001386174092054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 83
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69a6189cf3f12e30800000000000000
+      internalID: 4477127770791913835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grondmap-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 82
+        width: 85
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0afd6565e02b9400800000000000000
+      internalID: 331895167163169290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7b0873cdef910304cbc2ad4315f919b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grondmap-Photoroom_0: 4598949754373142924
+      grondmap-Photoroom_1: -6377108305742627581
+      grondmap-Photoroom_10: -4252363301839243594
+      grondmap-Photoroom_11: 6033805067662261738
+      grondmap-Photoroom_12: 2208148538980198992
+      grondmap-Photoroom_13: 4334380148867349243
+      grondmap-Photoroom_14: 7179778076323946485
+      grondmap-Photoroom_15: 7009676570301012428
+      grondmap-Photoroom_16: -9058313342058092562
+      grondmap-Photoroom_17: 6642067899585043780
+      grondmap-Photoroom_18: -5400407887492280888
+      grondmap-Photoroom_19: 5300400370135876453
+      grondmap-Photoroom_2: -590396746669313267
+      grondmap-Photoroom_20: 8918973556163660857
+      grondmap-Photoroom_21: 5893708855979396693
+      grondmap-Photoroom_22: 6222332539001563347
+      grondmap-Photoroom_23: 5039404196944372995
+      grondmap-Photoroom_24: 4217175419259449235
+      grondmap-Photoroom_25: -7878168653590797677
+      grondmap-Photoroom_26: 6760001386174092054
+      grondmap-Photoroom_27: 4477127770791913835
+      grondmap-Photoroom_28: 331895167163169290
+      grondmap-Photoroom_29: -4602022583656478978
+      grondmap-Photoroom_3: 5858015237646185029
+      grondmap-Photoroom_30: -6478823296042301051
+      grondmap-Photoroom_31: 435221423765866652
+      grondmap-Photoroom_32: -7368051869750992431
+      grondmap-Photoroom_33: -5426236292272540238
+      grondmap-Photoroom_4: 6607115957884941091
+      grondmap-Photoroom_5: 7584593507208165447
+      grondmap-Photoroom_6: 5248123446274827595
+      grondmap-Photoroom_7: -4941680305107920297
+      grondmap-Photoroom_8: 4592437928879005712
+      grondmap-Photoroom_9: 553692167856559830
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

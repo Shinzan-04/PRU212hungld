@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nuocnew
+  m_Name: ground
   m_Shader: {fileID: -6465566751694194690, guid: d6ae73b21a1d149b1ad593659b97ef29,
     type: 3}
   m_Parent: {fileID: 0}
@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _CausticHighlightTexture:
-        m_Texture: {fileID: 2800000, guid: 9cf31347d658e46e79a8dfe7a7e77fd1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticTexture:
-        m_Texture: {fileID: 2800000, guid: 4607143f1a8e3487fa2c113025470b25, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamTexture:
@@ -87,12 +87,12 @@ Material:
     - _SpecularSpeed: 0.3
     - _SpecularThreshold: -0.52
     m_Colors:
-    - _CausticColour: {r: 0.07058824, g: 0.18431373, b: 0.47058824, a: 0.39215687}
+    - _CausticColour: {r: 0.0798941, g: 0.1981132, b: 0.032707363, a: 0.30588236}
     - _CausticHighlightColour: {r: 0, g: 0, b: 0, a: 0}
     - _CurrentWorldTexturePos: {r: 0, g: 0, b: 0, a: 0}
-    - _FoamColour: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColour: {r: 0.36078432, g: 0.2509804, b: 0.011764707, a: 1}
     - _FoamTexelSize: {r: 0.005, g: 0.005, b: 0, a: 0}
-    - _MainColour: {r: 0, g: 0.56078434, b: 0.77254903, a: 0.5254902}
-    - _SpecularColour: {r: 1, g: 1, b: 1, a: 1}
+    - _MainColour: {r: 0.4811321, g: 0.281354, b: 0.0022694964, a: 1}
+    - _SpecularColour: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

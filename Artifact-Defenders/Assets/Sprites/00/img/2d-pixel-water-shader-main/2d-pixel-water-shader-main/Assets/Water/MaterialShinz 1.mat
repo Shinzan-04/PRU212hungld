@@ -94,12 +94,12 @@ Material:
     - _SpecularSpeed: 0.3
     - _SpecularThreshold: -0.84
     m_Colors:
-    - _CausticColour: {r: 0.039443493, g: 0, b: 1, a: 0.12156863}
+    - _CausticColour: {r: 0, g: 0.97657204, b: 1, a: 0.12156863}
     - _CausticHighlightColour: {r: 1, g: 1, b: 1, a: 0.36862746}
     - _CurrentWorldTexturePos: {r: -48, g: 3792, b: 0, a: 0}
     - _FoamColour: {r: 1, g: 1, b: 1, a: 1}
     - _FoamTexelSize: {r: 0.005, g: 0.005, b: 0, a: 0}
-    - _MainColour: {r: 0.007932663, g: 0, b: 1, a: 0.5254902}
+    - _MainColour: {r: 0.09656461, g: 0.6427315, b: 0.6603774, a: 1}
     - _SpecularColour: {r: 1, g: 1, b: 1, a: 0.87058824}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
