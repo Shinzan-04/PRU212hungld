@@ -30297,11 +30297,11 @@ MonoBehaviour:
   weaponPivot: {fileID: 0}
   bodyRenderer: {fileID: 2292280379270016652}
   spinFrames:
-  - {fileID: -8852537332764034070, guid: f2c41633f81a45a4fa5490ed089a294f, type: 3}
-  - {fileID: 1089917940270299943, guid: f2c41633f81a45a4fa5490ed089a294f, type: 3}
-  - {fileID: 2461170914968829851, guid: f2c41633f81a45a4fa5490ed089a294f, type: 3}
-  - {fileID: 7570887717381334299, guid: f2c41633f81a45a4fa5490ed089a294f, type: 3}
-  - {fileID: 6838682383987081270, guid: f2c41633f81a45a4fa5490ed089a294f, type: 3}
+  - {fileID: -5376840409664050080, guid: ffca7259c4b4bbf4290f483190c634c9, type: 3}
+  - {fileID: -3708116932983303957, guid: ffca7259c4b4bbf4290f483190c634c9, type: 3}
+  - {fileID: 4855844637911032718, guid: ffca7259c4b4bbf4290f483190c634c9, type: 3}
+  - {fileID: -5766660515677685750, guid: ffca7259c4b4bbf4290f483190c634c9, type: 3}
+  - {fileID: -6931608061969492542, guid: ffca7259c4b4bbf4290f483190c634c9, type: 3}
   frameTime: 0.06
   hitInterval: 0.15
 --- !u!114 &1529478019
@@ -53806,7 +53806,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4519202220023757189}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -53821,7 +53821,7 @@ SpriteRenderer:
   m_SmallMeshCulling: 1
   m_ForceMeshLod: -1
   m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 0
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -53846,13 +53846,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8145177530718502667, guid: e69c241e882bd1748b52afa928443f1d,
+  m_Sprite: {fileID: -5376840409664050080, guid: ffca7259c4b4bbf4290f483190c634c9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.75, y: 2.83}
+  m_Size: {x: 2.29, y: 2.46}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
