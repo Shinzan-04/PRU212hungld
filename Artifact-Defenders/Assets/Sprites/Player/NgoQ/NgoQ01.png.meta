@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -188,7 +188,7 @@ TextureImporter:
         serializedVersion: 2
         x: 142
         y: 529
-        width: 157
+        width: 164
         height: 143
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -208,7 +208,7 @@ TextureImporter:
       name: NgoQ01_1
       rect:
         serializedVersion: 2
-        x: 313
+        x: 314
         y: 530
         width: 156
         height: 142
@@ -322,8 +322,8 @@ TextureImporter:
         y: 367
         width: 127
         height: 134
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47950768, y: 0.098613456}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,8 +344,8 @@ TextureImporter:
         y: 367
         width: 131
         height: 132
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4205334, y: 0.099103756}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,8 +366,8 @@ TextureImporter:
         y: 368
         width: 115
         height: 129
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999946, y: 0.10995578}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,8 +388,8 @@ TextureImporter:
         y: 367
         width: 124
         height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6399211, y: 0.046224505}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,8 +410,8 @@ TextureImporter:
         y: 373
         width: 122
         height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4999995, y: 0.122212075}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,8 +432,8 @@ TextureImporter:
         y: 367
         width: 117
         height: 133
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49258396, y: 0.08907301}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,8 +454,8 @@ TextureImporter:
         y: 193
         width: 164
         height: 145
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7062983, y: 0.093166694}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,8 +476,8 @@ TextureImporter:
         y: 194
         width: 174
         height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7093997, y: 0.06624369}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,8 +498,8 @@ TextureImporter:
         y: 195
         width: 185
         height: 137
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6781913, y: 0.088406526}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,8 +520,8 @@ TextureImporter:
         y: 193
         width: 177
         height: 145
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.34806314, y: 0.06923544}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,12 +538,12 @@ TextureImporter:
       name: NgoQ01_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 427
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 284
+        y: 23
+        width: 143
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5303323, y: 0.08207466}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,8 +564,8 @@ TextureImporter:
         y: 23
         width: 127
         height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.52049196, y: 0.1269701}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
