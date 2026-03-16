@@ -8,7 +8,7 @@ public class TideSwitch : MonoBehaviour
     public static TideSwitch Instance;
 
     [Header("Main Swap Tilemaps")]
-    public Tilemap tilemap1; // Nước (Gắn Material chứa _MainColour)
+    public Tilemap tilemap1; // Nước
     public Tilemap tilemap2; // Đất hoặc trạng thái khác
 
     [Header("Sub Stakes Tilemaps")]
@@ -38,7 +38,7 @@ public class TideSwitch : MonoBehaviour
     public Transform playerTransform;
     public float pushSpeed = 10f;
 
-    private bool isHighTide = true; // Bắt đầu là Map 2 bật, Map 1 tắt
+    private bool isHighTide = true;
     public bool IsHighTide => isHighTide;
     private Coroutine tideCoroutine;
     private List<Transform> safetyPoints = new List<Transform>();
@@ -46,38 +46,16 @@ public class TideSwitch : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-
-        // Ép ẩn/hiện ngay lập tức từ lúc load script để tránh bị nháy map
-        ForceImmediateState();
+        // Bật tất cả GameObject ngay lập tức
+        ForceAllActive();
     }
 
-    void ForceImmediateState()
+    void ForceAllActive()
     {
-        // --- THAY ĐỔI 2: Logic bật Map 1 (Water), tắt Map 2 (Ground) ---
-        isHighTide = true;
-
-        // HIỆN object Nước (Map 1)
-        if (tilemap1 != null)
-        {
-            SetTilemapAlpha(tilemap1, 1f);
-            tilemap1.gameObject.SetActive(true);
-        }
-
-        // TẮT object Đất/Cọc (Map 2)
-        if (tilemap2 != null)
-        {
-            SetTilemapAlpha(tilemap2, 0f);
-            tilemap2.gameObject.SetActive(false);
-        }
-
-        // Tắt các cọc phụ
-        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(false);
-        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(false);
-
-        // Cập nhật Collider: Bật nước, tắt cọc
-        if (waterCollider) waterCollider.enabled = true;
-        if (stakesCollider) stakesCollider.enabled = false;
-        if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = false;
+        if (tilemap1) tilemap1.gameObject.SetActive(true);
+        if (tilemap2) tilemap2.gameObject.SetActive(true);
+        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(true);
+        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(true);
     }
 
     void Start()
@@ -89,29 +67,24 @@ public class TideSwitch : MonoBehaviour
         safetyPoints.Clear();
         foreach (var p in points) safetyPoints.Add(p.transform);
 
-        // Gọi lại để đảm bảo mọi thứ đồng bộ sau khi Start
-        InitialState();
+        // Thiết lập trạng thái hiển thị và va chạm ban đầu
+        SyncStateImmediate(true);
     }
 
-    void InitialState()
+    void SyncStateImmediate(bool toHigh)
     {
-        // --- THAY ĐỔI 3: Đồng bộ lại hàm InitialState ---
-        // Hiện Nước (Map 1)
-        SetTilemapAlpha(tilemap1, 1f);
-        if (tilemap1 != null) tilemap1.gameObject.SetActive(true);
-        if (waterCollider != null) waterCollider.enabled = true;
+        isHighTide = toHigh;
 
-        // Tắt Đất/Cọc (Map 2)
-        SetTilemapAlpha(tilemap2, 0f);
-        if (tilemap2 != null) tilemap2.gameObject.SetActive(false);
+        // Cập nhật Alpha ngay lập tức
+        SetTilemapAlpha(tilemap1, toHigh ? 1f : 0f);
+        SetTilemapAlpha(tilemap2, toHigh ? 0f : 1f);
+        SetTilemapAlpha(groundStakesTilemap, toHigh ? 0f : 1f);
+        SetTilemapAlpha(lowWaterStakesUpTilemap, toHigh ? 0f : 1f);
 
-        SetTilemapAlpha(groundStakesTilemap, 0f);
-        SetTilemapAlpha(lowWaterStakesUpTilemap, 0f);
-        if (groundStakesTilemap != null) groundStakesTilemap.gameObject.SetActive(false);
-        if (lowWaterStakesUpTilemap != null) lowWaterStakesUpTilemap.gameObject.SetActive(false);
-
-        if (stakesCollider != null) stakesCollider.enabled = false;
-        if (lowWaterStakesCollider != null) lowWaterStakesCollider.enabled = false;
+        // Cập nhật Collider
+        if (waterCollider) waterCollider.enabled = toHigh;
+        if (stakesCollider) stakesCollider.enabled = !toHigh;
+        if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = !toHigh;
     }
 
     void Update()
@@ -133,15 +106,10 @@ public class TideSwitch : MonoBehaviour
 
         StartCoroutine(ShakeCamera(0.2f, 0.1f));
     }
+
     IEnumerator TransitionTide(bool toHigh)
     {
         if (toHigh) CheckAndPushPlayer();
-
-        // Bật GameObject lên để có thể thấy hiệu ứng Fade
-        if (tilemap1) tilemap1.gameObject.SetActive(true);
-        if (tilemap2) tilemap2.gameObject.SetActive(true);
-        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(true);
-        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(true);
 
         float t = 0f;
         if (audioSource != null)
@@ -149,6 +117,12 @@ public class TideSwitch : MonoBehaviour
             audioSource.clip = toHigh ? tideInSound : tideOutSound;
             audioSource.Play();
         }
+
+        // Bật/Tắt collider ngay khi bắt đầu chuyển đổi hoặc kết thúc tùy bạn chọn
+        // Ở đây tôi để bật/tắt ngay lập tức để cảm giác vật lý khớp với hành động nhấn nút
+        if (waterCollider) waterCollider.enabled = toHigh;
+        if (stakesCollider) stakesCollider.enabled = !toHigh;
+        if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = !toHigh;
 
         while (t < fadeDuration)
         {
@@ -166,31 +140,23 @@ public class TideSwitch : MonoBehaviour
             yield return null;
         }
 
-        // Sau khi Fade xong, tắt hẳn GameObject không sử dụng để tối ưu và tránh lỗi hiển thị
-        if (tilemap1) tilemap1.gameObject.SetActive(toHigh);
-        if (tilemap2) tilemap2.gameObject.SetActive(!toHigh);
-        if (groundStakesTilemap) groundStakesTilemap.gameObject.SetActive(!toHigh);
-        if (lowWaterStakesUpTilemap) lowWaterStakesUpTilemap.gameObject.SetActive(!toHigh);
-
-        if (waterCollider != null) waterCollider.enabled = toHigh;
-        if (stakesCollider != null) stakesCollider.enabled = !toHigh;
-        if (lowWaterStakesCollider != null) lowWaterStakesCollider.enabled = !toHigh;
+        // Đảm bảo kết quả cuối cùng chính xác
+        SyncStateImmediate(toHigh);
     }
 
     void SetTilemapAlpha(Tilemap tm, float alpha)
     {
         if (tm == null) return;
 
-        // 1. Chỉnh màu trên Component Tilemap
+        // Chỉnh màu trên Component Tilemap
         Color c = tm.color;
         c.a = alpha;
         tm.color = c;
 
-        // 2. Chỉnh màu trực tiếp vào Shader (Dành cho Shader Nước của bạn)
+        // Chỉnh màu trực tiếp vào Shader nếu có
         TilemapRenderer tr = tm.GetComponent<TilemapRenderer>();
         if (tr != null && tr.material != null)
         {
-            // Kiểm tra xem Material có biến _MainColour không
             if (tr.material.HasProperty("_MainColour"))
             {
                 Color shaderColor = tr.material.GetColor("_MainColour");
@@ -199,6 +165,8 @@ public class TideSwitch : MonoBehaviour
             }
         }
     }
+
+    // --- CÁC HÀM CŨ GIỮ NGUYÊN ---
 
     void CheckAndPushPlayer()
     {
@@ -247,6 +215,7 @@ public class TideSwitch : MonoBehaviour
 
     void LateUpdate()
     {
+        // Hiệu ứng dập dềnh vẫn hoạt động dựa trên logic sóng
         if (isHighTide && tilemap1 != null)
         {
             float offset = Mathf.Sin(Time.time * waveSpeed) * waveAmount;
