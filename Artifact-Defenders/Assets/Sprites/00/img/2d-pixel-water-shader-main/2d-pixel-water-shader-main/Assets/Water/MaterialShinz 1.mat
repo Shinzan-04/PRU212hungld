@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _CausticHighlightTexture:
-        m_Texture: {fileID: 2800000, guid: ab99d397c3811ec4e8b3fc8b777d094f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9cf31347d658e46e79a8dfe7a7e77fd1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticSubGraph_f2a345640a7c40f4a0465fba88b0ed66_CausticHighlightTexture_187322138:
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4607143f1a8e3487fa2c113025470b25, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamSubGraph_0931d6e4af6344c9b836f27ff5e96741_MainTexture_806873349:
@@ -94,13 +94,13 @@ Material:
     - _SpecularSpeed: 0.3
     - _SpecularThreshold: -0.84
     m_Colors:
-    - _CausticColour: {r: 0.039443493, g: 0, b: 1, a: 0.12156863}
-    - _CausticHighlightColour: {r: 1, g: 1, b: 1, a: 0.36862746}
+    - _CausticColour: {r: 0, g: 0.97657204, b: 1, a: 0.2627451}
+    - _CausticHighlightColour: {r: 1, g: 1, b: 1, a: 0.6392157}
     - _CurrentWorldTexturePos: {r: -48, g: 3792, b: 0, a: 0}
-    - _FoamColour: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColour: {r: 0.1256404, g: 0.110137075, b: 0.7075472, a: 1}
     - _FoamTexelSize: {r: 0.005, g: 0.005, b: 0, a: 0}
-    - _MainColour: {r: 0.007932663, g: 0, b: 1, a: 0.5254902}
-    - _SpecularColour: {r: 1, g: 1, b: 1, a: 0.87058824}
+    - _MainColour: {r: 0.09656461, g: 0.6427315, b: 0.6603774, a: 1}
+    - _SpecularColour: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &1576172767386937083
