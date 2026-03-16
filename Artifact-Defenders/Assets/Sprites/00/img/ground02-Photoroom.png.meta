@@ -1,0 +1,1631 @@
+fileFormatVersion: 2
+guid: 85b6f255b4ec5f84ca673bfb432a35ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2979337025804215627
+    second: ground02-Photoroom_0
+  - first:
+      213: 4102392344476467292
+    second: ground02-Photoroom_1
+  - first:
+      213: 842917752587443830
+    second: ground02-Photoroom_2
+  - first:
+      213: -4408651390089927565
+    second: ground02-Photoroom_3
+  - first:
+      213: 180367178172160147
+    second: ground02-Photoroom_4
+  - first:
+      213: 3372270069909420248
+    second: ground02-Photoroom_5
+  - first:
+      213: -2581709405013999408
+    second: ground02-Photoroom_6
+  - first:
+      213: -6514389434692229649
+    second: ground02-Photoroom_7
+  - first:
+      213: -89786997869196301
+    second: ground02-Photoroom_8
+  - first:
+      213: -8308078798037114741
+    second: ground02-Photoroom_9
+  - first:
+      213: 1457736022896600353
+    second: ground02-Photoroom_10
+  - first:
+      213: -4493596175260915018
+    second: ground02-Photoroom_11
+  - first:
+      213: -5047364879121788703
+    second: ground02-Photoroom_12
+  - first:
+      213: -3955307120465281951
+    second: ground02-Photoroom_13
+  - first:
+      213: -4623953107804671312
+    second: ground02-Photoroom_14
+  - first:
+      213: 4113859107737778427
+    second: ground02-Photoroom_15
+  - first:
+      213: -5282659614708878773
+    second: ground02-Photoroom_16
+  - first:
+      213: 5240048486862122292
+    second: ground02-Photoroom_17
+  - first:
+      213: 6733255444299615330
+    second: ground02-Photoroom_18
+  - first:
+      213: -680279548322638882
+    second: ground02-Photoroom_19
+  - first:
+      213: 6799509564830421842
+    second: ground02-Photoroom_20
+  - first:
+      213: -2444655413681958258
+    second: ground02-Photoroom_21
+  - first:
+      213: 578882174307728705
+    second: ground02-Photoroom_22
+  - first:
+      213: 1817722673210732043
+    second: ground02-Photoroom_23
+  - first:
+      213: -4640499117699724469
+    second: ground02-Photoroom_24
+  - first:
+      213: 4663211221713510804
+    second: ground02-Photoroom_25
+  - first:
+      213: -578865175465337017
+    second: ground02-Photoroom_26
+  - first:
+      213: 7094071436911023742
+    second: ground02-Photoroom_27
+  - first:
+      213: 5581877443233418784
+    second: ground02-Photoroom_28
+  - first:
+      213: -1385683271224687675
+    second: ground02-Photoroom_29
+  - first:
+      213: -5643171098018178081
+    second: ground02-Photoroom_30
+  - first:
+      213: 7471023404146631560
+    second: ground02-Photoroom_31
+  - first:
+      213: -7416213947835610058
+    second: ground02-Photoroom_32
+  - first:
+      213: -6768361680097419173
+    second: ground02-Photoroom_33
+  - first:
+      213: -7454520609390011013
+    second: ground02-Photoroom_34
+  - first:
+      213: 66593686897743355
+    second: ground02-Photoroom_35
+  - first:
+      213: -6537829881209305012
+    second: ground02-Photoroom_36
+  - first:
+      213: -8612062818971930168
+    second: ground02-Photoroom_37
+  - first:
+      213: -8266336466873217363
+    second: ground02-Photoroom_38
+  - first:
+      213: -6758108042999158977
+    second: ground02-Photoroom_39
+  - first:
+      213: -813425472116431224
+    second: ground02-Photoroom_40
+  - first:
+      213: -99497835267900313
+    second: ground02-Photoroom_41
+  - first:
+      213: 632434296186586422
+    second: ground02-Photoroom_42
+  - first:
+      213: -6259293473425084045
+    second: ground02-Photoroom_43
+  - first:
+      213: 9047388526429792366
+    second: ground02-Photoroom_44
+  - first:
+      213: 1746557302314981467
+    second: ground02-Photoroom_45
+  - first:
+      213: 2788425404056743593
+    second: ground02-Photoroom_46
+  - first:
+      213: -179235392213007419
+    second: ground02-Photoroom_47
+  - first:
+      213: 7586248150543530140
+    second: ground02-Photoroom_48
+  - first:
+      213: -7476956709742285745
+    second: ground02-Photoroom_49
+  - first:
+      213: -4577953617261553924
+    second: ground02-Photoroom_50
+  - first:
+      213: 3603945359556333124
+    second: ground02-Photoroom_51
+  - first:
+      213: 1813885966470376280
+    second: ground02-Photoroom_52
+  - first:
+      213: 6876986060262353952
+    second: ground02-Photoroom_53
+  - first:
+      213: -8293617887565001646
+    second: ground02-Photoroom_54
+  - first:
+      213: 9055261176326293096
+    second: ground02-Photoroom_55
+  - first:
+      213: 5784673447685594781
+    second: ground02-Photoroom_56
+  - first:
+      213: -1804215392199261797
+    second: ground02-Photoroom_57
+  - first:
+      213: -3526491527180490954
+    second: ground02-Photoroom_58
+  - first:
+      213: 8907076141425086774
+    second: ground02-Photoroom_59
+  - first:
+      213: 1977960790333260442
+    second: ground02-Photoroom_60
+  - first:
+      213: 4139936195130878758
+    second: ground02-Photoroom_61
+  - first:
+      213: -8922050657490982699
+    second: ground02-Photoroom_62
+  - first:
+      213: 7953111423786634776
+    second: ground02-Photoroom_63
+  - first:
+      213: 4061331637302958715
+    second: ground02-Photoroom_64
+  - first:
+      213: -7301516341774211975
+    second: ground02-Photoroom_65
+  - first:
+      213: 748904194273619273
+    second: ground02-Photoroom_66
+  - first:
+      213: 2340104012497318412
+    second: ground02-Photoroom_67
+  - first:
+      213: -8614654621274440269
+    second: ground02-Photoroom_68
+  - first:
+      213: -6717825587057935531
+    second: ground02-Photoroom_69
+  - first:
+      213: 6520371266991239638
+    second: ground02-Photoroom_70
+  - first:
+      213: 8280738191034547045
+    second: ground02-Photoroom_71
+  - first:
+      213: -7623215304079922062
+    second: ground02-Photoroom_72
+  - first:
+      213: 860321162211106039
+    second: ground02-Photoroom_73
+  - first:
+      213: -3458767796094743711
+    second: ground02-Photoroom_74
+  - first:
+      213: -8293380664515282179
+    second: ground02-Photoroom_75
+  - first:
+      213: -1579448557152978684
+    second: ground02-Photoroom_76
+  - first:
+      213: 1663670061675302096
+    second: ground02-Photoroom_77
+  - first:
+      213: 6927802411793513634
+    second: ground02-Photoroom_78
+  - first:
+      213: 98432730412987532
+    second: ground02-Photoroom_79
+  - first:
+      213: 5655705153141757415
+    second: ground02-Photoroom_80
+  - first:
+      213: -308927301527544816
+    second: ground02-Photoroom_81
+  - first:
+      213: -8164866398596859698
+    second: ground02-Photoroom_82
+  - first:
+      213: -1790840049777588642
+    second: ground02-Photoroom_83
+  - first:
+      213: 6228350859962472001
+    second: ground02-Photoroom_84
+  - first:
+      213: -7707849187624409111
+    second: ground02-Photoroom_85
+  - first:
+      213: -1113081449520226374
+    second: ground02-Photoroom_86
+  - first:
+      213: -7210146723996243975
+    second: ground02-Photoroom_87
+  - first:
+      213: -8691536644922428357
+    second: ground02-Photoroom_88
+  - first:
+      213: 3859485911030159579
+    second: ground02-Photoroom_89
+  - first:
+      213: 356412812962266321
+    second: ground02-Photoroom_90
+  - first:
+      213: 1678348201213382429
+    second: ground02-Photoroom_91
+  - first:
+      213: 8872468757453740153
+    second: ground02-Photoroom_92
+  - first:
+      213: 7169322398987259345
+    second: ground02-Photoroom_93
+  - first:
+      213: -6349389077771150030
+    second: ground02-Photoroom_94
+  - first:
+      213: -8003074177683434410
+    second: ground02-Photoroom_95
+  - first:
+      213: 5076459781443011118
+    second: ground02-Photoroom_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ground02-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 709
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbce8e733301cef0800000000000000
+      internalID: -89786997869196301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 745
+        width: 72
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b802b0de956c3bc80800000000000000
+      internalID: -8308078798037114741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 709
+        width: 68
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125ea0d703bea3410800000000000000
+      internalID: 1457736022896600353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 709
+        width: 89
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bae481361a83a1c0800000000000000
+      internalID: -4493596175260915018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 767
+        width: 68
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0d920726824f9b0800000000000000
+      internalID: -5047364879121788703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 767
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cf71b412deb19c0800000000000000
+      internalID: -3955307120465281951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 767
+        width: 68
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b23d3fa52b64dfb0800000000000000
+      internalID: -4623953107804671312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 595
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14dfa6e354a980800800000000000000
+      internalID: 578882174307728705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 596
+        width: 114
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e26ecf329d93910800000000000000
+      internalID: 1817722673210732043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 596
+        width: 112
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b8efc83a2a99fb0800000000000000
+      internalID: -4640499117699724469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 596
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49169de36ed07b040800000000000000
+      internalID: 4663211221713510804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 596
+        width: 87
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f5b8b903577f7f0800000000000000
+      internalID: -578865175465337017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 626
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e769358c264337260800000000000000
+      internalID: 7094071436911023742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 656
+        width: 95
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e81b7e5ffc67d40800000000000000
+      internalID: 5581877443233418784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 626
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3837f086015cce0800000000000000
+      internalID: -1385683271224687675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 596
+        width: 67
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb10eff8cd6fa1b0800000000000000
+      internalID: -5643171098018178081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 596
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8832ac0f3386ea760800000000000000
+      internalID: 7471023404146631560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 363
+        width: 70
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b506d6a89e2f112a0800000000000000
+      internalID: -6768361680097419173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 482
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae0a22c7c2184d80800000000000000
+      internalID: -8266336466873217363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 481
+        width: 70
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3723577a806632a0800000000000000
+      internalID: -6758108042999158977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 363
+        width: 87
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886ee33c7d126b4f0800000000000000
+      internalID: -813425472116431224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_41
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 485
+        width: 27
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cbfe8fe338e9ef0800000000000000
+      internalID: -99497835267900313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 547
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635c9ff34abd6c800800000000000000
+      internalID: 632434296186586422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_43
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 483
+        width: 28
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371b393cfb58229a0800000000000000
+      internalID: -6259293473425084045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_45
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 503
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b585950ec940d3810800000000000000
+      internalID: 1746557302314981467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 507
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae2a7b912a72b620800000000000000
+      internalID: 2788425404056743593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 458
+        width: 68
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c347f34c5a338df0800000000000000
+      internalID: -179235392213007419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 460
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c987c1fcf74c74960800000000000000
+      internalID: 7586248150543530140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 484
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c66d2bc738c3890800000000000000
+      internalID: -7476956709742285745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 364
+        width: 90
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ec542c539c30230800000000000000
+      internalID: 3603945359556333124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_52
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 375
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b68861da73c2910800000000000000
+      internalID: 1813885966470376280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_53
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 250
+        width: 80
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c204fc266ff6f50800000000000000
+      internalID: 6876986060262353952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_54
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 345
+        width: 73
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cccd4097627ec80800000000000000
+      internalID: -8293617887565001646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_55
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 251
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86680532010caad70800000000000000
+      internalID: 9055261176326293096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_56
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 250
+        width: 87
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e1fe62ad9474050800000000000000
+      internalID: 5784673447685594781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_61
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 250
+        width: 69
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62bee8ff802047930800000000000000
+      internalID: 4139936195130878758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_62
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 250
+        width: 69
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8a534b2328e2480800000000000000
+      internalID: -8922050657490982699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_63
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 294
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e47e9d3b02f5e60800000000000000
+      internalID: 7953111423786634776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_64
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 218
+        width: 132
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a9f743b9fbc5830800000000000000
+      internalID: 4061331637302958715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_69
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 235
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bb16c983d75c2a0800000000000000
+      internalID: -6717825587057935531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_70
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 136
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d13da4fe130d7a50800000000000000
+      internalID: 6520371266991239638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_71
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 135
+        width: 68
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bff92f2871be270800000000000000
+      internalID: 8280738191034547045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_72
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 135
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27caef90216e43690800000000000000
+      internalID: -7623215304079922062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_73
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 135
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc1852f98970fb00800000000000000
+      internalID: 860321162211106039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_74
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 120
+        width: 119
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b4639c30dffffc0800000000000000
+      internalID: -3458767796094743711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_79
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 17
+        width: 172
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84b98afb04bd5100800000000000000
+      internalID: 98432730412987532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_81
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 18
+        width: 150
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cd70b814876bbf0800000000000000
+      internalID: -308927301527544816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_84
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 16
+        width: 89
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146df80ab1c8f6650800000000000000
+      internalID: 6228350859962472001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_86
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 16
+        width: 108
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf154ba15a8d80f0800000000000000
+      internalID: -1113081449520226374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ground02-Photoroom_87
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 18
+        width: 383
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7e1c961c960fb90800000000000000
+      internalID: -7210146723996243975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 28698724fb4d50b42b8c4e52aba66b44
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ground02-Photoroom_0: 2979337025804215627
+      ground02-Photoroom_1: 4102392344476467292
+      ground02-Photoroom_10: 1457736022896600353
+      ground02-Photoroom_11: -4493596175260915018
+      ground02-Photoroom_12: -5047364879121788703
+      ground02-Photoroom_13: -3955307120465281951
+      ground02-Photoroom_14: -4623953107804671312
+      ground02-Photoroom_15: 4113859107737778427
+      ground02-Photoroom_16: -5282659614708878773
+      ground02-Photoroom_17: 5240048486862122292
+      ground02-Photoroom_18: 6733255444299615330
+      ground02-Photoroom_19: -680279548322638882
+      ground02-Photoroom_2: 842917752587443830
+      ground02-Photoroom_20: 6799509564830421842
+      ground02-Photoroom_21: -2444655413681958258
+      ground02-Photoroom_22: 578882174307728705
+      ground02-Photoroom_23: 1817722673210732043
+      ground02-Photoroom_24: -4640499117699724469
+      ground02-Photoroom_25: 4663211221713510804
+      ground02-Photoroom_26: -578865175465337017
+      ground02-Photoroom_27: 7094071436911023742
+      ground02-Photoroom_28: 5581877443233418784
+      ground02-Photoroom_29: -1385683271224687675
+      ground02-Photoroom_3: -4408651390089927565
+      ground02-Photoroom_30: -5643171098018178081
+      ground02-Photoroom_31: 7471023404146631560
+      ground02-Photoroom_32: -7416213947835610058
+      ground02-Photoroom_33: -6768361680097419173
+      ground02-Photoroom_34: -7454520609390011013
+      ground02-Photoroom_35: 66593686897743355
+      ground02-Photoroom_36: -6537829881209305012
+      ground02-Photoroom_37: -8612062818971930168
+      ground02-Photoroom_38: -8266336466873217363
+      ground02-Photoroom_39: -6758108042999158977
+      ground02-Photoroom_4: 180367178172160147
+      ground02-Photoroom_40: -813425472116431224
+      ground02-Photoroom_41: -99497835267900313
+      ground02-Photoroom_42: 632434296186586422
+      ground02-Photoroom_43: -6259293473425084045
+      ground02-Photoroom_44: 9047388526429792366
+      ground02-Photoroom_45: 1746557302314981467
+      ground02-Photoroom_46: 2788425404056743593
+      ground02-Photoroom_47: -179235392213007419
+      ground02-Photoroom_48: 7586248150543530140
+      ground02-Photoroom_49: -7476956709742285745
+      ground02-Photoroom_5: 3372270069909420248
+      ground02-Photoroom_50: -4577953617261553924
+      ground02-Photoroom_51: 3603945359556333124
+      ground02-Photoroom_52: 1813885966470376280
+      ground02-Photoroom_53: 6876986060262353952
+      ground02-Photoroom_54: -8293617887565001646
+      ground02-Photoroom_55: 9055261176326293096
+      ground02-Photoroom_56: 5784673447685594781
+      ground02-Photoroom_57: -1804215392199261797
+      ground02-Photoroom_58: -3526491527180490954
+      ground02-Photoroom_59: 8907076141425086774
+      ground02-Photoroom_6: -2581709405013999408
+      ground02-Photoroom_60: 1977960790333260442
+      ground02-Photoroom_61: 4139936195130878758
+      ground02-Photoroom_62: -8922050657490982699
+      ground02-Photoroom_63: 7953111423786634776
+      ground02-Photoroom_64: 4061331637302958715
+      ground02-Photoroom_65: -7301516341774211975
+      ground02-Photoroom_66: 748904194273619273
+      ground02-Photoroom_67: 2340104012497318412
+      ground02-Photoroom_68: -8614654621274440269
+      ground02-Photoroom_69: -6717825587057935531
+      ground02-Photoroom_7: -6514389434692229649
+      ground02-Photoroom_70: 6520371266991239638
+      ground02-Photoroom_71: 8280738191034547045
+      ground02-Photoroom_72: -7623215304079922062
+      ground02-Photoroom_73: 860321162211106039
+      ground02-Photoroom_74: -3458767796094743711
+      ground02-Photoroom_75: -8293380664515282179
+      ground02-Photoroom_76: -1579448557152978684
+      ground02-Photoroom_77: 1663670061675302096
+      ground02-Photoroom_78: 6927802411793513634
+      ground02-Photoroom_79: 98432730412987532
+      ground02-Photoroom_8: -89786997869196301
+      ground02-Photoroom_80: 5655705153141757415
+      ground02-Photoroom_81: -308927301527544816
+      ground02-Photoroom_82: -8164866398596859698
+      ground02-Photoroom_83: -1790840049777588642
+      ground02-Photoroom_84: 6228350859962472001
+      ground02-Photoroom_85: -7707849187624409111
+      ground02-Photoroom_86: -1113081449520226374
+      ground02-Photoroom_87: -7210146723996243975
+      ground02-Photoroom_88: -8691536644922428357
+      ground02-Photoroom_89: 3859485911030159579
+      ground02-Photoroom_9: -8308078798037114741
+      ground02-Photoroom_90: 356412812962266321
+      ground02-Photoroom_91: 1678348201213382429
+      ground02-Photoroom_92: 8872468757453740153
+      ground02-Photoroom_93: 7169322398987259345
+      ground02-Photoroom_94: -6349389077771150030
+      ground02-Photoroom_95: -8003074177683434410
+      ground02-Photoroom_96: 5076459781443011118
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
