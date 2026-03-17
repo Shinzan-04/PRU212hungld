@@ -5073,6 +5073,11 @@ MonoBehaviour:
   minSpawnCount: 3
   maxSpawnCount: 5
   spawnSpreadRadius: 2
+  distanceToStartScaling: 80
+  scaleOverDistance: 1
+  minScale: 1
+  maxScale: 1.9
+  distanceToMaxScale: 2
   boatAudioSource: {fileID: 1348870525080491595}
   boatBreakSound: {fileID: 8300000, guid: 710f83afbe2bf2948b120dc1fdb92059, type: 3}
   breakVolume: 1

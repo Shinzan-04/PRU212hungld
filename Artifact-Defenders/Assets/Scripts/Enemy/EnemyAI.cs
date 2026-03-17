@@ -18,6 +18,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] int maxSpawnCount = 5;
     [SerializeField] float spawnSpreadRadius = 0.8f;
 
+    [Header("Boat Scale Settings")]
+    [SerializeField] private float distanceToStartScaling = 15f; // Khoảng cách bắt đầu to lên
+    [SerializeField] private bool scaleOverDistance = true; // Bật/tắt tính năng này
+    [SerializeField] private float minScale = 0.5f;       // Kích cỡ khi ở xa
+    [SerializeField] private float maxScale = 1.2f;       // Kích cỡ khi đến gần bờ
+    [SerializeField] private float distanceToMaxScale = 2f; // Khoảng cách mà tại đó thuyền đạt kích cỡ tối đa
+
     [Header("Audio Settings")]
     [SerializeField] private AudioSource boatAudioSource; // Kéo AudioSource của thuyền vào đây
     [SerializeField] private AudioClip boatBreakSound;    // Kéo file âm thanh thuyền vỡ vào đây
@@ -103,6 +110,10 @@ public class EnemyAI : MonoBehaviour
     {
         if (artifact == null) return;
 
+        UpdateBoatScale(); // Gọi ở đây để cập nhật liên tục khi thuyền di chuyển
+
+        if (artifact == null) return;
+
         // Âm thanh lướt sóng (Loop)
         if (boatAudioSource != null && !boatAudioSource.isPlaying)
             boatAudioSource.Play();
@@ -137,15 +148,29 @@ public class EnemyAI : MonoBehaviour
         left = artifact.transform.position.x < transform.position.x;
     }
 
-    // Hàm mới: Thuyền vỡ khi va chạm cọc/rút nước (Chỉ nổ âm thanh, không ra lính)
+    // Tìm đến hàm này trong EnemyAI.cs và thay thế nội dung
     void BreakWithoutSpawning()
     {
         if (isDead) return;
-        isDead = true;
+
+        isDead = true; // Kích hoạt trạng thái chết để WolfAnim nhận diện và chạy deathSprites
+        isMoving = false;
+
+        // Tắt va chạm để thuyền không cản đường các thuyền khác khi đang diễn hoạt ảnh vỡ
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
 
         PlayBreakAudio();
 
-        // Có thể thêm hiệu ứng Particle vỡ vụn ở đây nếu muốn
+        // Thay vì Destroy ngay, ta gọi Coroutine để chờ
+        StartCoroutine(WaitAndDestroyBoat());
+    }
+
+    IEnumerator WaitAndDestroyBoat()
+    {
+        // Chờ một khoảng thời gian (ví dụ 0.8 giây hoặc tùy độ dài anim của bạn)
+        // Đảm bảo thời gian này khớp với tổng thời gian chạy deathSprites trong WolfAnim
+        yield return new WaitForSeconds(0.8f);
         Destroy(gameObject);
     }
 
@@ -354,5 +379,19 @@ public class EnemyAI : MonoBehaviour
             if (rb != null) rb.AddForce(Random.insideUnitCircle.normalized * 2f, ForceMode2D.Impulse);
         }
         Destroy(gameObject);
+    }
+    void UpdateBoatScale()
+    {
+        if (!isBoat || artifact == null || !scaleOverDistance) return;
+
+        float distance = Vector2.Distance(transform.position, artifact.transform.position);
+
+        // Sử dụng biến distanceToStartScaling thay vì số 15 cố định
+        float t = Mathf.InverseLerp(distanceToStartScaling, distanceToMaxScale, distance);
+
+        // Clamp t để đảm bảo không bị nhỏ hơn minScale hoặc lớn hơn maxScale
+        float currentScale = Mathf.Lerp(minScale, maxScale, t);
+
+        transform.localScale = new Vector3(currentScale, currentScale, 1f);
     }
 }
