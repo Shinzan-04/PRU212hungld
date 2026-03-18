@@ -18,9 +18,14 @@ public class RemainingTimeUI : MonoBehaviour
         text = GetComponent<Text>();
     }
 
+    //void Update()
+    //{
+    //    text.text = remainingTime.GetString(Localization.currentLanguage) + ": " + (int)manager.GetTime() 
+    //        + " "+ secondsString.GetString(Localization.currentLanguage);
+    //}
     void Update()
     {
-        text.text = remainingTime.GetString(Localization.currentLanguage) + ": " + (int)manager.GetTime() 
-            + " "+ secondsString.GetString(Localization.currentLanguage);
+        // Chỉ hiện số, không hiện chữ "Thời gian còn lại" hay "Giây" nữa
+        text.text = ((int)manager.GetTime()).ToString();
     }
 }

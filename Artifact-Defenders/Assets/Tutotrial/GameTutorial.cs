@@ -107,13 +107,13 @@ public class GameTutorial : MonoBehaviour
         if (count != lastCount)
         {
             lastCount = count;
-            ShowText($"Chiến trận không chờ kẻ chậm chân… Dùng WASD để làm chủ bước chân! ({count}/4)");
+            ShowText($"Chiến trận không chờ kẻ chậm chân… Dùng AWDS để làm chủ bước chân! ({count}/4)");
         }
 
         if (w && a && s && d)
         {
             step = 1;
-            ShowText("Đừng do dự! Click chuột trái Tấn công ngay!");
+            ShowText("Đừng mất thời gian nữa! Nhấn chuột trái để Tấn công!");
             PlayVoice(attackVoice);
         }
     }
@@ -146,7 +146,7 @@ public class GameTutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             step = 4;
-            ShowText("Đây là đòn quyết định!Giăng bẫy cọc Nhấn P để để tiêu diệt thuyền chiến quân Nam Hán!");
+            ShowText("Đây là đòn quyết định! Giăng bẫy cọc Nhấn P để để tiêu diệt thuyền chiến quân Nam Hán!");
             PlayVoice(pVoice);
         }
     }
