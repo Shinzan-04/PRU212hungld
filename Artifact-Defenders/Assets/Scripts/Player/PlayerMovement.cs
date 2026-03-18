@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Component responsible of the player movement and managing the <see cref="SpriteRenderer.flipX"/> property
+/// Component responsible of the player movement and managing the SpriteRenderer.flipX property
 /// </summary>
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool attacking;
     float attackTimer;
+
     public Vector2 MoveDirection { get; private set; }
 
     void Start()
@@ -29,20 +30,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // Reset harvesting
         if (harvesting && Time.time > timer)
             harvesting = false;
 
+        // Reset attacking
         if (attacking && Time.time > attackTimer)
             attacking = false;
+
         FlipSprite();
     }
 
     private void FlipSprite()
     {
-        // Lấy hướng từ bàn phím trước
         float h = Input.GetAxisRaw("Horizontal");
 
-        // Nếu joystick có input, dùng joystick thay
         if (joystick != null && Mathf.Abs(joystick.Horizontal) > 0.1f)
         {
             h = joystick.Horizontal;
@@ -56,40 +58,45 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (harvesting || attacking)
+        // 👉 CHỈ chặn khi harvesting (KHÔNG chặn khi attacking nữa)
+        if (harvesting)
         {
             rigidbody.linearVelocity = Vector2.zero;
+            MoveDirection = Vector2.zero;
+            return;
         }
-        else
+
+        // Lấy input
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        if (joystick != null)
         {
-            // Lấy input từ bàn phím
-            float h = Input.GetAxis("Horizontal");
-            float v = Input.GetAxis("Vertical");
-
-            // Nếu joystick có input, dùng joystick thay
-            if (joystick != null)
+            if (Mathf.Abs(joystick.Horizontal) > 0.1f || Mathf.Abs(joystick.Vertical) > 0.1f)
             {
-                if (Mathf.Abs(joystick.Horizontal) > 0.1f || Mathf.Abs(joystick.Vertical) > 0.1f)
-                {
-                    h = joystick.Horizontal;
-                    v = joystick.Vertical;
-                }
+                h = joystick.Horizontal;
+                v = joystick.Vertical;
             }
-
-            // Gán lại vector di chuyển (đã bao gồm joystick hoặc bàn phím)
-            normVector = new Vector2(h, v);
-
-            // Giữ hướng di chuyển mượt
-            if (normVector.sqrMagnitude > 1)
-                normVector = normVector.normalized;
-
-            // Cập nhật vận tốc
-            rigidbody.linearVelocity = normVector * movementSpeed;
         }
+
+        normVector = new Vector2(h, v);
+
+        if (normVector.sqrMagnitude > 1)
+            normVector = normVector.normalized;
+
+        // 👉 Nếu đang đánh thì giảm tốc nhẹ (tùy chọn, có thể xoá nếu không thích)
+        float currentSpeed = movementSpeed;
+        if (attacking)
+        {
+            currentSpeed *= 0.7f; // giảm 30% tốc độ khi đánh
+        }
+
+        rigidbody.linearVelocity = normVector * currentSpeed;
+
         MoveDirection = normVector;
     }
 
-
+    // ===== HARVEST =====
     public void HarvestStopMovement(float time)
     {
         harvesting = true;
@@ -101,14 +108,10 @@ public class PlayerMovement : MonoBehaviour
         return harvesting;
     }
 
+    // ===== ATTACK =====
     public bool IsAttacking()
     {
         return attacking;
-    }
-
-    public Vector2 GetVelocity()
-    {
-        return rigidbody.linearVelocity;
     }
 
     public void StopMovementForAttack(float time)
@@ -117,4 +120,9 @@ public class PlayerMovement : MonoBehaviour
         attackTimer = Time.time + time;
     }
 
+    // ===== OTHER =====
+    public Vector2 GetVelocity()
+    {
+        return rigidbody.linearVelocity;
+    }
 }

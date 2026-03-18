@@ -3,44 +3,52 @@
 public class EnemyHealth : MonoBehaviour
 {
     [HideInInspector] public int max;
-     public int current;
+    public int current;
 
-    EnemyAI enemyAI;
-    BossAI bossAI;
+    private EnemyAI enemyAI;
+    private BossAI bossAI;
+
     private void Awake()
     {
+        // Khởi tạo máu
         current = max;
+
+        // Lấy component
         enemyAI = GetComponent<EnemyAI>();
         bossAI = GetComponent<BossAI>();
-
     }
 
-    // Gọi khi PlayerSlash trúng đòn (hoặc các nguồn gây damage gọi DamageEnemy)
+    // Gọi khi enemy bị gây damage
     public void DamageEnemy(int amount)
     {
-        // Nếu có EnemyAI — ủy quyền cho AI xử lý (anim + death + sync)
+        // Nếu có EnemyAI thì để AI xử lý
         if (enemyAI != null)
         {
             enemyAI.TakeDamage(amount);
-            // cập nhật current để UI đọc
             current = Mathf.Max(0, enemyAI.CurrentHealth);
             return;
         }
 
+        // Nếu là Boss
         if (bossAI != null)
         {
             bossAI.TakeDamage(amount);
-            // cập nhật current để UI đọc
             current = Mathf.Max(0, bossAI.CurrentHealth);
             return;
         }
 
-        // fallback: nếu không có AI, xử lý ở đây
+        // Nếu không có AI thì xử lý trực tiếp
         current -= amount;
+
         if (current <= 0)
         {
             current = 0;
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }

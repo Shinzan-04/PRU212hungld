@@ -1,58 +1,76 @@
 fileFormatVersion: 2
-guid: b8b1b7f2051ccd24895cd2435464c7dc
+guid: efb5504c226ef434ea0f23a7ef87efd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7900702003276793004
-    second: thuyendead_0
+      213: -2161194046081581849
+    second: NgoQArtStyle_0
   - first:
-      213: 1078491357017863808
-    second: thuyendead_1
+      213: -1268039178742715652
+    second: NgoQArtStyle_1
   - first:
-      213: -9156407933243360466
-    second: thuyendead_2
+      213: 4523339239848793236
+    second: NgoQArtStyle_2
   - first:
-      213: -7175631908639041148
-    second: thuyendead_3
+      213: 8889913417364209731
+    second: NgoQArtStyle_3
   - first:
-      213: -593608504505874838
-    second: thuyendead_4
+      213: 2258604526167420099
+    second: NgoQArtStyle_4
   - first:
-      213: 6127522590391173012
-    second: thuyendead_5
+      213: 8755218088353247690
+    second: NgoQArtStyle_5
   - first:
-      213: 9189959956476224150
-    second: thuyendead_6
+      213: -3083799305925579540
+    second: NgoQArtStyle_6
   - first:
-      213: 2585667796784334688
-    second: thuyendead_7
+      213: -2194638536808958480
+    second: NgoQArtStyle_7
   - first:
-      213: -4626420047083331370
-    second: thuyendead_8
+      213: 6663439650703108018
+    second: NgoQArtStyle_8
   - first:
-      213: 2788048069079729917
-    second: thuyendead_9
+      213: -8704548274401210008
+    second: NgoQArtStyle_9
   - first:
-      213: -3638740686932798395
-    second: thuyendead_10
+      213: -2496964055052299522
+    second: NgoQArtStyle_10
   - first:
-      213: 9019302988463127051
-    second: thuyendead_11
+      213: 1428605386298291684
+    second: NgoQArtStyle_11
   - first:
-      213: -7324166758999712024
-    second: thuyendead_12
+      213: -3923378952646929697
+    second: NgoQArtStyle_12
   - first:
-      213: -4547462696800705656
-    second: thuyendead_13
+      213: 2421913163110234199
+    second: NgoQArtStyle_13
   - first:
-      213: 2610281432922938182
-    second: thuyendead_14
+      213: 6904469313741734624
+    second: NgoQArtStyle_14
   - first:
-      213: -8283138482134157478
-    second: thuyendead_15
+      213: 6381416231390973209
+    second: NgoQArtStyle_15
   - first:
-      213: -1358695493090582976
-    second: thuyendead_16
+      213: -5225075413301006234
+    second: NgoQArtStyle_16
+  - first:
+      213: 3420260727686679105
+    second: NgoQArtStyle_17
+  - first:
+      213: 7670274293068257975
+    second: NgoQArtStyle_18
+  - first:
+      213: -587937377197604761
+    second: NgoQArtStyle_19
+  - first:
+      213: -7075212846684421883
+    second: NgoQArtStyle_20
+  - first:
+      213: 181980823296703343
+    second: NgoQArtStyle_21
+  - first:
+      213: 1376610219548664210
+    second: NgoQArtStyle_22
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -174,375 +192,441 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thuyendead_0
+      name: NgoQArtStyle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 663
-        width: 307
-        height: 154
+        x: 170
+        y: 529
+        width: 93
+        height: 147
       alignment: 9
-      pivot: {x: 0.4740931, y: 0.08683717}
+      pivot: {x: 0.593307, y: 0.07202605}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45b387243611b5290800000000000000
-      internalID: -7900702003276793004
+      spriteID: 7ec3e903775e102e0800000000000000
+      internalID: -2161194046081581849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_1
+      name: NgoQArtStyle_1
       rect:
         serializedVersion: 2
-        x: 330
-        y: 660
-        width: 294
-        height: 148
+        x: 334
+        y: 528
+        width: 91
+        height: 144
       alignment: 9
-      pivot: {x: 0.47294763, y: 0.1327828}
+      pivot: {x: 0.5715181, y: 0.07064226}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 086f064dc2297fe00800000000000000
-      internalID: 1078491357017863808
+      spriteID: cfa23c5d515076ee0800000000000000
+      internalID: -1268039178742715652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_2
+      name: NgoQArtStyle_2
       rect:
         serializedVersion: 2
-        x: 643
-        y: 652
-        width: 304
-        height: 167
+        x: 497
+        y: 528
+        width: 90
+        height: 144
       alignment: 9
-      pivot: {x: 0.5174414, y: 0.1824995}
+      pivot: {x: 0.59641725, y: 0.085707344}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2bf5785f77ede080800000000000000
-      internalID: -9156407933243360466
+      spriteID: 494d5cda21126ce30800000000000000
+      internalID: 4523339239848793236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_3
+      name: NgoQArtStyle_3
       rect:
         serializedVersion: 2
-        x: 957
-        y: 651
-        width: 323
-        height: 173
+        x: 662
+        y: 528
+        width: 87
+        height: 145
       alignment: 9
-      pivot: {x: 0.45075312, y: 0.13907887}
+      pivot: {x: 0.56233865, y: 0.081084155}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4899c961cc80b6c90800000000000000
-      internalID: -7175631908639041148
+      spriteID: 34009fdf6215f5b70800000000000000
+      internalID: 8889913417364209731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_4
+      name: NgoQArtStyle_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 441
-        width: 308
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 827
+        y: 529
+        width: 86
+        height: 143
+      alignment: 9
+      pivot: {x: 0.6513523, y: 0.10556606}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a66c641d53413c7f0800000000000000
-      internalID: -593608504505874838
+      spriteID: 3cc6c4699dc285f10800000000000000
+      internalID: 2258604526167420099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_5
+      name: NgoQArtStyle_5
       rect:
         serializedVersion: 2
-        x: 324
-        y: 441
-        width: 311
-        height: 171
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 990
+        y: 528
+        width: 99
+        height: 149
+      alignment: 9
+      pivot: {x: 0.44521633, y: 0.099609785}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49f7279b455590550800000000000000
-      internalID: 6127522590391173012
+      spriteID: ac1be57d678c08970800000000000000
+      internalID: 8755218088353247690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_6
+      name: NgoQArtStyle_6
       rect:
         serializedVersion: 2
-        x: 644
-        y: 441
-        width: 306
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 145
+        y: 366
+        width: 130
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5333751, y: 0.082192205}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69264d1d3eb498f70800000000000000
-      internalID: 9189959956476224150
+      spriteID: ceca5b3bed42435d0800000000000000
+      internalID: -3083799305925579540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_7
-      rect:
-        serializedVersion: 2
-        x: 957
-        y: 443
-        width: 315
-        height: 167
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0674f76692322e320800000000000000
-      internalID: 2585667796784334688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_8
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 234
-        width: 311
-        height: 151
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d02adf9a77abcfb0800000000000000
-      internalID: -4626420047083331370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_9
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 237
-        width: 305
-        height: 151
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df6063672f221b620800000000000000
-      internalID: 2788048069079729917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_10
-      rect:
-        serializedVersion: 2
-        x: 638
-        y: 231
-        width: 319
-        height: 165
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5441c95cf98908dc0800000000000000
-      internalID: -3638740686932798395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_11
-      rect:
-        serializedVersion: 2
-        x: 950
-        y: 229
-        width: 327
-        height: 171
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0ab6fc18400b2d70800000000000000
-      internalID: 9019302988463127051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 309
-        height: 184
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ee191643255b5a90800000000000000
-      internalID: -7324166758999712024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_13
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 173
-        width: 16
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 883aadf45ca24e0c0800000000000000
-      internalID: -4547462696800705656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: thuyendead_14
+      name: NgoQArtStyle_7
       rect:
         serializedVersion: 2
         x: 314
-        y: 19
-        width: 323
-        height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 365
+        width: 132
+        height: 134
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.103358485}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64b5b252225993420800000000000000
-      internalID: 2610281432922938182
+      spriteID: 0f57e13e0e31b81e0800000000000000
+      internalID: -2194638536808958480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_15
+      name: NgoQArtStyle_8
       rect:
         serializedVersion: 2
-        x: 630
-        y: 18
-        width: 334
-        height: 171
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 490
+        y: 367
+        width: 118
+        height: 130
+      alignment: 9
+      pivot: {x: 0.46323046, y: 0.11618558}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a57760bbf616c0d80800000000000000
-      internalID: -8283138482134157478
+      spriteID: 2b76962de0b497c50800000000000000
+      internalID: 6663439650703108018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thuyendead_16
+      name: NgoQArtStyle_9
       rect:
         serializedVersion: 2
-        x: 957
-        y: 0
-        width: 323
-        height: 189
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 649
+        y: 366
+        width: 126
+        height: 131
+      alignment: 9
+      pivot: {x: 0.6721734, y: 0.09427509}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04e5960d5a1f42de0800000000000000
-      internalID: -1358695493090582976
+      spriteID: 861931e867b333780800000000000000
+      internalID: -8704548274401210008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_10
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 372
+        width: 122
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07480005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef250b1eb60095dd0800000000000000
+      internalID: -2496964055052299522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_11
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 365
+        width: 120
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5180786, y: 0.1357374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5f48e970d63d310800000000000000
+      internalID: 1428605386298291684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_12
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 192
+        width: 166
+        height: 146
+      alignment: 9
+      pivot: {x: 0.70256317, y: 0.054235797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd25c3821ab5d89c0800000000000000
+      internalID: -3923378952646929697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 192
+        width: 176
+        height: 152
+      alignment: 9
+      pivot: {x: 0.67256474, y: 0.07896775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7583704a03d5c9120800000000000000
+      internalID: 2421913163110234199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_14
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 194
+        width: 183
+        height: 137
+      alignment: 9
+      pivot: {x: 0.67189133, y: 0.11996148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e24928624a91df50800000000000000
+      internalID: 6904469313741734624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_15
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 191
+        width: 178
+        height: 146
+      alignment: 9
+      pivot: {x: 0.37203053, y: 0.09138269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d88f390485f8850800000000000000
+      internalID: 6381416231390973209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 14
+        width: 156
+        height: 155
+      alignment: 9
+      pivot: {x: 0.5764847, y: 0.059124693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660f091689dcc77b0800000000000000
+      internalID: -5225075413301006234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_19
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 13
+        width: 147
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5664096, y: 0.06474094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76046f9021a37d7f0800000000000000
+      internalID: -587937377197604761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_20
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 13
+        width: 147
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5885462, y: 0.10619418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501481be66bcfcd90800000000000000
+      internalID: -7075212846684421883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NgoQArtStyle_22
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 13
+        width: 151
+        height: 161
+      alignment: 9
+      pivot: {x: 0.57183313, y: 0.068817824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291ee5a73b3ba1310800000000000000
+      internalID: 1376610219548664210
       vertices: []
       indices: 
       edges: []
@@ -551,7 +635,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6b91e2636fbb0444ab0d2763b513b067
+    spriteID: 461255e06c003b84eb0dc7b939e33a5f
     internalID: 0
     vertices: []
     indices: 
@@ -561,23 +645,30 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      thuyendead_0: -7900702003276793004
-      thuyendead_1: 1078491357017863808
-      thuyendead_10: -3638740686932798395
-      thuyendead_11: 9019302988463127051
-      thuyendead_12: -7324166758999712024
-      thuyendead_13: -4547462696800705656
-      thuyendead_14: 2610281432922938182
-      thuyendead_15: -8283138482134157478
-      thuyendead_16: -1358695493090582976
-      thuyendead_2: -9156407933243360466
-      thuyendead_3: -7175631908639041148
-      thuyendead_4: -593608504505874838
-      thuyendead_5: 6127522590391173012
-      thuyendead_6: 9189959956476224150
-      thuyendead_7: 2585667796784334688
-      thuyendead_8: -4626420047083331370
-      thuyendead_9: 2788048069079729917
+      NgoQArtStyle_0: -2161194046081581849
+      NgoQArtStyle_1: -1268039178742715652
+      NgoQArtStyle_10: -2496964055052299522
+      NgoQArtStyle_11: 1428605386298291684
+      NgoQArtStyle_12: -3923378952646929697
+      NgoQArtStyle_13: 2421913163110234199
+      NgoQArtStyle_14: 6904469313741734624
+      NgoQArtStyle_15: 6381416231390973209
+      NgoQArtStyle_16: -5225075413301006234
+      NgoQArtStyle_17: 3420260727686679105
+      NgoQArtStyle_18: 7670274293068257975
+      NgoQArtStyle_19: -587937377197604761
+      NgoQArtStyle_2: 4523339239848793236
+      NgoQArtStyle_20: -7075212846684421883
+      NgoQArtStyle_21: 181980823296703343
+      NgoQArtStyle_22: 1376610219548664210
+      NgoQArtStyle_23: 1350828157
+      NgoQArtStyle_3: 8889913417364209731
+      NgoQArtStyle_4: 2258604526167420099
+      NgoQArtStyle_5: 8755218088353247690
+      NgoQArtStyle_6: -3083799305925579540
+      NgoQArtStyle_7: -2194638536808958480
+      NgoQArtStyle_8: 6663439650703108018
+      NgoQArtStyle_9: -8704548274401210008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
