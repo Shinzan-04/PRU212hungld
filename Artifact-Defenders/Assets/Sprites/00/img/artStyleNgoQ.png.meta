@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: c35e226a2fe3f7d4cb53ceccbf6a762f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7430777907399311079
+    second: artStyleNgoQ_0
+  - first:
+      213: -4972643075701296833
+    second: artStyleNgoQ_1
+  - first:
+      213: -3664137883158385123
+    second: artStyleNgoQ_2
+  - first:
+      213: -2345400420874021982
+    second: artStyleNgoQ_3
+  - first:
+      213: 8930857345578297879
+    second: artStyleNgoQ_4
+  - first:
+      213: -1556671773787226470
+    second: artStyleNgoQ_5
+  - first:
+      213: 228280344872567932
+    second: artStyleNgoQ_6
+  - first:
+      213: -4951653826376218622
+    second: artStyleNgoQ_7
+  - first:
+      213: 374888395292620308
+    second: artStyleNgoQ_8
+  - first:
+      213: -2652124999587443025
+    second: artStyleNgoQ_9
+  - first:
+      213: -1846659737214595882
+    second: artStyleNgoQ_10
+  - first:
+      213: -7297046281169126103
+    second: artStyleNgoQ_11
+  - first:
+      213: -5746464571457920668
+    second: artStyleNgoQ_12
+  - first:
+      213: -2279945664062142910
+    second: artStyleNgoQ_13
+  - first:
+      213: -2768153694928012384
+    second: artStyleNgoQ_14
+  - first:
+      213: 2414622782477979006
+    second: artStyleNgoQ_15
+  - first:
+      213: -3764834754848320461
+    second: artStyleNgoQ_16
+  - first:
+      213: 7672793433599697176
+    second: artStyleNgoQ_17
+  - first:
+      213: 11220326573377270
+    second: artStyleNgoQ_18
+  - first:
+      213: 4817233046970552848
+    second: artStyleNgoQ_19
+  - first:
+      213: 8407814693585574853
+    second: artStyleNgoQ_20
+  - first:
+      213: -3998707028208175224
+    second: artStyleNgoQ_21
+  - first:
+      213: 7120835746468317958
+    second: artStyleNgoQ_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: artStyleNgoQ_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 529
+        width: 89
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee3b57032d6f1760800000000000000
+      internalID: 7430777907399311079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 527
+        width: 92
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31b406087f9dfab0800000000000000
+      internalID: -4972643075701296833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_2
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 527
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1eea4a320e562dc0800000000000000
+      internalID: -3664137883158385123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 527
+        width: 87
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a390c16eb6737fd0800000000000000
+      internalID: -2345400420874021982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_4
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 528
+        width: 86
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ae1e62077c0fb70800000000000000
+      internalID: 8930857345578297879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_5
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 521
+        width: 129
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ef883f447956ae0800000000000000
+      internalID: -1556671773787226470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 365
+        width: 131
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c744551a3c30b2300800000000000000
+      internalID: 228280344872567932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_7
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 364
+        width: 133
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20844247411384bb0800000000000000
+      internalID: -4951653826376218622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_8
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 366
+        width: 119
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41635df520fd33500800000000000000
+      internalID: 374888395292620308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 365
+        width: 128
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae48ab4d52c13bd0800000000000000
+      internalID: -2652124999587443025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_10
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 371
+        width: 139
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcce46c0c85f56e0800000000000000
+      internalID: -1846659737214595882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_11
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 362
+        width: 142
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d3455911fabba90800000000000000
+      internalID: -7297046281169126103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 167
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46122e71be47040b0800000000000000
+      internalID: -5746464571457920668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 191
+        width: 177
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246426a8f710c50e0800000000000000
+      internalID: -2279945664062142910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_14
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 193
+        width: 253
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab712a71ea8599d0800000000000000
+      internalID: -2768153694928012384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_15
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 191
+        width: 179
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d4a20a0a6728120800000000000000
+      internalID: 2414622782477979006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 12
+        width: 149
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3349837ccbe90cbc0800000000000000
+      internalID: -3764834754848320461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 12
+        width: 150
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811e8a4c9fc3b7a60800000000000000
+      internalID: 7672793433599697176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_18
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 12
+        width: 149
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f68babd3dcd72000800000000000000
+      internalID: 11220326573377270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 12
+        width: 149
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012d3f4feef3ad240800000000000000
+      internalID: 4817233046970552848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 12
+        width: 149
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb5a74daee8ea470800000000000000
+      internalID: 8407814693585574853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_21
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 12
+        width: 149
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8873bc6d42db188c0800000000000000
+      internalID: -3998707028208175224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artStyleNgoQ_22
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 12
+        width: 149
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bc524326a42d260800000000000000
+      internalID: 7120835746468317958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      artStyleNgoQ_0: 7430777907399311079
+      artStyleNgoQ_1: -4972643075701296833
+      artStyleNgoQ_10: -1846659737214595882
+      artStyleNgoQ_11: -7297046281169126103
+      artStyleNgoQ_12: -5746464571457920668
+      artStyleNgoQ_13: -2279945664062142910
+      artStyleNgoQ_14: -2768153694928012384
+      artStyleNgoQ_15: 2414622782477979006
+      artStyleNgoQ_16: -3764834754848320461
+      artStyleNgoQ_17: 7672793433599697176
+      artStyleNgoQ_18: 11220326573377270
+      artStyleNgoQ_19: 4817233046970552848
+      artStyleNgoQ_2: -3664137883158385123
+      artStyleNgoQ_20: 8407814693585574853
+      artStyleNgoQ_21: -3998707028208175224
+      artStyleNgoQ_22: 7120835746468317958
+      artStyleNgoQ_3: -2345400420874021982
+      artStyleNgoQ_4: 8930857345578297879
+      artStyleNgoQ_5: -1556671773787226470
+      artStyleNgoQ_6: 228280344872567932
+      artStyleNgoQ_7: -4951653826376218622
+      artStyleNgoQ_8: 374888395292620308
+      artStyleNgoQ_9: -2652124999587443025
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -90,9 +90,9 @@ Material:
     - _CausticColour: {r: 0.0798941, g: 0.1981132, b: 0.032707363, a: 0.27058825}
     - _CausticHighlightColour: {r: 0, g: 0, b: 0, a: 0}
     - _CurrentWorldTexturePos: {r: 0, g: 0, b: 0, a: 0}
-    - _FoamColour: {r: 0.47058827, g: 0.24313727, b: 0.007843138, a: 1}
+    - _FoamColour: {r: 0, g: 0, b: 0, a: 1}
     - _FoamTexelSize: {r: 0.005, g: 0.005, b: 0, a: 0}
-    - _MainColour: {r: 0.4811321, g: 0.281354, b: 0.0022694964, a: 1}
+    - _MainColour: {r: 0.6367924, g: 0.6935169, b: 0.8490566, a: 1}
     - _SpecularColour: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
