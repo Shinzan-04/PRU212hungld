@@ -69952,7 +69952,7 @@ Tilemap:
       - {fileID: 475806399, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: -581906228, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: 1337139000, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
-      m_AnimationSpeed: 2.5
+      m_AnimationSpeed: 2.5000002
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 20, y: 64, z: 0}
@@ -70044,7 +70044,7 @@ Tilemap:
       - {fileID: 1133128325, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: 1708104942, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: -209832231, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 16, y: 65, z: 0}
@@ -70136,7 +70136,7 @@ Tilemap:
       - {fileID: 1133128325, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: 1708104942, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: -209832231, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 20, y: 65, z: 0}
@@ -91652,11 +91652,11 @@ MonoBehaviour:
   text: {fileID: 1452179852}
   enemySpawner: {fileID: 642254313}
   voiceSource: {fileID: 2108799121}
-  moveVoice: {fileID: 8300000, guid: c51d87a0ae9d57a459252c2e595fede4, type: 3}
-  attackVoice: {fileID: 8300000, guid: f9a24c3e5cdea5f4f89de95d1c89353f, type: 3}
+  moveVoice: {fileID: 8300000, guid: e301a8bb2085de042bfabc548025df20, type: 3}
+  attackVoice: {fileID: 8300000, guid: 7ded83a08d03e3b42bb66eaa5d18ec83, type: 3}
   qVoice: {fileID: 8300000, guid: 3d17c4614395f8e4ebb714e4405844d3, type: 3}
   eVoice: {fileID: 8300000, guid: bf78a2503180ddc4fa6f7afee0a850bb, type: 3}
-  pVoice: {fileID: 8300000, guid: cc81041cc6e28314da6583c44f668f2f, type: 3}
+  pVoice: {fileID: 8300000, guid: 7728bf05aaefce946b9db355e1fd76d3, type: 3}
   doneVoice: {fileID: 8300000, guid: 5cd8e01b5fd27e846a609873d6dfcdba, type: 3}
 --- !u!82 &2108799121
 AudioSource:

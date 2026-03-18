@@ -146,7 +146,7 @@ public class GameTutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             step = 4;
-            ShowText("Đây là đòn quyết định!Kết liễu bằng bẫy cọc Nhấn P!");
+            ShowText("Đây là đòn quyết định!Giăng bẫy cọc Nhấn P để để tiêu diệt thuyền chiến quân Nam Hán!");
             PlayVoice(pVoice);
         }
     }
