@@ -4969,8 +4969,8 @@ GameObject:
   - component: {fileID: 6060242505385302421}
   - component: {fileID: 6060242505385302418}
   - component: {fileID: 6060242505385302419}
-  - component: {fileID: 1348870525080491595}
-  - component: {fileID: 1734063678725809130}
+  - component: {fileID: 5407607487443161981}
+  - component: {fileID: 5340566199201431172}
   m_Layer: 12
   m_Name: enemy00
   m_TagString: Untagged
@@ -5073,9 +5073,14 @@ MonoBehaviour:
   minSpawnCount: 3
   maxSpawnCount: 5
   spawnSpreadRadius: 0.8
-  boatAudioSource: {fileID: 0}
-  boatBreakSound: {fileID: 0}
-  breakVolume: 0.7
+  distanceToStartScaling: 15
+  scaleOverDistance: 1
+  minScale: 0.5
+  maxScale: 1.2
+  distanceToMaxScale: 2
+  boatAudioSource: {fileID: 5407607487443161981}
+  boatBreakSound: {fileID: 8300000, guid: 710f83afbe2bf2948b120dc1fdb92059, type: 3}
+  breakVolume: 1
   moveSpeed: 1
   maxHealth: 40
   attackDamage: 5
@@ -5199,7 +5204,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.04, y: 1.84}
+    oldSize: {x: 1.625, y: 2.875}
     newSize: {x: 0.71875, y: 0.96875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5207,7 +5212,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.819939, y: 1.0325992}
   m_EdgeRadius: 0
---- !u!82 &1348870525080491595
+--- !u!82 &5407607487443161981
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5218,20 +5223,20 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: e0a7098c1cc78644f910207a67182f29, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 2
-  MinDistance: 2.8032773
-  MaxDistance: 6.036845
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -5264,7 +5269,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.364
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5279,7 +5284,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5304,7 +5309,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &1734063678725809130
+--- !u!82 &5340566199201431172
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5315,11 +5320,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 7ce46b4da2c693548ac455664ee8f101, type: 3}
+  m_Resource: {fileID: 8300000, guid: 46a2e84d14fda1047b3e65c42c797fe4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
