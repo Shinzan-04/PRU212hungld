@@ -5153,6 +5153,12 @@ MonoBehaviour:
   - {fileID: -3362370236742786337, guid: 420a288f80402e74d8e478ebb517f2da, type: 3}
   castSprites: []
   frameTime: 0.15
+  audioSource: {fileID: 1348870525080491595}
+  walkSound: {fileID: 8300000, guid: e0a7098c1cc78644f910207a67182f29, type: 3}
+  attackSound: {fileID: 8300000, guid: 1c37bfb7cd70def4cb43227077a591e7, type: 3}
+  hurtSound: {fileID: 8300000, guid: 95450bbf97f82c14e87fb1eb2f4e70ba, type: 3}
+  deathSound: {fileID: 8300000, guid: 463bcafeff0cea041a03645b4417127a, type: 3}
+  castSound: {fileID: 0}
 --- !u!61 &6060242505385302419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5210,11 +5216,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: e0a7098c1cc78644f910207a67182f29, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
