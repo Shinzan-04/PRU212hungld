@@ -5156,7 +5156,7 @@ MonoBehaviour:
   hurtSound: {fileID: 8300000, guid: 463bcafeff0cea041a03645b4417127a, type: 3}
   deathSound: {fileID: 8300000, guid: 95450bbf97f82c14e87fb1eb2f4e70ba, type: 3}
   shoutSounds:
-  - {fileID: 8300000, guid: 7ce46b4da2c693548ac455664ee8f101, type: 3}
+  - {fileID: 0}
   shoutMinDelay: 3
   shoutMaxDelay: 7
 --- !u!114 &6060242505385302418
