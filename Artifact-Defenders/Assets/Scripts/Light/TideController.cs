@@ -8,8 +8,8 @@ public class TideSwitch : MonoBehaviour
     public static TideSwitch Instance;
 
     [Header("Main Swap Tilemaps")]
-    public Tilemap tilemap1; // Nước
-    public Tilemap tilemap2; // Đất hoặc trạng thái khác
+    public Tilemap tilemap1; // Nước (Mặc định ban đầu)
+    public Tilemap tilemap2; // Đất/Trạng thái khác
 
     [Header("Sub Stakes Tilemaps")]
     public Tilemap groundStakesTilemap;
@@ -23,6 +23,7 @@ public class TideSwitch : MonoBehaviour
     [Header("Settings & Mana")]
     public KeyCode toggleKey = KeyCode.P;
     public float fadeDuration = 1f;
+    public float autoReturnDelay = 15f; // Thời gian tự động quay về
     public PlayerMana playerMana;
     public int manaCost = 50;
 
@@ -41,12 +42,12 @@ public class TideSwitch : MonoBehaviour
     private bool isHighTide = true;
     public bool IsHighTide => isHighTide;
     private Coroutine tideCoroutine;
+    private Coroutine autoReturnCoroutine; // Coroutine quản lý việc tự động quay về
     private List<Transform> safetyPoints = new List<Transform>();
 
     void Awake()
     {
         if (Instance == null) Instance = this;
-        // Bật tất cả GameObject ngay lập tức
         ForceAllActive();
     }
 
@@ -67,21 +68,17 @@ public class TideSwitch : MonoBehaviour
         safetyPoints.Clear();
         foreach (var p in points) safetyPoints.Add(p.transform);
 
-        // Thiết lập trạng thái hiển thị và va chạm ban đầu
         SyncStateImmediate(true);
     }
 
     void SyncStateImmediate(bool toHigh)
     {
         isHighTide = toHigh;
-
-        // Cập nhật Alpha ngay lập tức
         SetTilemapAlpha(tilemap1, toHigh ? 1f : 0f);
         SetTilemapAlpha(tilemap2, toHigh ? 0f : 1f);
         SetTilemapAlpha(groundStakesTilemap, toHigh ? 0f : 1f);
         SetTilemapAlpha(lowWaterStakesUpTilemap, toHigh ? 0f : 1f);
 
-        // Cập nhật Collider
         if (waterCollider) waterCollider.enabled = toHigh;
         if (stakesCollider) stakesCollider.enabled = !toHigh;
         if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = !toHigh;
@@ -91,7 +88,9 @@ public class TideSwitch : MonoBehaviour
     {
         if (Input.GetKeyDown(toggleKey))
         {
-            if (playerMana != null && playerMana.TryUseMana(manaCost))
+            // Chỉ cho phép bấm đổi nếu đang ở trạng thái mặc định (High Tide)
+            // Hoặc nếu bạn muốn bấm để đổi qua lại liên tục thì bỏ điều kiện !isHighTide
+            if (isHighTide && playerMana != null && playerMana.TryUseMana(manaCost))
             {
                 ToggleTide();
             }
@@ -101,10 +100,31 @@ public class TideSwitch : MonoBehaviour
     public void ToggleTide()
     {
         isHighTide = !isHighTide;
+
+        // Xử lý Coroutine chuyển đổi hiệu ứng
         if (tideCoroutine != null) StopCoroutine(tideCoroutine);
         tideCoroutine = StartCoroutine(TransitionTide(isHighTide));
 
+        // Xử lý Logic tự động quay về
+        if (autoReturnCoroutine != null) StopCoroutine(autoReturnCoroutine);
+
+        if (!isHighTide) // Nếu vừa chuyển sang Low Tide
+        {
+            autoReturnCoroutine = StartCoroutine(AutoReturnTimer());
+        }
+
         StartCoroutine(ShakeCamera(0.2f, 0.1f));
+    }
+
+    IEnumerator AutoReturnTimer()
+    {
+        yield return new WaitForSeconds(autoReturnDelay);
+
+        // Nếu hiện tại vẫn đang là Low Tide thì mới tự động chuyển về
+        if (!isHighTide)
+        {
+            ToggleTide();
+        }
     }
 
     IEnumerator TransitionTide(bool toHigh)
@@ -118,8 +138,6 @@ public class TideSwitch : MonoBehaviour
             audioSource.Play();
         }
 
-        // Bật/Tắt collider ngay khi bắt đầu chuyển đổi hoặc kết thúc tùy bạn chọn
-        // Ở đây tôi để bật/tắt ngay lập tức để cảm giác vật lý khớp với hành động nhấn nút
         if (waterCollider) waterCollider.enabled = toHigh;
         if (stakesCollider) stakesCollider.enabled = !toHigh;
         if (lowWaterStakesCollider) lowWaterStakesCollider.enabled = !toHigh;
@@ -140,20 +158,16 @@ public class TideSwitch : MonoBehaviour
             yield return null;
         }
 
-        // Đảm bảo kết quả cuối cùng chính xác
         SyncStateImmediate(toHigh);
     }
 
     void SetTilemapAlpha(Tilemap tm, float alpha)
     {
         if (tm == null) return;
-
-        // Chỉnh màu trên Component Tilemap
         Color c = tm.color;
         c.a = alpha;
         tm.color = c;
 
-        // Chỉnh màu trực tiếp vào Shader nếu có
         TilemapRenderer tr = tm.GetComponent<TilemapRenderer>();
         if (tr != null && tr.material != null)
         {
