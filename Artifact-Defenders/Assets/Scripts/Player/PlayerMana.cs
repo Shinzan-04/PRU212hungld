@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections; // Cần dòng này để dùng Coroutine
+using System.Collections;
 
 public class PlayerMana : MonoBehaviour
 {
@@ -8,7 +8,7 @@ public class PlayerMana : MonoBehaviour
     public float regenRate = 5f;
 
     [Header("Direct UI")]
-    public GameObject warningTextObject; // Kéo thả Object chữ vào đây
+    public GameObject warningTextObject; // Kéo thả Object chữ báo thiếu mana vào đây
 
     [Header("Current Stats")]
     [SerializeField] int currentMana;
@@ -16,12 +16,13 @@ public class PlayerMana : MonoBehaviour
     void Awake()
     {
         currentMana = maxMana;
-        // Ẩn chữ ngay khi bắt đầu game
+        // Ẩn chữ cảnh báo ngay khi bắt đầu game
         if (warningTextObject != null) warningTextObject.SetActive(false);
     }
 
     void Update()
     {
+        // Tự động hồi mana theo thời gian
         if (currentMana < maxMana)
         {
             float newMana = currentMana + regenRate * Time.deltaTime;
@@ -31,16 +32,17 @@ public class PlayerMana : MonoBehaviour
 
     public bool TryUseMana(int amount)
     {
+        // Nếu đủ mana thì trừ và cho phép dùng skill
         if (currentMana >= amount)
         {
             currentMana -= amount;
             return true;
         }
 
-        // HIỆN TRỰC TIẾP Ở ĐÂY
+        // Nếu không đủ mana thì hiện chữ cảnh báo
         if (warningTextObject != null)
         {
-            StopAllCoroutines(); // Dừng các lần ẩn trước đó nếu bạn bấm liên tục
+            StopAllCoroutines();
             StartCoroutine(ShowWarningRoutine());
         }
 
@@ -48,7 +50,7 @@ public class PlayerMana : MonoBehaviour
         return false;
     }
 
-    // Hàm phụ để tự động ẩn chữ sau 1.5 giây
+    // Coroutine để tự động ẩn chữ sau 1.5 giây
     IEnumerator ShowWarningRoutine()
     {
         warningTextObject.SetActive(true);
@@ -56,6 +58,7 @@ public class PlayerMana : MonoBehaviour
         warningTextObject.SetActive(false);
     }
 
+    // Các hàm bổ trợ
     public void RestoreMana(int amount) => currentMana = Mathf.Min(maxMana, currentMana + amount);
     public int GetCurrentMana() => currentMana;
     public int GetMaxMana() => maxMana;

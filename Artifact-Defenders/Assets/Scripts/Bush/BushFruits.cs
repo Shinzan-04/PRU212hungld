@@ -2,25 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// This component is responsible for the main behaviour of bushes and communicates directly with <see cref="BushVisual"/>
-/// </summary>
 public class BushFruits : MonoBehaviour
 {
-    //Hacked away solution with prefabs, would work better using Scriptable objects for this data
     [SerializeField] int[] amountPerType;
     [SerializeField] float[] respawnTime;
+
+    // Biến này giúp tất cả bụi cây biết là đã hiện hướng dẫn 1 lần chưa
+    private static bool hasShownBushTutorial = false;
 
     BushVisual bushVisual;
     bool ready;
     float timer;
-    
+
     void Start()
     {
         bushVisual = GetComponent<BushVisual>();
-
-        //Randomly initializes some bushes with fruits
-        if(Random.Range(0,2) == 0)
+        if (Random.Range(0, 2) == 0)
         {
             ready = false;
             timer = Time.time + respawnTime[(int)bushVisual.GetVariant()];
@@ -34,24 +31,50 @@ public class BushFruits : MonoBehaviour
 
     void Update()
     {
-        if(Time.time > timer)
+        if (!ready && Time.time > timer)
         {
             ready = true;
             bushVisual.ShowFruits();
         }
     }
 
-    /// <summary>
-    /// Returns true if the bush has fruits, used by <see cref="PlayerHarvest"/> and <see cref="EnemyAI"/>
-    /// </summary>
-    public bool HasFruits()
+    // 1. KHI NGƯỜI CHƠI BƯỚC VÀO VÙNG BỤI CÂY
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        return ready;
+        if (collision.CompareTag("Player") && ready)
+        {
+            GameTutorial tutorial = FindObjectOfType<GameTutorial>();
+            if (tutorial != null)
+            {
+                if (!hasShownBushTutorial)
+                {
+                    tutorial.ShowManualText("Ấn SPACE để thu thập. Bạn có thể thu hoạch những trái cây từ bụi cây để hồi máu cho thành cổ.");
+                    hasShownBushTutorial = true;
+                }
+                else
+                {
+                    tutorial.ShowManualText("Ấn SPACE để thu thập");
+                }
+            }
+        }
     }
 
-    /// <summary>
-    /// Harvests the bush and returns the amount of fruits harvested
-    /// </summary>
+    // 2. KHI NGƯỜI CHƠI ĐI RA XA
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("Đã chạm vào bụi cây!");
+        if (collision.CompareTag("Player"))
+        {
+            GameTutorial tutorial = FindObjectOfType<GameTutorial>();
+            if (tutorial != null && tutorial.ui != null)
+            {
+                tutorial.ui.SetActive(false); // Tắt bảng hướng dẫn đi
+            }
+        }
+    }
+
+    public bool HasFruits() => ready;
+
     public int HarvestFruit()
     {
         if (ready)
@@ -59,20 +82,20 @@ public class BushFruits : MonoBehaviour
             ready = false;
             bushVisual.HideFruits();
             timer = Time.time + respawnTime[(int)bushVisual.GetVariant()];
+
+            // Hái xong thì ẩn chữ luôn cho đỡ vướng
+            GameTutorial tutorial = FindObjectOfType<GameTutorial>();
+            if (tutorial != null && tutorial.ui != null) tutorial.ui.SetActive(false);
+
             return amountPerType[(int)bushVisual.GetVariant()];
         }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
 
-    /// <summary>
-    /// Used by <see cref="EnemyAI"/> to eat bushes
-    /// </summary>
     public void EatBush()
     {
         enabled = false;
         bushVisual.SetToDry();
     }
+  
 }
