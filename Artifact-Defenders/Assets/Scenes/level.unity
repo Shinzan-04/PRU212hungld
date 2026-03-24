@@ -155868,7 +155868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654652985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -155908,7 +155908,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ch\u01B0a \u0111\u1EE7 Mana!"
+  m_text: "kh\xF4ng \u0111\u1EE7 mana"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -545187,7 +545187,7 @@ MonoBehaviour:
   dashDur: 0.15
   cooldown: 1
   grantIFrame: 1
-  invincibleLayer: PlayerIFrame
+  invincibleLayerName: PlayerIFrame
   manaCost: 10
 --- !u!114 &1529478020
 MonoBehaviour:
@@ -568938,7 +568938,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: baa50f8ea78ea5b43bb082b1cf403994, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -636730,7 +636730,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 0814f15dc32afa3498ae7db921b171ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.002
   m_Pitch: 1
   Loop: 1
   Mute: 0

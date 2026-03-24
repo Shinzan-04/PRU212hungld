@@ -13,21 +13,6 @@ public class WolfAnim : MonoBehaviour
     [Header("Animation Settings")]
     [SerializeField] private float frameTime = 0.15f;
 
-    [Header("Sound Effects")]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip walkSound;
-    [SerializeField] private AudioClip attackSound;
-    [SerializeField] private AudioClip hurtSound;
-    [SerializeField] private AudioClip deathSound;
-
-    [Header("Shout Sounds")]
-    [SerializeField] private AudioClip[] shoutSounds;
-    [SerializeField] private float shoutMinDelay = 3f;
-    [SerializeField] private float shoutMaxDelay = 7f;
-
-    private float nextShoutTime;
-    private bool hasPlayedDeathSound = false;
-
     private SpriteRenderer spriteRenderer;
     private EnemyAI enemyAI;
     private int frameIndex = 0;
@@ -38,21 +23,21 @@ public class WolfAnim : MonoBehaviour
     private bool isPlayingOnce = false;
     private Coroutine playOnceCoroutine = null;
 
-    void Start()
+    void Awake()
     {
+        // Tự động tìm Component để tránh lỗi Unassigned
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyAI = GetComponent<EnemyAI>();
-
-        SetNextShoutTime();
     }
 
     void Update()
     {
-        if (isDead) return;
+        if (isDead || enemyAI == null || spriteRenderer == null) return;
 
         Sprite[] currentAnim = GetCurrentAnim();
         if (currentAnim == null || currentAnim.Length == 0) return;
 
+        // Reset frame khi chuyển đổi bộ Animation mới
         if (currentAnim != lastAnim)
         {
             lastAnim = currentAnim;
@@ -61,6 +46,7 @@ public class WolfAnim : MonoBehaviour
             spriteRenderer.sprite = currentAnim[frameIndex];
         }
 
+        // Chạy animation lặp lại (Idle, Walk, Attack)
         if (!isPlayingOnce)
         {
             if (Time.time >= timer)
@@ -71,10 +57,8 @@ public class WolfAnim : MonoBehaviour
             }
         }
 
+        // Lật mặt nhân vật theo hướng di chuyển
         spriteRenderer.flipX = enemyAI.left;
-
-        HandleSound();
-        HandleShoutSound();
     }
 
     private Sprite[] GetCurrentAnim()
@@ -102,6 +86,7 @@ public class WolfAnim : MonoBehaviour
         return idleSprites;
     }
 
+    // Coroutine để chạy các animation chỉ diễn ra 1 lần (Hurt, Death)
     private IEnumerator PlayOnce(Sprite[] anim, bool dieAfter)
     {
         if (anim == null || anim.Length == 0)
@@ -117,20 +102,6 @@ public class WolfAnim : MonoBehaviour
         for (int i = 0; i < anim.Length; i++)
         {
             spriteRenderer.sprite = anim[i];
-
-            // 🎯 SOUND THEO FRAME
-            if (anim == attackSprites && i == 1)
-                audioSource.PlayOneShot(attackSound);
-
-            if (anim == hurtSprites && i == 0)
-                audioSource.PlayOneShot(hurtSound);
-
-            if (anim == deathSprites && i == 0 && !hasPlayedDeathSound)
-            {
-                audioSource.PlayOneShot(deathSound);
-                hasPlayedDeathSound = true;
-            }
-
             yield return new WaitForSeconds(frameTime);
         }
 
@@ -140,6 +111,7 @@ public class WolfAnim : MonoBehaviour
         if (dieAfter)
         {
             isDead = true;
+            // Giữ lại frame cuối cùng của animation chết
             spriteRenderer.sprite = anim[anim.Length - 1];
         }
         else
@@ -149,53 +121,5 @@ public class WolfAnim : MonoBehaviour
 
         frameIndex = 0;
         timer = Time.time + frameTime;
-    }
-
-    // 🔊 WALK LOOP
-    void HandleSound()
-    {
-        if (enemyAI.isDead) return;
-
-        if (enemyAI.isMoving && !enemyAI.isAttacking && !enemyAI.isHurt)
-        {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.clip = walkSound;
-                audioSource.loop = true;
-                audioSource.Play();
-            }
-        }
-        else
-        {
-            if (audioSource.loop)
-            {
-                audioSource.Stop();
-                audioSource.loop = false;
-            }
-        }
-    }
-
-    // 🎤 SHOUT (không spam)
-    void HandleShoutSound()
-    {
-        if (enemyAI.isDead) return;
-
-        if (!enemyAI.isMoving && !enemyAI.isAttacking) return;
-
-        if (Time.time >= nextShoutTime)
-        {
-            if (shoutSounds != null && shoutSounds.Length > 0)
-            {
-                AudioClip clip = shoutSounds[Random.Range(0, shoutSounds.Length)];
-                audioSource.PlayOneShot(clip);
-            }
-
-            SetNextShoutTime();
-        }
-    }
-
-    void SetNextShoutTime()
-    {
-        nextShoutTime = Time.time + Random.Range(shoutMinDelay, shoutMaxDelay);
     }
 }
