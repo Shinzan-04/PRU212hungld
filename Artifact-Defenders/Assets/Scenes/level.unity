@@ -6462,6 +6462,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   bleed: 1
+  tutorialClip: {fileID: 8300000, guid: 683c1bdda38450c498de3d80e804273b, type: 3}
 --- !u!58 &30125870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46489,12 +46490,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191705322}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.22, y: -2.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 642254314}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &191705324
 EdgeCollider2D:
@@ -152863,7 +152864,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 191705323}
   - {fileID: 1624900929}
   - {fileID: 507649258}
   - {fileID: 2122631383}
@@ -182614,13 +182614,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameTutorial
   ui: {fileID: 264713107}
   text: {fileID: 741984030}
-  enemySpawner: {fileID: 642254313}
   skipButton: {fileID: 434681208}
-  mainCamera: {fileID: 0}
-  panSpeed: 20
-  zoomSpeed: 5
-  minZoom: 3
-  maxZoom: 15
+  enemySpawners:
+  - {fileID: 642254313}
   voiceSource: {fileID: 765257369}
   moveVoice: {fileID: 8300000, guid: e301a8bb2085de042bfabc548025df20, type: 3}
   dashVoice: {fileID: 8300000, guid: 37f79301c020ab2408af337c46ca9031, type: 3}
@@ -636476,7 +636472,7 @@ Tilemap:
       - {fileID: -789301179, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: -150664405, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
       - {fileID: 811915624, guid: fb5a82b1f233b44ab934cb17882550c8, type: 3}
-      m_AnimationSpeed: 2.5000002
+      m_AnimationSpeed: 2.5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -813022,6 +813018,7 @@ SceneRoots:
   - {fileID: 1629720355}
   - {fileID: 1471817989}
   - {fileID: 1361843381}
+  - {fileID: 191705323}
   - {fileID: 642254314}
   - {fileID: 1469660209}
   - {fileID: 285690603}
