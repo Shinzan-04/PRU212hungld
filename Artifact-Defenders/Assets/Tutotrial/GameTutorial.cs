@@ -94,12 +94,12 @@ public class GameTutorial : MonoBehaviour
     {
         switch (s)
         {
-            case 0: return $"Nhấn AWDS để di chuyển! ({lastCount}/4)";
-            case 1: return "Nhấn SHIFT để lướt đi!";
-            case 2: return "Nhấn chuột trái để Tấn công!";
-            case 3: return "Nhấn phím Q để dùng kỹ năng!";
-            case 4: return "Nhấn phím E để phi đao!";
-            case 5: return "Nhấn phím P để đặt bẫy cọc!";
+            case 0: return $"Chiến trận không chờ kẻ chậm chân… Nhấn AWDS để làm chủ bước chân! ({lastCount}/4)";
+            case 1: return "Nhấn phím SHIFT để lướt tới áp sát kẻ địch!";
+            case 2: return "Đừng mất thời gian nữa, nhấn chuột trái để tấn công!";
+            case 3: return "Giải phóng nội lực! Dùng tuyệt kỹ ấn phím Q!";
+            case 4: return "Sử dụng kỹ năng phi đao! Ấn Phím E!";
+            case 5: return "Đây là đòn quyết định!Kết liễu bằng bẫy cọc Nhấn P!";
             case 6: return "Lăn chuột để Zoom, giữ chuột phải để lia map!";
             default: return "Hãy bảo vệ Thành Bạch Đằng!";
         }
@@ -134,13 +134,13 @@ public class GameTutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W)) w = true; if (Input.GetKeyDown(KeyCode.A)) a = true;
         if (Input.GetKeyDown(KeyCode.S)) s = true; if (Input.GetKeyDown(KeyCode.D)) d = true;
         int count = (w ? 1 : 0) + (a ? 1 : 0) + (s ? 1 : 0) + (d ? 1 : 0);
-        if (count != lastCount) { lastCount = count; ShowText($"Nhấn AWDS để di chuyển! ({count}/4)"); }
-        if (w && a && s && d) { step = 1; ShowText("Nhấn SHIFT để lướt đi!"); PlayVoice(dashVoice); }
+        if (count != lastCount) { lastCount = count; ShowText($"Chiến trận không chờ kẻ chậm chân… Nhấn phím AWDS để làm chủ bước chân! ({count}/4)"); }
+        if (w && a && s && d) { step = 1; ShowText("Nhấn phím SHIFT để lướt tới áp sát kẻ địch!"); PlayVoice(dashVoice); }
     }
-    void DashStep() { if (Input.GetKeyDown(KeyCode.LeftShift)) { step = 2; ShowText("Nhấn chuột trái để Tấn công!"); PlayVoice(attackVoice); } }
-    void AttackStep() { if (Input.GetMouseButtonDown(0)) { step = 3; ShowText("Nhấn phím Q để dùng kỹ năng!"); PlayVoice(qVoice); } }
-    void QStep() { if (Input.GetKeyDown(KeyCode.Q)) { step = 4; ShowText("Nhấn phím E để phi đao!"); PlayVoice(eVoice); } }
-    void EStep() { if (Input.GetKeyDown(KeyCode.E)) { step = 5; ShowText("Nhấn phím P để đặt bẫy cọc!"); PlayVoice(pVoice); } }
+    void DashStep() { if (Input.GetKeyDown(KeyCode.LeftShift)) { step = 2; ShowText("Đừng mất thời gian nữa, nhấn chuột trái để tấn công!"); PlayVoice(attackVoice); } }
+    void AttackStep() { if (Input.GetMouseButtonDown(0)) { step = 3; ShowText("Giải phóng nội lực! Dùng tuyệt kỹ ấn phím Q!"); PlayVoice(qVoice); } }
+    void QStep() { if (Input.GetKeyDown(KeyCode.Q)) { step = 4; ShowText("Sử dụng kỹ năng phi đao! Ấn Phím E!"); PlayVoice(eVoice); } }
+    void EStep() { if (Input.GetKeyDown(KeyCode.E)) { step = 5; ShowText("Đây là đòn quyết định!Kết liễu bằng bẫy cọc Nhấn P!"); PlayVoice(pVoice); } }
     void PStep() { if (Input.GetKeyDown(KeyCode.P)) { step = 6; ShowText("Lăn chuột để Zoom, giữ chuột phải để lia map!"); PlayVoice(cameraVoice); } }
     void CameraStep() { if (Mathf.Abs(Input.GetAxis("Mouse ScrollWheel")) > 0.01f || Input.GetMouseButton(1)) { step = 7; EndTutorial(); } }
 
