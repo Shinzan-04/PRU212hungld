@@ -6461,8 +6461,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 100
-  bleed: 1
   tutorialClip: {fileID: 8300000, guid: 683c1bdda38450c498de3d80e804273b, type: 3}
+  message: "\u0110\xE2y l\xE0 th\xE0nh c\u1ED5 c\u1EE7a b\u1EA1n..."
 --- !u!58 &30125870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90208,12 +90208,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378650693}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 642254314}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &378650695
 MonoBehaviour:
@@ -152873,7 +152873,6 @@ Transform:
   - {fileID: 1389271360}
   - {fileID: 1158353608}
   - {fileID: 1354409339}
-  - {fileID: 378650694}
   - {fileID: 1282861886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -813019,6 +813018,7 @@ SceneRoots:
   - {fileID: 1471817989}
   - {fileID: 1361843381}
   - {fileID: 191705323}
+  - {fileID: 378650694}
   - {fileID: 642254314}
   - {fileID: 1469660209}
   - {fileID: 285690603}
